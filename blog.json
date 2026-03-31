@@ -5,6 +5,67 @@
     "baseUrl": "https://plotkai.github.io",
     "posts": [
       {
+        "id": "5",
+        "title": "Modern Hindu Baby Names: Find the Perfect Name",
+        "slug": "modern-hindu-baby-names",
+        "author": {
+          "name": "Plotkai Team",
+          "email": "contact@plotkai.in",
+          "avatar": "img/blog/baby-names.png"
+        },
+        "publishDate": "2026-03-31",
+        "lastModified": "2026-03-31",
+        "category": "Client Projects",
+        "tags": [
+          "Android App",
+          "Mobile",
+          "UI/UX Design",
+          "Flutter"
+        ],
+        "excerpt": "Discover the perfect name for your little one with Modern Hindu Baby Names — a beautifully designed Android app featuring a vast collection of meaningful and modern names.",
+        "featured": true,
+        "featuredImage": {
+          "url": "img/blog/baby-names.png",
+          "alt": "Modern Hindu Baby Names App Preview",
+          "caption": "Modern Hindu Baby Names — elegant, simple, and meaningful."
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Modern Hindu Baby Names is a beautifully crafted Android application designed to help parents discover the perfect name for their newborn. The challenge: create a seamless, easy-to-use directory with rich meanings and offline support."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Intuitive and Elegant Design"
+          },
+          {
+            "type": "paragraph",
+            "text": "Every aspect of the user interface was designed with simplicity and elegance in mind. Finding the right name should be a joyful experience, not a chore. The app offers a smooth, distraction-free environment for exploring thousands of names."
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "text": "Features Designed for Parents"
+          },
+          {
+            "type": "list",
+            "listType": "unordered",
+            "items": [
+              "Vast collection of modern and traditional Hindu names",
+              "Detailed meanings and origins for every name",
+              "Favorites section to shortlist the best options"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "The result? A top-tier baby naming app that is lightweight, fast, and completely intuitive. It proves that thoughtful design makes all the difference."
+          }
+        ],
+        "readTime": "2 min read",
+        "status": "published"
+      },
+      {
         "id": "4",
         "title": "Hello from Plotkai Interactive – Why We Started",
         "slug": "hello-from-plotkai-interactive-why-we-started",
@@ -16,7 +77,11 @@
         "publishDate": "2025-10-23",
         "lastModified": "2025-10-23",
         "category": "About Us",
-        "tags": ["Introduction", "Digital Agency", "Plotkai Interactive"],
+        "tags": [
+          "Introduction",
+          "Digital Agency",
+          "Plotkai Interactive"
+        ],
         "excerpt": "We’re Plotkai Interactive — a creative digital agency on a mission to make technology accessible and human.",
         "featured": false,
         "featuredImage": {
@@ -62,7 +127,12 @@
         "publishDate": "2025-12-12",
         "lastModified": "2025-12-12",
         "category": "Client Projects",
-        "tags": ["Quick Commerce", "Optimization", "Razorpay", "Full Stack"],
+        "tags": [
+          "Quick Commerce",
+          "Optimization",
+          "Razorpay",
+          "Full Stack"
+        ],
         "excerpt": "How we built storoxo.com — a full-featured quick commerce platform for less than ₹1000/month, thanks to byte-level code optimization and non-volatile hosting.",
         "featured": true,
         "featuredImage": {
@@ -118,7 +188,12 @@
         "publishDate": "2025-10-23",
         "lastModified": "2025-10-23",
         "category": "Client Projects",
-        "tags": ["Web Development", "GCP", "Automation", "Deployment Pipeline"],
+        "tags": [
+          "Web Development",
+          "GCP",
+          "Automation",
+          "Deployment Pipeline"
+        ],
         "excerpt": "How Plotkai Interactive delivered a zero-cost, fully automated website for Yognishtha Trust — with a seamless build and deployment pipeline that required just one iteration.",
         "featured": true,
         "featuredImage": {
@@ -217,7 +292,13 @@
         "publishDate": "2026-01-17",
         "lastModified": "2026-01-17",
         "category": "Product Launch",
-        "tags": ["Android App", "Networking", "Hyperlocal", "Digital Creators", "Product Launch"],
+        "tags": [
+          "Android App",
+          "Networking",
+          "Hyperlocal",
+          "Digital Creators",
+          "Product Launch"
+        ],
         "excerpt": "Chowk is a scalable, mobile-ready Android app for digital creators to connect, network, and discover each other hyperlocally.",
         "featured": true,
         "featuredImage": {
