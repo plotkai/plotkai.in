@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   color: #161616;
   overflow-x: hidden;
-  background: #7ed857;
+  background: white;
 }
 a {
 	color: #161616;
@@ -120,12 +120,13 @@ h1 {
 	margin-top: 26px;
 	line-height: 1.2;
 	letter-spacing: 1.2px;
+	color: #7ed857;
 }
 h2 {
 	margin: 26px 0;
 	font-size: 22px;
 	font-weight: 700;
-	color: #161616;
+	color: #7ed857;
 }
 h2 em {
 	color: rgb(80, 90, 162);
@@ -138,14 +139,14 @@ p {
 	font-size: 18px;
 	line-height: 1.6;
 	margin: 26px 0;
-	color: #161616;
+	color: black;
 }
 ul {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 26px;
-	color: #161616;
+	color: black;
 }
 nav a {
 	font-size: 18px;
@@ -325,12 +326,14 @@ footer nav a:last-child {
 .feature h3, .partner h3, .about-page h3 {
 	font-family: 'PT Serif Caption', serif;
 	font-size: 25px;
+	color: #7ed857;
 }
 
 .feature p, .partner p {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: normal;
+	color: black;
 }
 
 .partners .partner {
@@ -464,6 +467,7 @@ footer nav a:last-child {
 
 .article-page h3 {
 	font-size: 22px;
+	color: #7ed857;
 }
 
 
@@ -799,7 +803,7 @@ iframe#download, iframe#thanks {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #7ed857;
+  background: white;
 }
 
 .blog-post-preview:hover {
@@ -868,7 +872,7 @@ iframe#download, iframe#thanks {
 }
 
 .modal-content {
-  background: #7ed857;
+  background: white;
   border-radius: 12px;
   max-width: 800px;
   max-height: 90vh;
