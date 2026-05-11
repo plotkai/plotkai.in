@@ -26,7 +26,7 @@ We're here to change that by helping startups, creators, and organizations build
   <h3>Trusted by Visionaries</h3>
   <p>
     Our customers are builders, educators, and entrepreneurs shaping meaningful digital change.
-    One of them is <a href="https://yognishthatrust.org/" target="_blank">Yognishtha</a> — a community-led initiative bringing the practice of yoga and mindfulness to the world.
+    One of them is <a href="https://yognishtha.in/" target="_blank">Yognishtha</a> — a community-led initiative bringing the practice of yoga and mindfulness to the world.
     Their trust inspires us to keep crafting technology that feels human.
   </p>
 
