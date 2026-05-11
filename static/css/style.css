@@ -985,19 +985,27 @@ iframe#download, iframe#thanks {
   border-bottom: 1px solid #4a5568;
 }
 
-.code-block pre {
-  margin: 0;
-  padding: 20px;
+.post-content pre {
+  margin: 25px 0;
+  padding: 15px;
   background: #f7fafc;
   border: 1px solid #e2e8f0;
+  border-radius: 6px;
   overflow-x: auto;
+  max-width: 100%;
 }
 
-.code-block code {
+.post-content code {
   font-family: 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 0.9em;
+  background: #f7fafc;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.post-content pre code {
   background: transparent;
-  border: none;
+  padding: 0;
   white-space: pre;
 }
 
