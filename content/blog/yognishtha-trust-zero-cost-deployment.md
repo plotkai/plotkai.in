@@ -53,7 +53,7 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
       - name: Deploy
-        run: gcloud run deploy yognishtha --source . --region=asia-south2 --platform=managed
+        run: gcloud run deploy yognishtha --source .
 ```
 
 This pipeline ensures zero-touch deployment. The website is automatically rebuilt and redeployed whenever content or code changes — delivering a smooth experience both for the maintainers and the end users.
