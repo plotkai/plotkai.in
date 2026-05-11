@@ -1,0 +1,9 @@
+{{ define "bodyclass" }}{{ if eq .Title "About Us" }}about-page{{ else if eq .Title "Contact Us" }}contact-page{{ else }}content-page{{ end }}{{ end }}
+{{ define "main" }}
+<div class="wrapper-inside">
+  <h1><span>{{ .Title }}</span></h1>
+  <div class="content-body">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

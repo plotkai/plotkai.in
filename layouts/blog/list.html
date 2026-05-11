@@ -1,0 +1,21 @@
+{{ define "bodyclass" }}content-page{{ end }}
+{{ define "main" }}
+<div class="wrapper-inside">
+  <h1><span>Showcase & Blog</span></h1>
+  <div class="content-body" style="margin-top: 30px;">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="post-preview-content">
+      <div class="blog-post-preview">
+        <h2 class="post-title">{{ .Title }}</h2>
+        <div class="post-preview-meta">
+          <span>{{ .Date.Format "January 2, 2006" }}</span>
+          {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.readTime }}<span>{{ . }}</span>{{ end }}
+        </div>
+        <p class="post-excerpt">{{ .Params.excerpt }}</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

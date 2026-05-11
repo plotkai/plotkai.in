@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <meta name="twitter:image:src" content="/img/logo.png">
+
+    <!-- Facebook OpenGraph -->
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <meta property="og:image" content="/img/logo.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&amp;family=PT+Serif+Caption&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRVQMMXFF5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GRVQMMXFF5');
+    </script>
+    <link rel="preconnect" href="https://plotkai.in/" crossorigin="true">
+    <link rel="dns-prefetch" href="https://plotkai.in/">
+  </head>
+
+  <body class="{{ block "bodyclass" . }}content-page{{ end }}">
+    <div class="wrapper">
+      <header>
+        <div class="header-wrapper">
+          <div class="header-inside">
+            <figure class="logo">
+              <a href="{{ site.BaseURL }}">
+                <img src="/img/logo.png" class="text" alt="Plotkai">
+              </a>
+            </figure>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span>
+            </label>
+            <div class="header-menu">
+              <ul>
+                <li><a href="/about-us/">About</a></li>
+                <li><a href="/blog/">Showcase</a></li>
+                <li><a href="/contact/">Contact</a></li>
+
+              </ul>
+            </div>
+          </div>
+          {{ if .IsHome }}
+          <p class="note">The Product Tech Partner for Ambitious Startups!</p>
+          {{ end }}
+        </div>
+      </header>
+
+      {{ block "main" . }}
+      {{ end }}
+
+      <footer>
+        <p>
+          © {{ now.Format "2006" }} <a href="{{ site.BaseURL }}">Plotkai Interactive</a><br>
+          Made with love in India.
+        </p>
+        <nav>
+          <a href="/about-us/">About</a>
+          <a href="/blog/">Showcase</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

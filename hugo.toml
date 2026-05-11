@@ -1,0 +1,12 @@
+baseURL = "https://plotkai.in/"
+locale = "en-us"
+title = "Plotkai Interactive: Let's make it happen"
+disableKinds = ["taxonomy", "term"]
+enableGitInfo = true
+
+[params]
+  description = "The Product Tech Partner for Ambitious Startups"
+  author = "Plotkai Interactive"
+
+[markup.goldmark.renderer]
+unsafe = true
