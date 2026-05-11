@@ -6,7 +6,7 @@ category: "Client Projects"
 tags: ["Web Development", "GCP", "Automation", "Deployment Pipeline"]
 excerpt: "How Plotkai Interactive delivered a zero-cost, fully automated website for Yognishtha Trust — with a seamless build and deployment pipeline that required just one iteration."
 featured: true
-featuredImage: "https://yognishthatrust.org/images/yognishtha_50.jpeg"
+featuredImage: "https://yognishtha.in/images/yognishtha_50.jpeg"
 featuredImageCaption: "A minimal, performance-optimized website built for Yognishtha Trust"
 readTime: "4 min read"
 ---

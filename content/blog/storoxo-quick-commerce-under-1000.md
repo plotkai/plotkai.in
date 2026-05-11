@@ -6,7 +6,7 @@ category: "Client Projects"
 tags: ["Quick Commerce", "Optimization", "Razorpay", "Full Stack"]
 excerpt: "How we built storoxo.com — a full-featured quick commerce platform for less than ₹1000/month, thanks to byte-level code optimization and non-volatile hosting."
 featured: true
-featuredImage: "https://storoxo.com/assets/og-image.jpg"
+featuredImage: "/img/blog/storoxo-logo-new-small.png"
 featuredImageCaption: "Storoxo.com — ultra-lean, full-stack, and affordable."
 readTime: "2 min read"
 ---
