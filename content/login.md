@@ -5,6 +5,14 @@ description: "Sign in to your Plotkai Interactive client dashboard."
 ---
 
 <div class="login-container" id="login-gate">
+  <div id="check-loader" style="text-align: center;">
+    <div class="spinner"></div>
+    <p style="margin-top: 15px; color: #666; font-size: 14px;">Connecting to Plotkai...</p>
+    <div id="manual-override" style="display: none; margin-top: 15px; animation: fadeInUp 0.4s ease-out;">
+      <p style="font-size: 12px; color: #999; margin-bottom: 8px;">Taking longer than usual?</p>
+      <a href="https://home.plotkai.in" style="color: #7ed857; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid #7ed857; padding: 5px 12px; border-radius: 6px;">Try Dashboard Anyway →</a>
+    </div>
+  </div>
   <div class="login-card sleep-card" id="sleep-message" style="display: none;">
     <div class="sleep-icon">🌙</div>
     <h2 class="sleep-title">Our Servers Are Asleep</h2>
@@ -125,20 +133,33 @@ description: "Sign in to your Plotkai Interactive client dashboard."
   background: none !important;
   opacity: 0.8;
 }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #7ed857;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 </style>
 
 <script>
 (function() {
-  // Get current time in IST (UTC+5:30)
-  function getISTHour() {
+  var sleepMessage = document.getElementById('sleep-message');
+  var loader = document.getElementById('check-loader');
+  var override = document.getElementById('manual-override');
+
+  function updateClock() {
     var now = new Date();
     var utc = now.getTime() + now.getTimezoneOffset() * 60000;
     var ist = new Date(utc + 5.5 * 3600000);
-    return { hour: ist.getHours(), date: ist };
-  }
-
-  function updateClock() {
-    var ist = getISTHour().date;
     var h = ist.getHours().toString().padStart(2, '0');
     var m = ist.getMinutes().toString().padStart(2, '0');
     var s = ist.getSeconds().toString().padStart(2, '0');
@@ -146,17 +167,83 @@ description: "Sign in to your Plotkai Interactive client dashboard."
     if (el) el.textContent = h + ':' + m + ':' + s + ' IST';
   }
 
-  var istHour = getISTHour().hour;
-
-  if (istHour >= 9 && istHour < 18) {
-    // Business hours — redirect to dashboard
-    window.location.href = 'https://home.plotkai.in';
-  } else {
-    // Outside business hours — show sleep message
-    var msg = document.getElementById('sleep-message');
-    if (msg) msg.style.display = 'block';
-    updateClock();
-    setInterval(updateClock, 1000);
+  function showSleep() {
+    if (loader) loader.style.display = 'none';
+    if (sleepMessage) {
+      sleepMessage.style.display = 'block';
+      updateClock();
+      setInterval(updateClock, 1000);
+    }
   }
+
+  function verifyWithImage(testUrl) {
+    // We use the "Image Trick" with a known Authentik static asset.
+    // Cloudflare 530/1033 errors return HTML/Text, which triggers img.onerror.
+    var img = new Image();
+    var timeout = setTimeout(function() {
+      console.log('Image check timed out. Showing manual override.');
+      if (override) override.style.display = 'block';
+    }, 4000);
+
+    img.onload = function() {
+      clearTimeout(timeout);
+      console.log('Authentik asset verified. Redirecting...');
+      window.location.href = 'https://home.plotkai.in';
+    };
+
+    img.onerror = function() {
+      clearTimeout(timeout);
+      console.log('Asset load failed. This usually means Cloudflare 530/1033.');
+      showSleep();
+    };
+
+    var assetPath = '/static/dist/assets/icons/icon_left_brand.svg';
+    img.src = testUrl.replace(/\/$/, '') + assetPath + '?v=' + Date.now();
+  }
+
+  async function checkReachability() {
+    var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    var testUrl = (isLocal || window.location.search.includes('test=local')) 
+      ? 'http://localhost:56969' 
+      : 'https://auth.plotkai.in';
+
+    // Show override link if it takes too long
+    setTimeout(function() {
+      if (loader && loader.style.display !== 'none' && override) {
+        override.style.display = 'block';
+      }
+    }, 3500);
+
+    try {
+      var controller = new AbortController();
+      var timeout = setTimeout(function() { controller.abort(); }, 7000);
+      
+      // 1. Try a standard fetch to detect specific status codes if CORS is allowed
+      var response = await fetch(testUrl, { 
+        mode: 'cors', 
+        signal: controller.signal,
+        cache: 'no-store' 
+      });
+      
+      var text = await response.text();
+      clearTimeout(timeout);
+
+      if (response.status === 530 || text.includes('1033')) {
+        showSleep();
+      } else {
+        window.location.href = 'https://home.plotkai.in';
+      }
+    } catch (err) {
+      clearTimeout(timeout);
+      // 2. If fetch fails (CORS block or network error), fallback to Image trick for production
+      if (testUrl.includes('localhost')) {
+        showSleep();
+      } else {
+        verifyWithImage(testUrl);
+      }
+    }
+  }
+
+  checkReachability();
 })();
 </script>
