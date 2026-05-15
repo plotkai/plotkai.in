@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2026 20:11:10 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2026 23:35:27 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
 &lt;h2 id="game-features"&gt;Game Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Challenging puzzles that test your logic&lt;/li&gt;
@@ -117,6 +117,14 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  &lt;/svg&gt;
  &lt;/a&gt;
 &lt;/div&gt;</description></item><item><title>Login</title><link>https://plotkai.in/login/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/login/</guid><description>&lt;div class="login-container" id="login-gate"&gt;
+ &lt;div id="check-loader" style="text-align: center;"&gt;
+ &lt;div class="spinner"&gt;&lt;/div&gt;
+ &lt;p style="margin-top: 15px; color: #666; font-size: 14px;"&gt;Connecting to Plotkai...&lt;/p&gt;
+ &lt;div id="manual-override" style="display: none; margin-top: 15px; animation: fadeInUp 0.4s ease-out;"&gt;
+ &lt;p style="font-size: 12px; color: #999; margin-bottom: 8px;"&gt;Taking longer than usual?&lt;/p&gt;
+ &lt;a href="https://home.plotkai.in" style="color: #7ed857; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid #7ed857; padding: 5px 12px; border-radius: 6px;"&gt;Try Dashboard Anyway →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
  &lt;div class="login-card sleep-card" id="sleep-message" style="display: none;"&gt;
  &lt;div class="sleep-icon"&gt;🌙&lt;/div&gt;
  &lt;h2 class="sleep-title"&gt;Our Servers Are Asleep&lt;/h2&gt;
@@ -125,151 +133,7 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  &lt;p class="sleep-body"&gt;
  We believe in sustainable work — and so do our servers.&lt;br&gt;
  Come back during business hours and we'll be ready for you.
- &lt;/p&gt;
- &lt;div class="sleep-clock" id="sleep-clock"&gt;&lt;/div&gt;
- &lt;p class="sleep-hint"&gt;Need urgent help? Reach us at &lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;&lt;/p&gt;
- &lt;/div&gt;
-&lt;/div&gt;
-&lt;style&gt;
-.login-container {
- display: flex;
- justify-content: center;
- align-items: center;
- min-height: 55vh;
- padding: 40px 20px;
-}
-
-.sleep-card {
- width: 100%;
- max-width: 480px;
- border: 1.5px solid #e8e8e8;
- border-radius: 16px;
- padding: 50px 40px;
- background: white;
- box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
- text-align: center;
- animation: fadeInUp 0.6s ease-out;
-}
-
-@keyframes fadeInUp {
- from {
- opacity: 0;
- transform: translateY(20px);
- }
- to {
- opacity: 1;
- transform: translateY(0);
- }
-}
-
-.sleep-icon {
- font-size: 64px;
- margin-bottom: 10px;
- animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
- 0%, 100% { transform: translateY(0); }
- 50% { transform: translateY(-10px); }
-}
-
-.sleep-title {
- font-family: 'PT Serif Caption', serif !important;
- font-size: 28px !important;
- color: #161616 !important;
- margin: 10px 0 8px 0 !important;
-}
-
-.sleep-subtitle {
- font-size: 15px !important;
- color: #666 !important;
- margin: 0 0 20px 0 !important;
-}
-
-.sleep-subtitle strong {
- color: #7ed857;
- font-weight: 900;
-}
-
-.sleep-divider {
- width: 60px;
- height: 3px;
- background: linear-gradient(90deg, #7ed857, #5cb83c);
- border-radius: 3px;
- margin: 0 auto 20px auto;
-}
-
-.sleep-body {
- font-size: 16px !important;
- line-height: 1.7 !important;
- color: #555 !important;
- margin: 0 0 25px 0 !important;
-}
-
-.sleep-clock {
- font-family: 'Courier New', monospace;
- font-size: 22px;
- font-weight: bold;
- color: #161616;
- background: #f5f5f5;
- display: inline-block;
- padding: 10px 22px;
- border-radius: 8px;
- margin-bottom: 20px;
- letter-spacing: 2px;
- border: 1px solid #e0e0e0;
-}
-
-.sleep-hint {
- font-size: 13px !important;
- color: #999 !important;
- margin: 0 !important;
-}
-
-.sleep-hint a {
- color: #7ed857 !important;
- font-weight: 700;
- border: none !important;
-}
-
-.sleep-hint a:hover {
- background: none !important;
- opacity: 0.8;
-}
-&lt;/style&gt;
-&lt;script&gt;
-(function() {
- // Get current time in IST (UTC+5:30)
- function getISTHour() {
- var now = new Date();
- var utc = now.getTime() + now.getTimezoneOffset() * 60000;
- var ist = new Date(utc + 5.5 * 3600000);
- return { hour: ist.getHours(), date: ist };
- }
-
- function updateClock() {
- var ist = getISTHour().date;
- var h = ist.getHours().toString().padStart(2, '0');
- var m = ist.getMinutes().toString().padStart(2, '0');
- var s = ist.getSeconds().toString().padStart(2, '0');
- var el = document.getElementById('sleep-clock');
- if (el) el.textContent = h + ':' + m + ':' + s + ' IST';
- }
-
- var istHour = getISTHour().hour;
-
- if (istHour &gt;= 9 &amp;&amp; istHour &lt; 18) {
- // Business hours — redirect to dashboard
- window.location.href = 'https://home.plotkai.in';
- } else {
- // Outside business hours — show sleep message
- var msg = document.getElementById('sleep-message');
- if (msg) msg.style.display = 'block';
- updateClock();
- setInterval(updateClock, 1000);
- }
-})();
-&lt;/script&gt;</description></item><item><title>Privacy Policy</title><link>https://plotkai.in/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/privacy/</guid><description>&lt;p&gt;Thank you for choosing to be part of our community at &lt;strong&gt;Plotkai Interactive&lt;/strong&gt; (&amp;ldquo;Plotkai&amp;rdquo;, &amp;ldquo;Company&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;). We’re committed to respecting your privacy and protecting your personal information. If you have any questions or concerns about this policy or our data practices, please contact us at &lt;a href="mailto:contact@plotkai.in"&gt;&lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+ &lt;/p&gt;</description></item><item><title>Privacy Policy</title><link>https://plotkai.in/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/privacy/</guid><description>&lt;p&gt;Thank you for choosing to be part of our community at &lt;strong&gt;Plotkai Interactive&lt;/strong&gt; (&amp;ldquo;Plotkai&amp;rdquo;, &amp;ldquo;Company&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;). We’re committed to respecting your privacy and protecting your personal information. If you have any questions or concerns about this policy or our data practices, please contact us at &lt;a href="mailto:contact@plotkai.in"&gt;&lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;When you visit our websites or use our products and services, you trust us with your information — and we take that responsibility seriously. This Privacy Policy explains what data we collect, how we use it, and the rights you have in relation to it. Please read it carefully. If you do not agree with any part of this policy, please discontinue using our Sites or services.&lt;/p&gt;</description></item><item><title>Terms &amp; Conditions</title><link>https://plotkai.in/terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/terms/</guid><description>&lt;h2 id="the-basics"&gt;The Basics&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Use our services responsibly. Any illegal, unethical, or abusive use of Plotkai Interactive&amp;rsquo;s platforms, software, or infrastructure will result in immediate suspension or termination.&lt;/li&gt;
