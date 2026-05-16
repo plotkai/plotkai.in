@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2026 23:35:27 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 16 May 2026 21:40:39 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
 &lt;h2 id="game-features"&gt;Game Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Challenging puzzles that test your logic&lt;/li&gt;
@@ -35,20 +35,23 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  &lt;p&gt;
  We're a compact, fast-moving team based in India — with a global mindset and partners who help us build at scale.
  From custom-built web apps to intelligent cloud infrastructure, we deliver enterprise-grade performance with startup agility.
- &lt;/p&gt;</description></item><item><title>Careers</title><link>https://plotkai.in/careers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/careers/</guid><description>&lt;h2 id="why-work-with-us"&gt;Why Work With Us?&lt;/h2&gt;
-&lt;p&gt;At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we don&amp;rsquo;t just build products — we build a culture where curiosity, ownership, and creativity thrive. We&amp;rsquo;re a small team with big ambitions, and every person here shapes what we become.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ownership from Day One&lt;/strong&gt; — You won&amp;rsquo;t be a cog in the machine. Every team member has a voice, a stake, and real impact on what we ship.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Remote-First, Async-Friendly&lt;/strong&gt; — Work from wherever you do your best thinking. We value outcomes, not hours logged.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Learn by Building&lt;/strong&gt; — We work across industries, stacks, and challenges. If you love solving new problems, you&amp;rsquo;ll never be bored here.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="our-values"&gt;Our Values&lt;/h2&gt;
-&lt;div class="credits"&gt;
- &lt;h3&gt;🛠 Build with Purpose&lt;/h3&gt;
- &lt;p&gt;
- We care deeply about the "why" behind every product. Our work isn't just functional — it's meaningful.
- If you want your work to matter beyond the codebase, this is the place.
+ &lt;/p&gt;</description></item><item><title>Careers</title><link>https://plotkai.in/careers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/careers/</guid><description>&lt;div class="login-container" id="login-gate"&gt;
+ &lt;div id="check-loader" style="text-align: center;"&gt;
+ &lt;div class="spinner"&gt;&lt;/div&gt;
+ &lt;p style="margin-top: 15px; color: #666; font-size: 14px;"&gt;Connecting to Plotkai Careers...&lt;/p&gt;
+ &lt;div id="manual-override" style="display: none; margin-top: 15px; animation: fadeInUp 0.4s ease-out;"&gt;
+ &lt;p style="font-size: 12px; color: #999; margin-bottom: 8px;"&gt;Taking longer than usual?&lt;/p&gt;
+ &lt;a href="https://careers.plotkai.in" style="color: #7ed857; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid #7ed857; padding: 5px 12px; border-radius: 6px;"&gt;Go to Careers Portal Anyway →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="login-card sleep-card" id="sleep-message" style="display: none;"&gt;
+ &lt;div class="sleep-icon"&gt;🌙&lt;/div&gt;
+ &lt;h2 class="sleep-title"&gt;Our Servers Are Asleep&lt;/h2&gt;
+ &lt;p class="sleep-subtitle"&gt;The careers portal is available between &lt;strong&gt;9:00 AM — 6:00 PM IST&lt;/strong&gt;&lt;/p&gt;
+ &lt;div class="sleep-divider"&gt;&lt;/div&gt;
+ &lt;p class="sleep-body"&gt;
+ We believe in sustainable work — and so do our servers.&lt;br&gt;
+ Come back during business hours and we'll be ready for you.
  &lt;/p&gt;</description></item><item><title>Contact Us</title><link>https://plotkai.in/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/contact/</guid><description>&lt;p&gt;
  &lt;img src="" style="width: 120%; transform: rotate(-1deg); margin-left: -50px;"&gt;
 &lt;/p&gt;
