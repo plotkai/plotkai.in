@@ -1,63 +1,234 @@
 ---
 title: "Careers"
 url: "/careers/"
-description: "Join Plotkai Interactive — explore open roles, our culture, and why building with us is different."
+description: "Join Plotkai Interactive — explore open roles and our culture."
 ---
 
-## Why Work With Us?
-
-At **Plotkai Interactive**, we don't just build products — we build a culture where curiosity, ownership, and creativity thrive. We're a small team with big ambitions, and every person here shapes what we become.
-
-- **Ownership from Day One** — You won't be a cog in the machine. Every team member has a voice, a stake, and real impact on what we ship.
-- **Remote-First, Async-Friendly** — Work from wherever you do your best thinking. We value outcomes, not hours logged.
-- **Learn by Building** — We work across industries, stacks, and challenges. If you love solving new problems, you'll never be bored here.
-
----
-
-## Our Values
-
-<div class="credits">
-  <h3>🛠 Build with Purpose</h3>
-  <p>
-    We care deeply about the "why" behind every product. Our work isn't just functional — it's meaningful.
-    If you want your work to matter beyond the codebase, this is the place.
-  </p>
-
-  <h3>🤝 Collaborate with Trust</h3>
-  <p>
-    We hire kind, curious people and give them the freedom to do great work.
-    No micromanagement, no politics — just honest collaboration and shared goals.
-  </p>
-
-  <h3>🚀 Grow Together</h3>
-  <p>
-    Whether it's learning a new framework, leading a client project, or mentoring a teammate — growth is built into everything we do.
-  </p>
+<div class="login-container" id="login-gate">
+  <div id="check-loader" style="text-align: center;">
+    <div class="spinner"></div>
+    <p style="margin-top: 15px; color: #666; font-size: 14px;">Connecting to Plotkai Careers...</p>
+    <div id="manual-override" style="display: none; margin-top: 15px; animation: fadeInUp 0.4s ease-out;">
+      <p style="font-size: 12px; color: #999; margin-bottom: 8px;">Taking longer than usual?</p>
+      <a href="https://careers.plotkai.in" style="color: #7ed857; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid #7ed857; padding: 5px 12px; border-radius: 6px;">Go to Careers Portal Anyway →</a>
+    </div>
+  </div>
+  <div class="login-card sleep-card" id="sleep-message" style="display: none;">
+    <div class="sleep-icon">🌙</div>
+    <h2 class="sleep-title">Our Servers Are Asleep</h2>
+    <p class="sleep-subtitle">The careers portal is available between <strong>9:00 AM — 6:00 PM IST</strong></p>
+    <div class="sleep-divider"></div>
+    <p class="sleep-body">
+      We believe in sustainable work — and so do our servers.<br>
+      Come back during business hours and we'll be ready for you.
+    </p>
+    <div class="sleep-clock" id="sleep-clock"></div>
+    <p class="sleep-hint">Need urgent help? Reach us at <a href="mailto:contact@plotkai.in">contact@plotkai.in</a></p>
+  </div>
 </div>
 
----
+<style>
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+  padding: 40px 20px;
+}
 
-## Open Positions
+.sleep-card {
+  width: 100%;
+  max-width: 480px;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 50px 40px;
+  background: white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+}
 
-We're always looking for talented folks who share our passion for crafting great digital products.
-If you don't see a role that fits but feel aligned with our mission, reach out anyway — we'd love to hear from you.
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.sleep-icon {
+  font-size: 64px;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+}
 
-<div style="text-align: center; margin: 30px 0;">
-  <a href="#"features" style="display: inline-block;">
-    No Open positions 
-  </a>
-</div>
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 
-<!-- ---
+.sleep-title {
+  font-family: 'PT Serif Caption', serif !important;
+  font-size: 28px !important;
+  color: #161616 !important;
+  margin: 10px 0 8px 0 !important;
+}
 
-## What to Expect
+.sleep-subtitle {
+  font-size: 15px !important;
+  color: #666 !important;
+  margin: 0 0 20px 0 !important;
+}
 
-1. **Apply** — Send us your resume, portfolio, or GitHub profile at [careers@plotkai.in](mailto:careers@plotkai.in).
-2. **Chat** — A short, friendly call to understand your interests and experience.
-3. **Challenge** — A small real-world task (no trick questions, we promise).
-4. **Offer** — If it's a fit, we move fast. -->
+.sleep-subtitle strong {
+  color: #7ed857;
+  font-weight: 900;
+}
 
-<p style="text-align: center; font-style: italic; opacity: 0.7;">
-  We believe in hiring for potential, not just credentials.
-</p>
+.sleep-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #7ed857, #5cb83c);
+  border-radius: 3px;
+  margin: 0 auto 20px auto;
+}
+
+.sleep-body {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #555 !important;
+  margin: 0 0 25px 0 !important;
+}
+
+.sleep-clock {
+  font-family: 'Courier New', monospace;
+  font-size: 22px;
+  font-weight: bold;
+  color: #161616;
+  background: #f5f5f5;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  border: 1px solid #e0e0e0;
+}
+
+.sleep-hint {
+  font-size: 13px !important;
+  color: #999 !important;
+  margin: 0 !important;
+}
+
+.sleep-hint a {
+  color: #7ed857 !important;
+  font-weight: 700;
+  border: none !important;
+}
+
+.sleep-hint a:hover {
+  background: none !important;
+  opacity: 0.8;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #7ed857;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<script>
+(function() {
+  var sleepMessage = document.getElementById('sleep-message');
+  var loader = document.getElementById('check-loader');
+  var override = document.getElementById('manual-override');
+
+  function updateClock() {
+    var now = new Date();
+    var utc = now.getTime() + now.getTimezoneOffset() * 60000;
+    var ist = new Date(utc + 5.5 * 3600000);
+    var h = ist.getHours().toString().padStart(2, '0');
+    var m = ist.getMinutes().toString().padStart(2, '0');
+    var s = ist.getSeconds().toString().padStart(2, '0');
+    var el = document.getElementById('sleep-clock');
+    if (el) el.textContent = h + ':' + m + ':' + s + ' IST';
+  }
+
+  function showSleep() {
+    if (loader) loader.style.display = 'none';
+    if (sleepMessage) {
+      sleepMessage.style.display = 'block';
+      updateClock();
+      setInterval(updateClock, 1000);
+    }
+  }
+
+  function verifyWithImage(testUrl) {
+    var img = new Image();
+    var timeout = setTimeout(function() {
+      if (override) override.style.display = 'block';
+    }, 4000);
+
+    img.onload = function() {
+      clearTimeout(timeout);
+      window.location.href = 'https://careers.plotkai.in';
+    };
+
+    img.onerror = function() {
+      clearTimeout(timeout);
+      showSleep();
+    };
+
+    var assetPath = '/static/dist/assets/icons/icon_left_brand.svg';
+    img.src = testUrl.replace(/\/$/, '') + assetPath + '?v=' + Date.now();
+  }
+
+  async function checkReachability() {
+    var testUrl = 'https://auth.plotkai.in';
+
+    setTimeout(function() {
+      if (loader && loader.style.display !== 'none' && override) {
+        override.style.display = 'block';
+      }
+    }, 3500);
+
+    try {
+      var controller = new AbortController();
+      var timeout = setTimeout(function() { controller.abort(); }, 7000);
+      
+      var response = await fetch(testUrl, { 
+        mode: 'cors', 
+        signal: controller.signal,
+        cache: 'no-store' 
+      });
+      
+      var text = await response.text();
+      clearTimeout(timeout);
+
+      if (response.status === 530 || text.includes('1033')) {
+        showSleep();
+      } else {
+        window.location.href = 'https://careers.plotkai.in';
+      }
+    } catch (err) {
+      clearTimeout(timeout);
+      verifyWithImage(testUrl);
+    }
+  }
+
+  checkReachability();
+})();
+</script>

@@ -202,10 +202,7 @@ description: "Sign in to your Plotkai Interactive client dashboard."
   }
 
   async function checkReachability() {
-    var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    var testUrl = (isLocal || window.location.search.includes('test=local')) 
-      ? 'http://localhost:56969' 
-      : 'https://auth.plotkai.in';
+    var testUrl = 'https://auth.plotkai.in';
 
     // Show override link if it takes too long
     setTimeout(function() {
@@ -236,11 +233,7 @@ description: "Sign in to your Plotkai Interactive client dashboard."
     } catch (err) {
       clearTimeout(timeout);
       // 2. If fetch fails (CORS block or network error), fallback to Image trick for production
-      if (testUrl.includes('localhost')) {
-        showSleep();
-      } else {
-        verifyWithImage(testUrl);
-      }
+      verifyWithImage(testUrl);
     }
   }
 
