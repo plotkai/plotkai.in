@@ -39,11 +39,13 @@ description: "Join Plotkai Interactive — explore open roles and our culture."
 .sleep-card {
   width: 100%;
   max-width: 480px;
-  border: 1.5px solid #e8e8e8;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 50px 40px;
-  background: white;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
   text-align: center;
   animation: fadeInUp 0.6s ease-out;
 }
@@ -73,25 +75,25 @@ description: "Join Plotkai Interactive — explore open roles and our culture."
 .sleep-title {
   font-family: 'PT Serif Caption', serif !important;
   font-size: 28px !important;
-  color: #161616 !important;
+  color: #ffffff !important;
   margin: 10px 0 8px 0 !important;
 }
 
 .sleep-subtitle {
   font-size: 15px !important;
-  color: #666 !important;
+  color: rgba(255, 255, 255, 0.6) !important;
   margin: 0 0 20px 0 !important;
 }
 
 .sleep-subtitle strong {
-  color: #7ed857;
+  color: #daa520;
   font-weight: 900;
 }
 
 .sleep-divider {
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #7ed857, #5cb83c);
+  background: linear-gradient(90deg, #daa520, #ff7f50);
   border-radius: 3px;
   margin: 0 auto 20px auto;
 }
@@ -99,7 +101,7 @@ description: "Join Plotkai Interactive — explore open roles and our culture."
 .sleep-body {
   font-size: 16px !important;
   line-height: 1.7 !important;
-  color: #555 !important;
+  color: rgba(255, 255, 255, 0.65) !important;
   margin: 0 0 25px 0 !important;
 }
 
@@ -107,24 +109,24 @@ description: "Join Plotkai Interactive — explore open roles and our culture."
   font-family: 'Courier New', monospace;
   font-size: 22px;
   font-weight: bold;
-  color: #161616;
-  background: #f5f5f5;
+  color: #daa520;
+  background: rgba(218, 165, 32, 0.08);
   display: inline-block;
   padding: 10px 22px;
   border-radius: 8px;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(218, 165, 32, 0.25);
 }
 
 .sleep-hint {
   font-size: 13px !important;
-  color: #999 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
   margin: 0 !important;
 }
 
 .sleep-hint a {
-  color: #7ed857 !important;
+  color: #ff7f50 !important;
   font-weight: 700;
   border: none !important;
 }
@@ -137,8 +139,8 @@ description: "Join Plotkai Interactive — explore open roles and our culture."
 .spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #7ed857;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid #daa520;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto;
