@@ -1,8 +1,12 @@
-{{ define "bodyclass" }}{{ if eq .Title "About Us" }}about-page{{ else if eq .Title "Contact Us" }}contact-page{{ else }}content-page{{ end }}{{ end }}
+{{ define "bodyclass" }}inner-page{{ end }}
 {{ define "main" }}
-<div class="wrapper-inside">
-  <h1><span>{{ .Title }}</span></h1>
-  <div class="content-body">
+<div class="content-page-wrapper">
+  <div class="reveal" style="margin-bottom:12px;">
+    <span class="badge">{{ if eq .Title "About Us" }}Company{{ else if eq .Title "Contact Us" }}Get in Touch{{ else }}Information{{ end }}</span>
+  </div>
+  <h1 class="reveal" style="margin-top:16px;">{{ .Title }}</h1>
+  <div class="divider reveal"></div>
+  <div class="content-body reveal">
     {{ .Content }}
   </div>
 </div>

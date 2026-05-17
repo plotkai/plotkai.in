@@ -20,7 +20,7 @@ We're here to change that by helping startups, creators, and organizations build
 
   <p>
     Through the <a href="#">Google Cloud for Startups</a> program and our collaboration with <a href="#">Cloudflare</a>,
-    we ensure that every product we build is fast, secure, and ready to grow with your users.
+    we ensure that every product we build is fast, secure, and ready to grow with your users. We are also worldwide recognized by <a href="#">D&B</a>.
   </p>
 
   <h3>Trusted by Visionaries</h3>

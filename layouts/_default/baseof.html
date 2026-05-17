@@ -1,87 +1,265 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
-    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
-    <meta name="twitter:image:src" content="/img/logo.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="description"
+    content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
 
-    <!-- Facebook OpenGraph -->
-    <meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
-    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
-    <meta property="og:image" content="/img/logo.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&amp;family=PT+Serif+Caption&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    
-    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRVQMMXFF5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-GRVQMMXFF5');
-    </script>
-    <link rel="preconnect" href="https://plotkai.in/" crossorigin="true">
-    <link rel="dns-prefetch" href="https://plotkai.in/">
-  </head>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
+  <meta name="twitter:description"
+    content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta name="twitter:image:src" content="/img/plotkai-logo-square.png">
 
-  <body class="{{ block "bodyclass" . }}content-page{{ end }}">
-    <div class="wrapper">
-      <header>
-        <div class="header-wrapper">
-          <div class="header-inside">
-            <figure class="logo">
-              <a href="{{ site.BaseURL }}">
-                <img src="/img/logo.png" class="text" alt="Plotkai">
-              </a>
-            </figure>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-              <span></span>
-            </label>
-            <div class="header-menu">
-              <ul>
-                <li><a href="/about-us/">About</a></li>
-                <li><a href="/blog/">Showcase</a></li>
-                <li><a href="/contact/">Contact</a></li>
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
+  <meta property="og:description"
+    content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta property="og:image" content="/img/plotkai-logo-square.png">
 
-              </ul>
-            </div>
-          </div>
-          {{ if .IsHome }}
-          <p class="note">The Product Tech Partner for Ambitious Startups!</p>
-          {{ end }}
-        </div>
-      </header>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-      {{ block "main" . }}
-      {{ end }}
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#133339',
+            'brand-teal': '#008080',
+            'brand-coral': '#ff7f50',
+            'brand-crimson': '#8b0000',
+            'brand-white': '#ffffff',
+          },
+          fontFamily: {
+            'inter': ['Inter', 'sans-serif'],
+            'space': ['Space Grotesk', 'sans-serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.7s ease forwards',
+            'fade-in': 'fadeIn 0.6s ease forwards',
+            'slide-right': 'slideRight 0.7s ease forwards',
+            'glow-pulse': 'glowPulse 3s ease-in-out infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'shimmer': 'shimmer 2s linear infinite',
+            'spin-slow': 'spin 8s linear infinite',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideRight: {
+              '0%': { opacity: '0', transform: 'translateX(-30px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            glowPulse: {
+              '0%, 100%': { boxShadow: '0 0 20px rgba(0, 128, 128, 0.3)' },
+              '50%': { boxShadow: '0 0 40px rgba(0, 128, 128, 0.6)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            },
+          },
+        },
+      },
+    }
+  </script>
 
-      <footer>
-        <p>
-          © {{ now.Format "2006" }} <a href="{{ site.BaseURL }}">Plotkai Interactive</a><br>
-          Made with love in India.
-        </p>
-        <nav>
-          <a href="/about-us/">About</a>
-          <a href="/blog/">Showcase</a>
-          <a href="/privacy/">Privacy</a>
-          <a href="/terms/">Terms</a>
-          <a href="/careers/">Careers</a>
-          <a href="/login/">Login</a>
-          <a href="/contact/">Contact</a>
-        </nav>
-      </footer>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/theme.css">
+
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRVQMMXFF5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GRVQMMXFF5');
+  </script>
+  <link rel="preconnect" href="https://plotkai.in/" crossorigin="true">
+  <link rel="dns-prefetch" href="https://plotkai.in/">
+</head>
+
+<body class="bg-brand-dark text-brand-white font-inter antialiased min-h-screen flex flex-col {{ block " bodyclass" .
+  }}{{ end }}">
+
+  <!-- Navigation -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="nav-container mx-auto px-6 py-4 flex items-center justify-between max-w-7xl">
+      <!-- Logo -->
+      <a href="{{ site.BaseURL }}" class="flex items-center gap-3 group" id="nav-logo">
+        <img src="/img/plotkai-logo.png" alt="Plotkai"
+          class="h-9 transition-transform duration-300 group-hover:scale-105">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-2" id="desktop-nav">
+        <a href="/about-us/"
+          class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200">About</a>
+        <a href="/blog/"
+          class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200">Showcase</a>
+        <a href="/partners/"
+          class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200">Partners</a>
+        <a href="/contact/"
+          class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white rounded-full hover:bg-white/10 transition-all duration-200">Contact</a>
+        <a href="/contact/" id="nav-cta"
+          class="ml-3 px-5 py-2.5 text-sm font-semibold bg-brand-coral text-white rounded-full hover:bg-brand-coral/90 transition-all duration-200 hover:shadow-lg hover:shadow-brand-coral/30 hover:-translate-y-0.5">
+          Start a Project
+        </a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer" aria-label="Toggle menu">
+        <span class="hamburger-line block w-6 h-0.5 bg-white transition-all duration-300"></span>
+        <span class="hamburger-line block w-6 h-0.5 bg-white transition-all duration-300"></span>
+        <span class="hamburger-line block w-4 h-0.5 bg-white transition-all duration-300"></span>
+      </button>
     </div>
-  </body>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/98 backdrop-blur-xl border-t border-white/10">
+      <nav class="flex flex-col px-6 py-6 gap-4">
+        <a href="/about-us/" class="text-white/80 hover:text-white text-lg font-medium transition-colors">About</a>
+        <a href="/blog/" class="text-white/80 hover:text-white text-lg font-medium transition-colors">Showcase</a>
+        <a href="/contact/" class="text-white/80 hover:text-white text-lg font-medium transition-colors">Contact</a>
+        <a href="/contact/"
+          class="mt-2 px-6 py-3 text-center font-semibold bg-brand-coral text-white rounded-full transition-all">
+          Start a Project
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 pt-20">
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black/40 border-t border-white/10 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <!-- Brand -->
+        <div>
+          <img src="/img/plotkai-logo.png" alt="Plotkai" class="h-10 mb-4 opacity-90">
+          <p class="text-white/60 text-sm leading-relaxed mb-4">
+            The product tech partner for ambitious startups. Built in India, trusted worldwide.
+          </p>
+          <div class="flex gap-3">
+            <div class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></div>
+            <span class="text-white/50 text-xs">Available for new projects</span>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="text-white font-semibold text-sm uppercase tracking-widest mb-4 text-brand-teal">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="/about-us/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">About Us</a>
+            </li>
+            <li><a href="/blog/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Showcase</a>
+            </li>
+            <li><a href="/partners/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Partners</a>
+            </li>
+            <li><a href="/careers/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Careers</a>
+            </li>
+            <li><a href="/contact/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal + CTA -->
+        <div>
+          <h4 class="text-white font-semibold text-sm uppercase tracking-widest mb-4 text-brand-teal">Legal</h4>
+          <ul class="space-y-2 mb-6">
+            <li><a href="/privacy/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Privacy
+                Policy</a></li>
+            <li><a href="/terms/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Terms of
+                Service</a></li>
+            <li><a href="/login/" class="text-white/60 hover:text-brand-coral text-sm transition-colors">Team Login</a>
+            </li>
+          </ul>
+          <!-- <a href="mailto:contact@plotkai.in"
+            class="inline-block px-5 py-2.5 border border-brand-teal text-brand-teal text-sm font-semibold rounded-full hover:bg-brand-teal hover:text-white transition-all duration-200">
+            contact@plotkai.in
+          </a> -->
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-white/40 text-sm">
+          © {{ now.Format "2006" }} <a href="{{ site.BaseURL }}" class="hover:text-white transition-colors">Plotkai
+            Interactive</a>. Made with love in India.
+        </p>
+        <div class="flex items-center gap-2">
+          <span class="text-white/30 text-xs">D&B D-U-N-S Registered</span>
+          <span class="text-white/20">·</span>
+          <span class="text-white/30 text-xs">Google for Startups 2025–27</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('bg-brand-dark/95', 'backdrop-blur-xl', 'shadow-2xl', 'border-b', 'border-white/10');
+      } else {
+        header.classList.remove('bg-brand-dark/95', 'backdrop-blur-xl', 'shadow-2xl', 'border-b', 'border-white/10');
+      }
+    });
+
+    // Mobile menu
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const lines = document.querySelectorAll('.hamburger-line');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      lines[0].classList.toggle('rotate-45');
+      lines[0].classList.toggle('translate-y-2');
+      lines[1].classList.toggle('opacity-0');
+      lines[2].classList.toggle('-rotate-45');
+      lines[2].classList.toggle('-translate-y-2');
+      lines[2].classList.toggle('w-6');
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+
 </html>

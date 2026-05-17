@@ -1,137 +1,384 @@
-{{ define "bodyclass" }}{{ end }}
+{{ define "bodyclass" }}home-page{{ end }}
 {{ define "main" }}
-<div class="home-wrapper">
-  <figure class="hero">
-    <img src="/img/hero.png" srcset="/img/hero.png 1x, /img/hero@2x.png 2x" alt="">
-  </figure>
-  <div class="wrapper-inside">
-    <h1><span>Every Great Product Starts with an Idea</span></h1>
-    <p>Big things begin small — a sketch on paper, a thought in your notes app, a spark in a late-night chat.
-    We help you take that spark and turn it into something real, tested, and ready for the world.</p>
-    <hr style="border: none; height: 1px; background-color: #333; margin: 0px auto; width: 80%; opacity: 0.2;">
-    <nav>
-      <div class="hero-actions">
-         <div class="hero-actions__download">
-          <a href="" class="download-big"><img src="/img/Google_for_Startups_logo.png" alt="Google-for-startups" id="request-invite" height="20px"></a>
-          <p class="note">Proud member of Google for Startups 2025-27.</p>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section grid-bg" id="hero">
+  <!-- Floating orbs -->
+  <div
+    style="position:absolute;top:15%;right:8%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,127,80,0.12) 0%,transparent 70%);pointer-events:none;animation:float 7s ease-in-out infinite;">
+  </div>
+  <div
+    style="position:absolute;bottom:25%;left:5%;width:250px;height:250px;background:radial-gradient(circle,rgba(0,128,128,0.15) 0%,transparent 70%);pointer-events:none;animation:float 9s ease-in-out infinite reverse;">
+  </div>
+
+  <div class="container" style="position:relative;z-index:1;text-align:center;">
+
+    <!-- Badge -->
+    <div class="reveal" style="display:flex;justify-content:center;margin-bottom:28px;">
+      <span class="badge">
+        <span
+          style="width:7px;height:7px;background:#00e5a0;border-radius:50%;display:inline-block;animation:glowPulse 2s ease-in-out infinite;"></span>
+        The Product Tech Partner for Ambitious Startups
+      </span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="reveal reveal-delay-1"
+      style="font-size:clamp(40px,7vw,84px);font-weight:900;line-height:1.05;letter-spacing:-2px;margin-bottom:28px;font-family:'Space Grotesk',sans-serif;">
+      Every Great Product<br>
+      <span class="gradient-text">Starts with an Idea.</span>
+    </h1>
+
+    <!-- Subhead -->
+    <p class="reveal reveal-delay-2"
+      style="font-size:clamp(17px,2.5vw,21px);color:rgba(255,255,255,0.65);max-width:620px;margin:0 auto 44px;line-height:1.7;">
+      Big things begin small — a sketch on paper, a spark in a late-night conversation.
+      We turn your idea into tested, scalable, production-ready technology.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="reveal reveal-delay-3"
+      style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:56px;">
+      <a href="/contact/" class="btn-primary" id="hero-cta-primary">
+        Start Building
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+      <a href="/blog/" class="btn-outline" id="hero-cta-secondary">
+        Explore Our Work
+      </a>
+    </div>
+
+    <!-- Trust signals -->
+    <div class="reveal reveal-delay-4" style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+      <div class="trust-badge">
+        <img src="/img/Google_for_Startups_logo.png" alt="Google for Startups"
+          style="filter:brightness(1) invert(0);opacity:0.75;height:22px;">
+        <div>
+          <strong>Google for Startups</strong>
+          <p>Member 2025–27</p>
+        </div>
       </div>
+      <div class="trust-badge">
+        <img src="/img/dandb.png" alt="D&B" style="filter:brightness(1) invert(0);opacity:0.75;height:30px;">
+        <div>
+          <strong>D&B D-U-N-S Registered</strong>
+          <p>Globally recognized</p>
+        </div>
       </div>
-      <div class="hero-actions">
-         <div class="hero-actions__download">
-          <a href="https://www.dnb.com/business-directory/company-profiles.plotkai_interactive.af953e0df1f6fdd22b4dcf9b19754862.html" class="download-big"><img src="/img/dandb.png" alt="dun-&-bradstreet" id="request-invite" height="40px"></a>
-          <p class="note">Globally recognized as D&B D-U-N-S Registered.</p>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div
+    style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;animation:float 2s ease-in-out infinite;">
+    <span
+      style="font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.1em;">Scroll</span>
+    <div style="width:1px;height:40px;background:linear-gradient(180deg,rgba(0,128,128,0.7),transparent);"></div>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<section class="section-sm"
+  style="border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:32px;">
+      <div class="stat-card reveal">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Products Built</div>
       </div>
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Years in the Field</div>
       </div>
-    </nav>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Startups Scaled</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-num">3x</div>
+        <div class="stat-label">Avg Growth Delivered</div>
+      </div>
+    </div>
   </div>
-  <hr style="border: none; height: 1px; background-color: #333; margin: 0px auto; width: 80%; opacity: 0.2;">
-</div>
-<div class="wrapper-inside features-page">
-  <p>
-    Here's some of the highlights that Plotkai focus when we build your product -
-  </p>
-  <div class="feature cloud-hosted">
-    <figure>
-      <img src="/img/cloud-hosted.png" alt="code-co-build" height="400">
-    </figure>
-    <aside>
-      <h3>We Don't Just Code, We Co-Build</h3>
-      <p>At Plotkai, we think like founders — understanding the “why” before touching the “how.”
-      Our team becomes your product team, turning business goals into working technology.
+</section>
+
+<!-- ===== VALUE PILLARS ===== -->
+<section class="section" id="what-we-do">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:64px;">
+      <span class="badge" style="margin-bottom:20px;">What We Focus On</span>
+      <h2
+        style="font-size:clamp(28px,4vw,48px);font-weight:800;line-height:1.2;font-family:'Space Grotesk',sans-serif;">
+        The Plotkai Advantage
+      </h2>
+      <div class="divider" style="margin:20px auto;"></div>
+      <p style="font-size:18px;color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto;line-height:1.7;">
+        Here's what sets us apart when we build your product
       </p>
-    </aside>
+    </div>
+
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <div class="card reveal" id="feature-cobuild">
+        <div
+          style="width:48px;height:48px;background:rgba(0,128,128,0.15);border:1px solid rgba(0,128,128,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008080" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:10px;">We Don't Just Code, We Co-Build</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7;margin:0;">
+          At Plotkai, we think like founders — understanding the "why" before touching the "how." Our team becomes your
+          product team, turning business goals into working technology.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card reveal reveal-delay-1" id="feature-design">
+        <div
+          style="width:48px;height:48px;background:rgba(255,127,80,0.12);border:1px solid rgba(255,127,80,0.25);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7f50" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+            <line x1="9" y1="9" x2="9.01" y2="9" />
+            <line x1="15" y1="9" x2="15.01" y2="9" />
+          </svg>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:10px;">Where Creativity Meets Code</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7;margin:0;">
+          Design thinking meets engineering precision. We blend storytelling, user empathy, and technical depth to build
+          products people actually love.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card reveal reveal-delay-2" id="feature-journey">
+        <div
+          style="width:48px;height:48px;background:rgba(0,128,128,0.15);border:1px solid rgba(0,128,128,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008080" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+          </svg>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:10px;">Your Journey, Mapped and Measured</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7;margin:0;">
+          From idea validation to MVP, from scaling to automation — we guide every stage. You always know what's
+          happening, why it matters, and what's next.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <!-- <div class="card reveal" id="feature-method">
+        <div
+          style="width:48px;height:48px;background:rgba(255,127,80,0.12);border:1px solid rgba(255,127,80,0.25);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7f50" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:10px;">The Plotkai Way</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7;margin:0;">
+          Fast prototypes, open communication, and technology choices that stand the test of scale. We move with startup
+          speed but engineer with enterprise reliability.
+        </p>
+      </div> -->
+
+      <!-- Card 5 -->
+      <div class="card reveal reveal-delay-1" id="feature-security">
+        <div
+          style="width:48px;height:48px;background:rgba(0,128,128,0.15);border:1px solid rgba(0,128,128,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008080" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:10px;">Secure. Scalable. Smart.</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7;margin:0;">
+          From infrastructure to interface, we engineer for trust. Our builds are fast, reliable, and ready for the real
+          world — with security baked into every layer.
+        </p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card reveal reveal-delay-2" id="feature-india">
+        <div
+          style="width:48px;height:48px;background:rgba(255,127,80,0.12);border:1px solid rgba(255,127,80,0.25);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7f50" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:10px;">Built in India, Trusted Worldwide</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7;margin:0;">
+          Proudly founded in India, we build for a global stage. Our roots keep us grounded — our code travels
+          everywhere.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="feature instant-publish">
-    <aside>
-      <h3>Where Creativity Meets Code</h3>
-      <p>Design thinking meets engineering precision — that's where our magic happens.
-      We blend storytelling, user empathy, and technical depth to build products people actually love.
+</section>
+
+<!-- ===== HOW WE WORK ===== -->
+<section class="section" style="background:rgba(0,0,0,0.2);" id="process">
+  <div class="container" style="max-width:900px;">
+    <div class="reveal" style="text-align:center;margin-bottom:64px;">
+      <span class="badge" style="margin-bottom:20px;">Our Process</span>
+      <h2
+        style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.2;font-family:'Space Grotesk',sans-serif;">
+        How We Work — The Plotkai Way
+      </h2>
+      <div class="divider" style="margin:20px auto;"></div>
+    </div>
+
+    <div>
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Discovery & Strategy</h3>
+          <p>We deep-dive into your vision, market, and constraints. Every decision is grounded in clarity — no
+            assumptions, no guesswork.</p>
+        </div>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Prototype & Validate</h3>
+          <p>Fast, functional prototypes that let real users test your core idea before a single line of production code
+            is written.</p>
+        </div>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Build with Precision</h3>
+          <p>Clean architecture, modern stacks, automated testing — engineered to ship fast and sustain long-term scale.
+          </p>
+        </div>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Launch & Grow Together</h3>
+          <p>We don't disappear after delivery. We grow with your vision — monitoring, iterating, and elevating
+            alongside you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY STARTUPS CHOOSE US ===== -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" id="why-grid">
+      <div class="reveal">
+        <span class="badge" style="margin-bottom:20px;">Why Us</span>
+        <h2
+          style="font-size:clamp(26px,3.5vw,42px);font-weight:800;line-height:1.2;margin-bottom:20px;font-family:'Space Grotesk',sans-serif;">
+          Why Startups Choose Plotkai
+        </h2>
+        <div class="divider"></div>
+        <p style="font-size:17px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:20px;">
+          Because we care about costs and outcomes, not just output. We don't disappear after delivery — we grow with
+          your vision, as your long-term tech partner.
+        </p>
+        <p style="font-size:17px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:32px;">
+          A team of engineers, designers, and dreamers who've built, broken, and rebuilt products that now power real
+          businesses. We love clarity, precision, clean code, and the quiet satisfaction of a product that just works.
+        </p>
+        <a href="/about-us/" class="btn-outline" id="why-us-link">
+          Meet the Team
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div
+            style="padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;gap:16px;">
+            <div style="font-size:28px;">⚡</div>
+            <div>
+              <div style="font-weight:700;font-size:15px;margin-bottom:4px;">Startup Speed</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);">Ship MVPs in weeks, not months</div>
+            </div>
+          </div>
+          <div
+            style="padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;gap:16px;">
+            <div style="font-size:28px;">🏗️</div>
+            <div>
+              <div style="font-weight:700;font-size:15px;margin-bottom:4px;">Enterprise Reliability</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);">Architecture that scales to millions</div>
+            </div>
+          </div>
+          <div
+            style="padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;gap:16px;">
+            <div style="font-size:28px;">🤝</div>
+            <div>
+              <div style="font-weight:700;font-size:15px;margin-bottom:4px;">True Partnership</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);">We're your team, not just a vendor</div>
+            </div>
+          </div>
+          <div
+            style="padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;display:flex;align-items:center;gap:16px;">
+            <div style="font-size:28px;">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:15px;margin-bottom:4px;">Outcome-Driven</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);">We care about your metrics, not just delivery
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="section-sm" id="cta-section">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <span class="badge" style="margin-bottom:20px;">Let's Build What's Next</span>
+      <h2
+        style="font-size:clamp(26px,4vw,48px);font-weight:800;margin-bottom:16px;font-family:'Space Grotesk',sans-serif;">
+        Every Product Starts<br>with a Conversation.
+      </h2>
+      <p
+        style="font-size:18px;color:rgba(255,255,255,0.6);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;">
+        Yours could start here — with us. Let's talk about what you're building and how we can make it exceptional.
       </p>
-    </aside>
-    <figure>
-      <img src="/img/instant-publish.png" alt="creativity" height="400">
-    </figure>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="/contact/" class="btn-primary" id="cta-contact">
+          Start a Conversation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="/blog/" class="btn-outline" id="cta-showcase">View Our Work</a>
+      </div>
+    </div>
   </div>
-  <div class="feature edit-anywhere">
-    <figure>
-      <img src="/img/edit-anywhere.png" alt="journey" height="400">
-    </figure>
-    <aside>
-      <h3>Your Journey, Mapped and Measured</h3>
-      <p>From idea validation to MVP, from scaling to automation — we guide every stage.
-      You always know what's happening, why it matters, and what's next.
-      </p>
-    </aside>
-  </div>
-  <div class="feature smart-localhost">
-    <aside>
-      <h3>How We Work — The Plotkai Way</h3>
-      <p>Fast prototypes, open communication, and technology choices that stand the test of scale.
-      We move with startup speed but engineer with enterprise reliability.
-      </p>
-    </aside>
-    <figure>
-      <img src="/img/smart-localhost.png" alt="how-we-work" height="400">
-    </figure>
-  </div>
-  <div class="feature mac-native">
-    <figure>
-      <img src="/img/mac-native.png" alt="who-we-are" height="400">
-    </figure>
-    <aside>
-      <h3>Who We Are</h3>
-      <p>A team of engineers, designers, and dreamers who've built, broken, and rebuilt products that now power real businesses.
-      We love clarity, precision, clean code, and the quiet satisfaction of a product that just works.
-      </p>
-    </aside>
-  </div>
-  <div class="feature any-editor">
-    <aside>
-      <h3>Why Startups Choose Plotkai</h3>
-      <p>
-        Because we care about costs and outcomes, not just output.
-        We don't disappear after delivery — we grow with your vision, as your tech partner.
-      </p>
-    </aside>
-    <figure>
-      <img src="/img/any-editor.png" alt="startups-choice" height="400">
-    </figure>
-  </div>
-  <div class="feature custom-domain">
-    <figure>
-      <img src="/img/custom-domains.png" alt="built-in-India" height="400">
-    </figure>
-    <aside>
-      <h3>Built in India, Trusted Worldwide</h3>
-      <p>
-        Proudly founded in India, we build for a global stage.
-        Our roots keep us grounded; our code travels everywhere.
-      </p>
-    </aside>
-  </div>
-  <div class="feature cdn">
-    <aside>
-      <h3>Secure. Scalable. Smart.</h3>
-      <p>
-        From infrastructure to interface, we engineer for trust.
-        Our builds are fast, reliable, and ready for the real world — with security at every layer.
-      </p>
-    </aside>
-    <figure>
-      <img src="/img/free-ssl.png" alt="Security" height="400">
-    </figure>
-  </div>
-  <div class="feature free-ssl">
-    <figure>
-      <img src="/img/global-cdn.png" alt="lets-build" height="400">
-    </figure>
-    <aside>
-      <h3>Let's Build What's Next</h3>
-      <p>
-        Every product starts with a conversation.
-        Yours could start here — with us.
-      </p>
-    </aside>
-  </div>
-</div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    #why-grid {
+      grid-template-columns: 1fr !important;
+      gap: 40px !important;
+    }
+  }
+</style>
+
 {{ end }}

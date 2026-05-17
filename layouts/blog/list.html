@@ -1,19 +1,27 @@
-{{ define "bodyclass" }}content-page{{ end }}
+{{ define "bodyclass" }}inner-page{{ end }}
 {{ define "main" }}
-<div class="wrapper-inside">
-  <h1><span>Showcase & Blog</span></h1>
-  <div class="content-body" style="margin-top: 30px;">
+<div class="blog-list-page">
+  <div class="reveal" style="margin-bottom:12px;">
+    <span class="badge">Portfolio &amp; Insights</span>
+  </div>
+  <h1 class="reveal" style="font-size:clamp(32px,5vw,54px);font-weight:900;line-height:1.1;margin:16px 0 8px;font-family:'Space Grotesk',sans-serif;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,0.7) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+    Showcase &amp; Blog
+  </h1>
+  <div class="divider reveal"></div>
+  <p class="reveal" style="font-size:18px;color:rgba(255,255,255,0.55);margin-bottom:48px;line-height:1.6;">
+    What we've built, learned, and shipped.
+  </p>
+
+  <div>
     {{ range .Pages }}
-    <a href="{{ .RelPermalink }}" class="post-preview-content">
-      <div class="blog-post-preview">
-        <h2 class="post-title">{{ .Title }}</h2>
-        <div class="post-preview-meta">
-          <span>{{ .Date.Format "January 2, 2006" }}</span>
-          {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
-          {{ with .Params.readTime }}<span>{{ . }}</span>{{ end }}
-        </div>
-        <p class="post-excerpt">{{ .Params.excerpt }}</p>
+    <a href="{{ .RelPermalink }}" class="blog-card reveal" id="post-{{ .File.UniqueID }}">
+      <div class="meta">
+        <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+        {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
+        {{ with .Params.readTime }}<span>{{ . }}</span>{{ end }}
       </div>
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Params.excerpt }}</p>
     </a>
     {{ end }}
   </div>
