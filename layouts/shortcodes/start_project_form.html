@@ -1,0 +1,845 @@
+{{ $json := readFile "content/start-project.json" }}
+
+<!-- Dynamic JSON Loader -->
+<div id="offerings-data" style="display: none;">
+  {{ $json | safeHTML }}
+</div>
+
+
+<div class="spa-container card">
+  <!-- Progress Header -->
+  <div class="spa-header" id="spa-header" style="display: none;">
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    </div>
+    <div class="header-nav">
+      <button class="back-btn" id="back-btn" aria-label="Go back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Back</span>
+      </button>
+      <span class="progress-text" id="progress-text">Question 1 of 5</span>
+    </div>
+  </div>
+
+  <!-- SPA Screen Body -->
+  <div id="step-container" class="step-transition-container">
+    <!-- Will be dynamically populated by JS -->
+  </div>
+</div>
+
+<style>
+/* ===== SPA GLASSMORPHIC CONTAINER ===== */
+.spa-container.card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.spa-container.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 128, 128, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* ===== PROGRESS HEADER ===== */
+.spa-header {
+  margin-bottom: 28px;
+}
+
+.progress-bar-container {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--teal), var(--coral));
+  border-radius: 10px;
+  transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 0 10px rgba(255, 127, 80, 0.4);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.progress-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ===== SCREEN TRANSITIONS ===== */
+.step-transition-container {
+  transition: opacity 0.22s cubic-bezier(0.25, 1, 0.5, 1), transform 0.22s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 1;
+  transform: translateX(0);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-transition-container.slide-out {
+  opacity: 0;
+  transform: translateX(-15px);
+}
+
+.step-transition-container.slide-in {
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+/* ===== SCREEN 1: OFFERINGS GRID ===== */
+.spa-welcome-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.spa-welcome-header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.spa-welcome-header p {
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-size: 15px;
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.offering-select-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.offering-select-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  transition: color 0.2s;
+}
+
+.offering-select-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6) !important;
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+
+.offering-card-footer {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal);
+  gap: 6px;
+  margin-top: auto;
+}
+
+.offering-card-footer svg {
+  transition: transform 0.2s ease;
+}
+
+.offering-select-card:hover {
+  border-color: rgba(218, 165, 32, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(218, 165, 32, 0.08);
+}
+
+.offering-select-card:hover h3 {
+  color: var(--teal);
+}
+
+.offering-select-card:hover .offering-card-footer svg {
+  transform: translateX(4px);
+}
+
+/* ===== SCREEN 2: TYPEFORM QUESTION ===== */
+.question-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.options-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-pill {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.option-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 14px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.option-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.2s;
+}
+
+/* Hover & Active States */
+.option-pill:hover {
+  border-color: rgba(218, 165, 32, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+.option-pill:hover .option-badge {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: rgba(218, 165, 32, 0.1);
+}
+
+.option-pill:hover .option-label {
+  color: #ffffff;
+}
+
+/* Selected state (briefly flashes) */
+.option-pill.active {
+  border-color: var(--coral) !important;
+  background: rgba(255, 127, 80, 0.1) !important;
+  box-shadow: 0 0 15px rgba(255, 127, 80, 0.2);
+}
+
+.option-pill.active .option-badge {
+  border-color: var(--coral) !important;
+  background: var(--coral) !important;
+  color: #ffffff !important;
+}
+
+.option-pill.active .option-label {
+  color: #ffffff !important;
+}
+
+/* Keyboard hint in bottom */
+.keyboard-hint {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.keyboard-hint kbd {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 10px;
+  font-family: inherit;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== SCREEN 3: SUMMARY & INTAKE ===== */
+.summary-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.summary-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.summary-header p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.summary-q {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 50%;
+  line-height: 1.4;
+}
+
+.summary-a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teal);
+  text-align: right;
+  max-width: 48%;
+  line-height: 1.4;
+}
+
+.personalization-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .personalization-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.15);
+}
+
+.action-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.cta-large-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+  padding: 16px 28px;
+  background: var(--coral);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(255, 127, 80, 0.25);
+}
+
+.cta-large-btn:hover {
+  background: #ff6a35;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 127, 80, 0.45);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .spa-container.card {
+    padding: 24px 20px;
+    min-height: 440px;
+  }
+  .spa-welcome-header h2 {
+    font-size: 24px;
+  }
+  .question-text {
+    font-size: 18px;
+  }
+  .option-pill {
+    padding: 14px 16px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Data Parsing
+  let offerings = [];
+  try {
+    const rawData = document.getElementById("offerings-data").textContent;
+    const parsed = JSON.parse(rawData);
+    offerings = parsed.offerings || [];
+  } catch (err) {
+    console.error("Error loading offerings schema:", err);
+  }
+
+  // 2. SPA State
+  const state = {
+    step: "offering", // "offering" | "questions" | "summary"
+    selectedOfferingId: null,
+    currentQuestionIndex: 0,
+    answers: {} // { questionId: { value, label } }
+  };
+
+  // Cache DOM
+  const header = document.getElementById("spa-header");
+  const fill = document.getElementById("progress-bar-fill");
+  const progressText = document.getElementById("progress-text");
+  const backBtn = document.getElementById("back-btn");
+  const stepContainer = document.getElementById("step-container");
+
+  // 3. Navigation Helpers
+  function transitionTo(renderFn) {
+    stepContainer.classList.add("slide-out");
+    setTimeout(() => {
+      renderFn();
+      stepContainer.classList.remove("slide-out");
+      stepContainer.classList.add("slide-in");
+      setTimeout(() => {
+        stepContainer.classList.remove("slide-in");
+      }, 50);
+    }, 220);
+  }
+
+  function getActiveOffering() {
+    return offerings.find(o => o.id === state.selectedOfferingId);
+  }
+
+  function getActiveQuestions() {
+    const off = getActiveOffering();
+    return off ? off.questions : [];
+  }
+
+  // 4. Update Header Progress
+  function updateProgress() {
+    if (state.step === "offering") {
+      header.style.display = "none";
+      return;
+    }
+
+    header.style.display = "block";
+    const questions = getActiveQuestions();
+    const total = questions.length;
+    
+    if (state.step === "questions") {
+      const idx = state.currentQuestionIndex;
+      const pct = ((idx) / total) * 100;
+      fill.style.width = `${pct}%`;
+      progressText.textContent = `Question ${idx + 1} of ${total}`;
+    } else if (state.step === "summary") {
+      fill.style.width = "100%";
+      progressText.textContent = "Configuration Complete";
+    }
+  }
+
+  // 5. Render: Screen 1 - Selection
+  function renderOfferingSelection() {
+    state.step = "offering";
+    state.selectedOfferingId = null;
+    state.currentQuestionIndex = 0;
+    state.answers = {};
+    updateProgress();
+
+    let gridHtml = offerings.map(off => `
+      <div class="offering-select-card" data-id="${off.id}">
+        <h3>${off.title}</h3>
+        <p>${off.description}</p>
+        <div class="offering-card-footer">
+          <span>Start Configuration</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+      </div>
+    `).join("");
+
+    stepContainer.innerHTML = `
+      <div class="spa-welcome-header">
+        <h2>Tailor Your Solution</h2>
+        <p>Select your primary offering below to construct a custom implementation roadmap tailored precisely to your operational targets.</p>
+      </div>
+      <div class="offerings-grid">
+        ${gridHtml}
+      </div>
+    `;
+
+    // Listeners for cards
+    stepContainer.querySelectorAll(".offering-select-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const offId = card.getAttribute("data-id");
+        state.selectedOfferingId = offId;
+        state.step = "questions";
+        state.currentQuestionIndex = 0;
+        transitionTo(renderQuestion);
+      });
+    });
+  }
+
+  // 6. Render: Screen 2 - Questions
+  const optKeys = ["a", "b", "c", "d", "e", "f"];
+  
+  function renderQuestion() {
+    updateProgress();
+    const questions = getActiveQuestions();
+    const q = questions[state.currentQuestionIndex];
+    
+    if (!q) return;
+
+    let optionsHtml = q.options.map((opt, i) => {
+      const isSelected = state.answers[q.id] && state.answers[q.id].value === opt.value;
+      const key = optKeys[i] ? optKeys[i].toUpperCase() : "";
+      return `
+        <div class="option-pill ${isSelected ? 'active' : ''}" data-value="${opt.value}" data-label="${opt.label}" data-index="${i}">
+          <div class="option-badge">${key}</div>
+          <div class="option-label">${opt.label}</div>
+        </div>
+      `;
+    }).join("");
+
+    stepContainer.innerHTML = `
+      <div class="question-view">
+        <div class="question-text">${q.text}</div>
+        <div class="options-stack">
+          ${optionsHtml}
+        </div>
+        <div class="keyboard-hint">
+          <span>Press</span>
+          <kbd>A</kbd>, <kbd>B</kbd>, etc. <span>to select options instantly</span>
+        </div>
+      </div>
+    `;
+
+    // Click handlers for options
+    stepContainer.querySelectorAll(".option-pill").forEach(pill => {
+      pill.addEventListener("click", () => {
+        selectOption(pill, q.id);
+      });
+    });
+  }
+
+  function selectOption(pillElement, questionId) {
+    const val = pillElement.getAttribute("data-value");
+    const label = pillElement.getAttribute("data-label");
+    
+    // Highlight
+    stepContainer.querySelectorAll(".option-pill").forEach(p => p.classList.remove("active"));
+    pillElement.classList.add("active");
+
+    // Save answer
+    state.answers[questionId] = { value: val, label: label };
+
+    // Slide to next screen
+    setTimeout(() => {
+      const questions = getActiveQuestions();
+      if (state.currentQuestionIndex < questions.length - 1) {
+        state.currentQuestionIndex++;
+        transitionTo(renderQuestion);
+      } else {
+        state.step = "summary";
+        transitionTo(renderSummary);
+      }
+    }, 220);
+  }
+
+  // 7. Render: Screen 3 - Summary & Personalized Form
+  function renderSummary() {
+    updateProgress();
+    const offering = getActiveOffering();
+    const questions = getActiveQuestions();
+
+    let summaryHtml = questions.map(q => {
+      const ans = state.answers[q.id] || { label: "Not answered" };
+      return `
+        <div class="summary-row">
+          <div class="summary-q">${q.text}</div>
+          <div class="summary-a">${ans.label}</div>
+        </div>
+      `;
+    }).join("");
+
+    stepContainer.innerHTML = `
+      <div class="summary-view">
+        <div class="summary-header">
+          <h2>Your Growth Roadmap Configuration</h2>
+          <p>Please review your responses below, add your details, and build your specialized growth roadmap.</p>
+        </div>
+        
+        <div class="summary-grid">
+          <div class="summary-row">
+            <div class="summary-q">Selected Solution</div>
+            <div class="summary-a" style="color: var(--coral);">${offering.title}</div>
+          </div>
+          ${summaryHtml}
+        </div>
+
+        <div class="personalization-form">
+          <div class="form-group">
+            <label class="form-label" for="user-name">Your Name</label>
+            <input type="text" id="user-name" class="form-input" placeholder="e.g. Rahul Sharma" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="user-company">Company Name</label>
+            <input type="text" id="user-company" class="form-input" placeholder="e.g. Plotkai Logistics" />
+          </div>
+          <div class="form-group full-width">
+            <label class="form-label" for="user-contact">Contact Details (Email/Phone)</label>
+            <input type="text" id="user-contact" class="form-input" placeholder="e.g. rahul@example.com or +91 98765 43210" required />
+          </div>
+          <div class="form-group full-width">
+            <label class="form-label" for="user-note">Additional Project Notes (Optional)</label>
+            <input type="text" id="user-note" class="form-input" placeholder="e.g. Need quick prototype in 3 weeks" />
+          </div>
+        </div>
+
+        <div class="action-btn-container">
+          <button class="cta-large-btn" id="submit-form-btn">
+            <span>Build My Growth Roadmap</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </div>
+      </div>
+    `;
+
+    // Click handler for submit
+    document.getElementById("submit-form-btn").addEventListener("click", () => {
+      handleSubmit();
+    });
+  }
+
+  // 8. Handle Form Submit (Mailto generation)
+  function handleSubmit() {
+    const nameInput = document.getElementById("user-name");
+    const contactInput = document.getElementById("user-contact");
+    const companyVal = document.getElementById("user-company").value.trim();
+    const noteVal = document.getElementById("user-note").value.trim();
+
+    const nameVal = nameInput.value.trim();
+    const contactVal = contactInput.value.trim();
+
+    // Custom browser validation alerts
+    if (!nameVal) {
+      nameInput.focus();
+      nameInput.style.borderColor = "var(--crimson)";
+      return;
+    }
+    if (!contactVal) {
+      contactInput.focus();
+      contactInput.style.borderColor = "var(--crimson)";
+      return;
+    }
+
+    const offering = getActiveOffering();
+    const questions = getActiveQuestions();
+
+    // Prepare email body
+    let body = `Hi Plotkai Team,\n\n`;
+    body += `I would like to request a custom Growth Roadmap for my project based on the following configurations:\n\n`;
+    body += `--------------------------------------------------\n`;
+    body += `🚀 SELECTED SOLUTION: ${offering.title}\n`;
+    body += `--------------------------------------------------\n\n`;
+
+    questions.forEach((q, idx) => {
+      const ans = state.answers[q.id] || { label: "Not answered", value: "n/a" };
+      body += `${idx + 1}. ${q.text}\n`;
+      body += `   👉 ${ans.label} (${ans.value})\n\n`;
+    });
+
+    body += `--------------------------------------------------\n`;
+    body += `👤 PROSPECT DETAILS:\n`;
+    body += `--------------------------------------------------\n`;
+    body += `Name: ${nameVal}\n`;
+    body += `Company: ${companyVal ? companyVal : 'N/A'}\n`;
+    body += `Contact (Email/Phone): ${contactVal}\n`;
+    if (noteVal) {
+      body += `Additional Notes: ${noteVal}\n`;
+    }
+    body += `\n`;
+    body += `Looking forward to launching this with you!\n\n`;
+    body += `Best regards,\n`;
+    body += `${nameVal}`;
+
+    const subject = `Growth Roadmap Inquiry: ${offering.title} - ${nameVal}`;
+    const mailtoUrl = `mailto:contact@plotkai.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.location.href = mailtoUrl;
+  }
+
+  // 9. Back Button Handler
+  backBtn.addEventListener("click", () => {
+    if (state.step === "questions") {
+      if (state.currentQuestionIndex > 0) {
+        state.currentQuestionIndex--;
+        transitionTo(renderQuestion);
+      } else {
+        state.step = "offering";
+        transitionTo(renderOfferingSelection);
+      }
+    } else if (state.step === "summary") {
+      state.step = "questions";
+      const questions = getActiveQuestions();
+      state.currentQuestionIndex = questions.length - 1;
+      transitionTo(renderQuestion);
+    }
+  });
+
+  // 10. Keyboard Event Handler
+  document.addEventListener("keydown", (e) => {
+    if (state.step !== "questions") return;
+
+    const key = e.key.toLowerCase();
+    const index = optKeys.indexOf(key);
+
+    if (index !== -1) {
+      // Find the corresponding pill in current question
+      const pill = stepContainer.querySelector(`.option-pill[data-index="${index}"]`);
+      if (pill) {
+        e.preventDefault();
+        const questions = getActiveQuestions();
+        const q = questions[state.currentQuestionIndex];
+        selectOption(pill, q.id);
+      }
+    }
+  });
+
+  // Start Application
+  renderOfferingSelection();
+});
+</script>
