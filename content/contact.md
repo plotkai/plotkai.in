@@ -10,7 +10,7 @@ url: "/contact/"
   Hello, Old Sport! <br />Contact us on <a href="mailto:contact@plotkai.in">contact@plotkai.in</a>
 </p>
 
-<div style="text-align: center; margin: 20px 0;">
+<div style="text-align: left; margin: 20px 0;">
   <a href="https://api.whatsapp.com/send/?phone=919044399422&text&type=phone_number&app_absent=0" class="features" style="display: inline-block;">
     Get Started
   </a>
@@ -20,7 +20,7 @@ url: "/contact/"
 <style>
   .social-icons {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 24px;
     flex-wrap: wrap;
     margin-top: 12px;
