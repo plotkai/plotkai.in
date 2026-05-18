@@ -1,5 +1,5 @@
 ---
-title: "Start Your Project"
+title: "Start Building Your Project"
 url: "/start-project/"
 ---
 
