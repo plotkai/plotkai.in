@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2026 20:22:26 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2026 23:18:40 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
 &lt;h2 id="game-features"&gt;Game Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Challenging puzzles that test your logic&lt;/li&gt;
@@ -58,7 +58,7 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
 &lt;p&gt;
  Hello, Old Sport! &lt;br /&gt;Contact us on &lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;
 &lt;/p&gt;
-&lt;div style="text-align: center; margin: 20px 0;"&gt;
+&lt;div style="text-align: left; margin: 20px 0;"&gt;
  &lt;a href="https://api.whatsapp.com/send/?phone=919044399422&amp;text&amp;type=phone_number&amp;app_absent=0" class="features" style="display: inline-block;"&gt;
  Get Started
  &lt;/a&gt;
@@ -67,7 +67,7 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
 &lt;style&gt;
  .social-icons {
  display: flex;
- align-items: center;
+ align-items: left;
  gap: 24px;
  flex-wrap: wrap;
  margin-top: 12px;
