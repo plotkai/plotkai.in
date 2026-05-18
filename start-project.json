@@ -1,0 +1,240 @@
+{
+    "offerings": [
+        {
+            "id": "mobile_app",
+            "title": "Mobile App Development",
+            "description": "High-performance Android & iOS apps tailored for local markets.",
+            "questions": [
+                {
+                    "id": "m1",
+                    "text": "Which platform is your priority?",
+                    "options": [
+                        {
+                            "label": "Android (Recommended for Tier 2)",
+                            "value": "android",
+                            "weight": 1
+                        },
+                        {
+                            "label": "Both Android & iOS",
+                            "value": "cross_platform",
+                            "weight": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "m2",
+                    "text": "Will your app involve on-ground operations (like delivery or physical skill sessions)?",
+                    "options": [
+                        {
+                            "label": "Yes, involves physical locations/staff",
+                            "value": "field_ops",
+                            "weight": 3
+                        },
+                        {
+                            "label": "No, it is purely digital",
+                            "value": "pure_digital",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "m3",
+                    "text": "Do you need an integrated payment gateway for online collections?",
+                    "options": [
+                        {
+                            "label": "Yes, enable online payments",
+                            "value": "pg_integration",
+                            "weight": 2
+                        },
+                        {
+                            "label": "No, manual/cash payments only",
+                            "value": "manual_pay",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": "m4",
+                    "text": "Do you need dedicated Sales and Marketing support to launch?",
+                    "options": [
+                        {
+                            "label": "Yes, help me get my first 100 users",
+                            "value": "marketing_support",
+                            "weight": 3
+                        },
+                        {
+                            "label": "No, I will handle marketing",
+                            "value": "self_market",
+                            "weight": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecommerce",
+            "title": "E-commerce Solution",
+            "description": "A complete storefront to move your local business online.",
+            "questions": [
+                {
+                    "id": "e1",
+                    "text": "How many products do you plan to list?",
+                    "options": [
+                        {
+                            "label": "1-50 (Small Boutique)",
+                            "value": "small_scale",
+                            "weight": 1
+                        },
+                        {
+                            "label": "500+ (Large Inventory)",
+                            "value": "large_scale",
+                            "weight": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "e2",
+                    "text": "Do you require on-ground logistics and delivery tracking?",
+                    "options": [
+                        {
+                            "label": "Yes, track my delivery team",
+                            "value": "logistics_tracking",
+                            "weight": 3
+                        },
+                        {
+                            "label": "No, standard shipping only",
+                            "value": "std_shipping",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "e3",
+                    "text": "Do you want Plotkai to manage your digital marketing and cataloging?",
+                    "options": [
+                        {
+                            "label": "Yes, provide full marketing support",
+                            "value": "full_mkt_pack",
+                            "weight": 3
+                        },
+                        {
+                            "label": "No, I just need the software",
+                            "value": "software_only",
+                            "weight": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ai_solution",
+            "title": "AI & Automation Solution",
+            "description": "Smart automation to reduce manual work and improve decision making.",
+            "questions": [
+                {
+                    "id": "a1",
+                    "text": "What is the primary goal for AI?",
+                    "options": [
+                        {
+                            "label": "Customer Support (Chatbots)",
+                            "value": "ai_chatbot",
+                            "weight": 2
+                        },
+                        {
+                            "label": "Business Strategy & Automated Reports",
+                            "value": "ai_strategy",
+                            "weight": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "a2",
+                    "text": "Will the AI interact with on-ground data (like scanning physical bills or tracking staff)?",
+                    "options": [
+                        {
+                            "label": "Yes, involves physical data/operations",
+                            "value": "vision_ocr",
+                            "weight": 3
+                        },
+                        {
+                            "label": "No, digital data only",
+                            "value": "text_only",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "a3",
+                    "text": "Do you need a payment gateway for subscription-based AI services?",
+                    "options": [
+                        {
+                            "label": "Yes, recurring billing needed",
+                            "value": "subscription_pg",
+                            "weight": 2
+                        },
+                        {
+                            "label": "No",
+                            "value": "no_pg",
+                            "weight": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "it_solution",
+            "title": "Office & IT Solutions",
+            "description": "Automate your office tasks and save on expensive monthly software fees.",
+            "questions": [
+                {
+                    "id": "it1",
+                    "text": "What is the primary goal for IT Solution?",
+                    "options": [
+                        {
+                            "label": "Staff Attendance & Payroll",
+                            "value": "ai_chatbot",
+                            "weight": 2
+                        },
+                        {
+                            "label": "Customer Records & Billing",
+                            "value": "ai_strategy",
+                            "weight": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "it2",
+                    "text": "Where should your data be stored?",
+                    "options": [
+                        {
+                            "label": "Local Server (Privacy Focused)",
+                            "value": "self_hosted",
+                            "weight": 3
+                        },
+                        {
+                            "label": "Cloud Storage (Access Anywhere)",
+                            "value": "cloud_saas",
+                            "weight": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "it3",
+                    "text": "Do you need a payment gateway for subscription-based IT services?",
+                    "options": [
+                        {
+                            "label": "Yes, recurring billing needed",
+                            "value": "subscription_pg",
+                            "weight": 2
+                        },
+                        {
+                            "label": "No",
+                            "value": "no_pg",
+                            "weight": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

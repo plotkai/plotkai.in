@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2026 00:05:37 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2026 16:38:15 +0530</lastBuildDate><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Remainder - Android Game</title><link>https://plotkai.in/blog/remainder-android-game/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/remainder-android-game/</guid><description>&lt;p&gt;We&amp;rsquo;re thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you&amp;rsquo;re a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.&lt;/p&gt;
 &lt;h2 id="game-features"&gt;Game Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Challenging puzzles that test your logic&lt;/li&gt;
@@ -153,7 +153,828 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  One of them is &lt;a href="https://yognishtha.in/" target="_blank"&gt;Yognishtha&lt;/a&gt;.
  &lt;/p&gt;
 &lt;/div&gt;</description></item><item><title>Privacy Policy</title><link>https://plotkai.in/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/privacy/</guid><description>&lt;p&gt;Thank you for choosing to be part of our community at &lt;strong&gt;Plotkai Interactive&lt;/strong&gt; (&amp;ldquo;Plotkai&amp;rdquo;, &amp;ldquo;Company&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;). We’re committed to respecting your privacy and protecting your personal information. If you have any questions or concerns about this policy or our data practices, please contact us at &lt;a href="mailto:contact@plotkai.in"&gt;&lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;When you visit our websites or use our products and services, you trust us with your information — and we take that responsibility seriously. This Privacy Policy explains what data we collect, how we use it, and the rights you have in relation to it. Please read it carefully. If you do not agree with any part of this policy, please discontinue using our Sites or services.&lt;/p&gt;</description></item><item><title>Terms &amp; Conditions</title><link>https://plotkai.in/terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/terms/</guid><description>&lt;h2 id="the-basics"&gt;The Basics&lt;/h2&gt;
+&lt;p&gt;When you visit our websites or use our products and services, you trust us with your information — and we take that responsibility seriously. This Privacy Policy explains what data we collect, how we use it, and the rights you have in relation to it. Please read it carefully. If you do not agree with any part of this policy, please discontinue using our Sites or services.&lt;/p&gt;</description></item><item><title>Start Your Project</title><link>https://plotkai.in/start-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/start-project/</guid><description>&lt;div id="offerings-data" style="display: none;"&gt;
+ {
+ "offerings": [
+ {
+ "id": "mobile_app",
+ "title": "Mobile App Development",
+ "description": "High-performance Android &amp; iOS apps tailored for local markets.",
+ "questions": [
+ {
+ "id": "m1",
+ "text": "Which platform is your priority?",
+ "options": [
+ {
+ "label": "Android (Recommended for Tier 2)",
+ "value": "android",
+ "weight": 1
+ },
+ {
+ "label": "Both Android &amp; iOS",
+ "value": "cross_platform",
+ "weight": 2
+ }
+ ]
+ },
+ {
+ "id": "m2",
+ "text": "Will your app involve on-ground operations (like delivery or physical skill sessions)?",
+ "options": [
+ {
+ "label": "Yes, involves physical locations/staff",
+ "value": "field_ops",
+ "weight": 3
+ },
+ {
+ "label": "No, it is purely digital",
+ "value": "pure_digital",
+ "weight": 1
+ }
+ ]
+ },
+ {
+ "id": "m3",
+ "text": "Do you need an integrated payment gateway for online collections?",
+ "options": [
+ {
+ "label": "Yes, enable online payments",
+ "value": "pg_integration",
+ "weight": 2
+ },
+ {
+ "label": "No, manual/cash payments only",
+ "value": "manual_pay",
+ "weight": 0
+ }
+ ]
+ },
+ {
+ "id": "m4",
+ "text": "Do you need dedicated Sales and Marketing support to launch?",
+ "options": [
+ {
+ "label": "Yes, help me get my first 100 users",
+ "value": "marketing_support",
+ "weight": 3
+ },
+ {
+ "label": "No, I will handle marketing",
+ "value": "self_market",
+ "weight": 0
+ }
+ ]
+ }
+ ]
+ },
+ {
+ "id": "ecommerce",
+ "title": "E-commerce Solution",
+ "description": "A complete storefront to move your local business online.",
+ "questions": [
+ {
+ "id": "e1",
+ "text": "How many products do you plan to list?",
+ "options": [
+ {
+ "label": "1-50 (Small Boutique)",
+ "value": "small_scale",
+ "weight": 1
+ },
+ {
+ "label": "500+ (Large Inventory)",
+ "value": "large_scale",
+ "weight": 3
+ }
+ ]
+ },
+ {
+ "id": "e2",
+ "text": "Do you require on-ground logistics and delivery tracking?",
+ "options": [
+ {
+ "label": "Yes, track my delivery team",
+ "value": "logistics_tracking",
+ "weight": 3
+ },
+ {
+ "label": "No, standard shipping only",
+ "value": "std_shipping",
+ "weight": 1
+ }
+ ]
+ },
+ {
+ "id": "e3",
+ "text": "Do you want Plotkai to manage your digital marketing and cataloging?",
+ "options": [
+ {
+ "label": "Yes, provide full marketing support",
+ "value": "full_mkt_pack",
+ "weight": 3
+ },
+ {
+ "label": "No, I just need the software",
+ "value": "software_only",
+ "weight": 0
+ }
+ ]
+ }
+ ]
+ },
+ {
+ "id": "ai_solution",
+ "title": "AI &amp; Automation Solution",
+ "description": "Smart automation to reduce manual work and improve decision making.",
+ "questions": [
+ {
+ "id": "a1",
+ "text": "What is the primary goal for AI?",
+ "options": [
+ {
+ "label": "Customer Support (Chatbots)",
+ "value": "ai_chatbot",
+ "weight": 2
+ },
+ {
+ "label": "Business Strategy &amp; Automated Reports",
+ "value": "ai_strategy",
+ "weight": 3
+ }
+ ]
+ },
+ {
+ "id": "a2",
+ "text": "Will the AI interact with on-ground data (like scanning physical bills or tracking staff)?",
+ "options": [
+ {
+ "label": "Yes, involves physical data/operations",
+ "value": "vision_ocr",
+ "weight": 3
+ },
+ {
+ "label": "No, digital data only",
+ "value": "text_only",
+ "weight": 1
+ }
+ ]
+ },
+ {
+ "id": "a3",
+ "text": "Do you need a payment gateway for subscription-based AI services?",
+ "options": [
+ {
+ "label": "Yes, recurring billing needed",
+ "value": "subscription_pg",
+ "weight": 2
+ },
+ {
+ "label": "No",
+ "value": "no_pg",
+ "weight": 0
+ }
+ ]
+ }
+ ]
+ },
+ {
+ "id": "it_solution",
+ "title": "Office &amp; IT Solutions",
+ "description": "Automate your office tasks and save on expensive monthly software fees.",
+ "questions": [
+ {
+ "id": "it1",
+ "text": "What is the primary goal for IT Solution?",
+ "options": [
+ {
+ "label": "Staff Attendance &amp; Payroll",
+ "value": "ai_chatbot",
+ "weight": 2
+ },
+ {
+ "label": "Customer Records &amp; Billing",
+ "value": "ai_strategy",
+ "weight": 3
+ }
+ ]
+ },
+ {
+ "id": "it2",
+ "text": "Where should your data be stored?",
+ "options": [
+ {
+ "label": "Local Server (Privacy Focused)",
+ "value": "self_hosted",
+ "weight": 3
+ },
+ {
+ "label": "Cloud Storage (Access Anywhere)",
+ "value": "cloud_saas",
+ "weight": 2
+ }
+ ]
+ },
+ {
+ "id": "it3",
+ "text": "Do you need a payment gateway for subscription-based IT services?",
+ "options": [
+ {
+ "label": "Yes, recurring billing needed",
+ "value": "subscription_pg",
+ "weight": 2
+ },
+ {
+ "label": "No",
+ "value": "no_pg",
+ "weight": 0
+ }
+ ]
+ }
+ ]
+ }
+ ]
+}
+&lt;/div&gt;
+
+
+&lt;div class="spa-container card"&gt;
+ 
+ &lt;div class="spa-header" id="spa-header" style="display: none;"&gt;
+ &lt;div class="progress-bar-container"&gt;
+ &lt;div class="progress-bar-fill" id="progress-bar-fill"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="header-nav"&gt;
+ &lt;button class="back-btn" id="back-btn" aria-label="Go back"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;line x1="19" y1="12" x2="5" y2="12"&gt;&lt;/line&gt;&lt;polyline points="12 19 5 12 12 5"&gt;&lt;/polyline&gt;&lt;/svg&gt;
+ &lt;span&gt;Back&lt;/span&gt;
+ &lt;/button&gt;
+ &lt;span class="progress-text" id="progress-text"&gt;Question 1 of 5&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ 
+ &lt;div id="step-container" class="step-transition-container"&gt;
+ 
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+ 
+.spa-container.card {
+ background: rgba(255, 255, 255, 0.02);
+ border: 1px solid var(--border);
+ border-radius: 16px;
+ padding: 32px;
+ min-height: 480px;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ overflow: hidden;
+ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+ margin-top: 20px;
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+}
+
+.spa-container.card::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(135deg, rgba(0, 128, 128, 0.04) 0%, transparent 60%);
+ pointer-events: none;
+}
+
+ 
+.spa-header {
+ margin-bottom: 28px;
+}
+
+.progress-bar-container {
+ height: 5px;
+ background: rgba(255, 255, 255, 0.08);
+ border-radius: 10px;
+ overflow: hidden;
+ position: relative;
+ margin-bottom: 16px;
+}
+
+.progress-bar-fill {
+ height: 100%;
+ width: 0%;
+ background: linear-gradient(90deg, var(--teal), var(--coral));
+ border-radius: 10px;
+ transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+ box-shadow: 0 0 10px rgba(255, 127, 80, 0.4);
+}
+
+.header-nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.back-btn {
+ background: transparent;
+ border: none;
+ color: rgba(255, 255, 255, 0.6);
+ font-size: 14px;
+ font-weight: 600;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ padding: 6px 12px;
+ border-radius: 8px;
+ transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+ color: white;
+ background: rgba(255, 255, 255, 0.05);
+}
+
+.progress-text {
+ font-size: 13px;
+ font-weight: 600;
+ color: var(--teal);
+ letter-spacing: 0.05em;
+ text-transform: uppercase;
+}
+
+ 
+.step-transition-container {
+ transition: opacity 0.22s cubic-bezier(0.25, 1, 0.5, 1), transform 0.22s cubic-bezier(0.25, 1, 0.5, 1);
+ opacity: 1;
+ transform: translateX(0);
+ flex-grow: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.step-transition-container.slide-out {
+ opacity: 0;
+ transform: translateX(-15px);
+}
+
+.step-transition-container.slide-in {
+ opacity: 0;
+ transform: translateX(15px);
+}
+
+ 
+.spa-welcome-header {
+ text-align: center;
+ margin-bottom: 28px;
+}
+
+.spa-welcome-header h2 {
+ font-size: 28px;
+ font-weight: 800;
+ margin-bottom: 8px;
+ color: #ffffff;
+}
+
+.spa-welcome-header p {
+ color: rgba(255, 255, 255, 0.65) !important;
+ font-size: 15px;
+ margin: 0 auto;
+ max-width: 520px;
+}
+
+.offerings-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+ gap: 16px;
+ margin-top: 10px;
+}
+
+.offering-select-card {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid var(--border);
+ border-radius: 12px;
+ padding: 24px;
+ cursor: pointer;
+ transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+ text-align: left;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+}
+
+.offering-select-card h3 {
+ font-size: 18px;
+ font-weight: 700;
+ color: #ffffff;
+ margin: 0 0 10px 0;
+ transition: color 0.2s;
+}
+
+.offering-select-card p {
+ font-size: 14px;
+ line-height: 1.6;
+ color: rgba(255, 255, 255, 0.6) !important;
+ margin: 0 0 16px 0;
+ flex-grow: 1;
+}
+
+.offering-card-footer {
+ display: flex;
+ align-items: center;
+ font-size: 13px;
+ font-weight: 700;
+ color: var(--teal);
+ gap: 6px;
+ margin-top: auto;
+}
+
+.offering-card-footer svg {
+ transition: transform 0.2s ease;
+}
+
+.offering-select-card:hover {
+ border-color: rgba(218, 165, 32, 0.45);
+ background: rgba(255, 255, 255, 0.06);
+ transform: translateY(-4px);
+ box-shadow: 0 10px 25px rgba(218, 165, 32, 0.08);
+}
+
+.offering-select-card:hover h3 {
+ color: var(--teal);
+}
+
+.offering-select-card:hover .offering-card-footer svg {
+ transform: translateX(4px);
+}
+
+ 
+.question-view {
+ display: flex;
+ flex-direction: column;
+}
+
+.question-text {
+ font-size: 22px;
+ font-weight: 700;
+ color: #ffffff;
+ line-height: 1.4;
+ margin-bottom: 24px;
+}
+
+.options-stack {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+}
+
+.option-pill {
+ display: flex;
+ align-items: center;
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid var(--border);
+ border-radius: 10px;
+ padding: 16px 20px;
+ cursor: pointer;
+ transition: all 0.2s ease;
+ position: relative;
+}
+
+.option-badge {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 24px;
+ height: 24px;
+ background: rgba(255, 255, 255, 0.06);
+ border: 1px solid rgba(255, 255, 255, 0.15);
+ border-radius: 6px;
+ font-size: 11px;
+ font-weight: 700;
+ color: rgba(255, 255, 255, 0.7);
+ margin-right: 14px;
+ flex-shrink: 0;
+ transition: all 0.2s ease;
+}
+
+.option-label {
+ font-size: 15px;
+ font-weight: 600;
+ color: rgba(255, 255, 255, 0.85);
+ transition: color 0.2s;
+}
+
+ 
+.option-pill:hover {
+ border-color: rgba(218, 165, 32, 0.35);
+ background: rgba(255, 255, 255, 0.06);
+ transform: translateY(-1px);
+}
+
+.option-pill:hover .option-badge {
+ border-color: var(--teal);
+ color: var(--teal);
+ background: rgba(218, 165, 32, 0.1);
+}
+
+.option-pill:hover .option-label {
+ color: #ffffff;
+}
+
+ 
+.option-pill.active {
+ border-color: var(--coral) !important;
+ background: rgba(255, 127, 80, 0.1) !important;
+ box-shadow: 0 0 15px rgba(255, 127, 80, 0.2);
+}
+
+.option-pill.active .option-badge {
+ border-color: var(--coral) !important;
+ background: var(--coral) !important;
+ color: #ffffff !important;
+}
+
+.option-pill.active .option-label {
+ color: #ffffff !important;
+}
+
+ 
+.keyboard-hint {
+ font-size: 12px;
+ color: rgba(255, 255, 255, 0.4);
+ margin-top: 20px;
+ display: flex;
+ align-items: center;
+ gap: 4px;
+}
+
+.keyboard-hint kbd {
+ background: rgba(255, 255, 255, 0.08);
+ border: 1px solid rgba(255, 255, 255, 0.15);
+ border-radius: 4px;
+ padding: 1px 5px;
+ font-size: 10px;
+ font-family: inherit;
+ font-weight: 700;
+ color: rgba(255, 255, 255, 0.6);
+}
+
+ 
+.summary-view {
+ display: flex;
+ flex-direction: column;
+}
+
+.summary-header {
+ text-align: center;
+ margin-bottom: 24px;
+}
+
+.summary-header h2 {
+ font-size: 24px;
+ font-weight: 800;
+ margin-bottom: 6px;
+}
+
+.summary-header p {
+ font-size: 14px;
+ color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.summary-grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 12px;
+ background: rgba(255, 255, 255, 0.02);
+ border: 1px solid var(--border);
+ border-radius: 12px;
+ padding: 20px;
+ margin-bottom: 24px;
+}
+
+.summary-row {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ padding-bottom: 10px;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-row:last-child {
+ border-bottom: none;
+ padding-bottom: 0;
+}
+
+.summary-q {
+ font-size: 13.5px;
+ font-weight: 600;
+ color: rgba(255, 255, 255, 0.5);
+ max-width: 50%;
+ line-height: 1.4;
+}
+
+.summary-a {
+ font-size: 14px;
+ font-weight: 700;
+ color: var(--teal);
+ text-align: right;
+ max-width: 48%;
+ line-height: 1.4;
+}
+
+.personalization-form {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 12px;
+ margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+ .personalization-form {
+ grid-template-columns: 1fr;
+ }
+}
+
+.form-group {
+ display: flex;
+ flex-direction: column;
+}
+
+.form-group.full-width {
+ grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+ .form-group.full-width {
+ grid-column: span 1;
+ }
+}
+
+.form-label {
+ font-size: 12px;
+ font-weight: 700;
+ color: rgba(255, 255, 255, 0.65);
+ text-transform: uppercase;
+ letter-spacing: 0.06em;
+ margin-bottom: 6px;
+}
+
+.form-input {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 10px 14px;
+ color: #ffffff;
+ font-size: 14px;
+ font-family: inherit;
+ transition: all 0.2s ease;
+ width: 100%;
+}
+
+.form-input::placeholder {
+ color: rgba(255, 255, 255, 0.25);
+}
+
+.form-input:focus {
+ outline: none;
+ border-color: var(--teal);
+ background: rgba(255, 255, 255, 0.06);
+ box-shadow: 0 0 10px rgba(218, 165, 32, 0.15);
+}
+
+.action-btn-container {
+ display: flex;
+ justify-content: center;
+ margin-top: 8px;
+}
+
+.cta-large-btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ width: 100%;
+ max-width: 320px;
+ padding: 16px 28px;
+ background: var(--coral);
+ color: white;
+ font-weight: 700;
+ font-size: 16px;
+ border-radius: 50px;
+ border: none;
+ cursor: pointer;
+ transition: all 0.2s ease;
+ text-decoration: none;
+ box-shadow: 0 8px 24px rgba(255, 127, 80, 0.25);
+}
+
+.cta-large-btn:hover {
+ background: #ff6a35;
+ transform: translateY(-2px);
+ box-shadow: 0 12px 30px rgba(255, 127, 80, 0.45);
+}
+
+ 
+@media (max-width: 768px) {
+ .spa-container.card {
+ padding: 24px 20px;
+ min-height: 440px;
+ }
+ .spa-welcome-header h2 {
+ font-size: 24px;
+ }
+ .question-text {
+ font-size: 18px;
+ }
+ .option-pill {
+ padding: 14px 16px;
+ }
+}
+&lt;/style&gt;
+
+&lt;script&gt;
+document.addEventListener("DOMContentLoaded", () =&gt; {
+ 
+ let offerings = [];
+ try {
+ const rawData = document.getElementById("offerings-data").textContent;
+ const parsed = JSON.parse(rawData);
+ offerings = parsed.offerings || [];
+ } catch (err) {
+ console.error("Error loading offerings schema:", err);
+ }
+
+ 
+ const state = {
+ step: "offering", 
+ selectedOfferingId: null,
+ currentQuestionIndex: 0,
+ answers: {} 
+ };
+
+ 
+ const header = document.getElementById("spa-header");
+ const fill = document.getElementById("progress-bar-fill");
+ const progressText = document.getElementById("progress-text");
+ const backBtn = document.getElementById("back-btn");
+ const stepContainer = document.getElementById("step-container");
+
+ 
+ function transitionTo(renderFn) {
+ stepContainer.classList.add("slide-out");
+ setTimeout(() =&gt; {
+ renderFn();
+ stepContainer.classList.remove("slide-out");
+ stepContainer.classList.add("slide-in");
+ setTimeout(() =&gt; {
+ stepContainer.classList.remove("slide-in");
+ }, 50);
+ }, 220);
+ }
+
+ function getActiveOffering() {
+ return offerings.find(o =&gt; o.id === state.selectedOfferingId);
+ }
+
+ function getActiveQuestions() {
+ const off = getActiveOffering();
+ return off ? off.questions : [];
+ }
+
+ 
+ function updateProgress() {
+ if (state.step === "offering") {
+ header.style.display = "none";
+ return;
+ }
+
+ header.style.display = "block";
+ const questions = getActiveQuestions();
+ const total = questions.length;
+ 
+ if (state.step === "questions") {
+ const idx = state.currentQuestionIndex;
+ const pct = ((idx) / total) * 100;
+ fill.style.width = `${pct}%`;
+ progressText.textContent = `Question ${idx + 1} of ${total}`;
+ } else if (state.step === "summary") {
+ fill.style.width = "100%";
+ progressText.textContent = "Configuration Complete";
+ }
+ }
+
+ 
+ function renderOfferingSelection() {
+ state.step = "offering";
+ state.selectedOfferingId = null;
+ state.currentQuestionIndex = 0;
+ state.answers = {};
+ updateProgress();
+
+ let gridHtml = offerings.map(off =&gt; `
+ &lt;div class="offering-select-card" data-id="${off.id}"&gt;
+ &lt;h3&gt;${off.title}&lt;/h3&gt;
+ &lt;p&gt;${off.description}&lt;/p&gt;</description></item><item><title>Terms &amp; Conditions</title><link>https://plotkai.in/terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/terms/</guid><description>&lt;h2 id="the-basics"&gt;The Basics&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Use our services responsibly. Any illegal, unethical, or abusive use of Plotkai Interactive&amp;rsquo;s platforms, software, or infrastructure will result in immediate suspension or termination.&lt;/li&gt;
 &lt;li&gt;Don&amp;rsquo;t overload, exploit, or misuse our systems. If we detect unusual or harmful activity, we may restrict or revoke access without notice to protect the integrity of our network and other users.&lt;/li&gt;
