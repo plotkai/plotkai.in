@@ -1,0 +1,58 @@
+[
+    {
+        "id": "utkarsh_11",
+        "isFounder": true,
+        "photo": "/img/team/utkarsh_11.png",
+        "name": "Utkarsh Chaudhary",
+        "position": "Founder & Head of Engineering",
+        "philosophy": "Simplicity is the ultimate sophistication in system design.",
+        "linkedin": "",
+        "skills": [
+            "System Architecture",
+            "FinOps",
+            "AI/ML"
+        ]
+    },
+    {
+        "id": "abhilasha_27",
+        "isFounder": true,
+        "photo": "/img/team/abhilasha_27.png",
+        "name": "Abhilasha Chaudhary",
+        "position": "Co-Founder & Head of Product",
+        "philosophy": "Great products are simple and user-centric.",
+        "linkedin": "",
+        "skills": [
+            "Product Strategy",
+            "UI/UX Design",
+            "Growth"
+        ]
+    },
+    {
+        "id": "sudhanshu_23",
+        "isFounder": true,
+        "photo": "/img/team/sudhanshu_23.png",
+        "name": "Sudhanshu Singh",
+        "position": "Marketing & Sales Head",
+        "philosophy": "Focused on nderstanding people and their needs.",
+        "linkedin": "",
+        "skills": [
+            "Brand Marketing",
+            "Growth Marketing",
+            "Content Marketing"
+        ]
+    },
+    {
+        "id": "adarsh_02",
+        "isFounder": true,
+        "photo": "/img/team/adarsh_02.png",
+        "name": "Adarsh Pandey",
+        "position": "People & Business Operations",
+        "philosophy": "Building foundation by focusing on people and processes.",
+        "linkedin": "",
+        "skills": [
+            "People Operations",
+            "Business Operations",
+            "Finance"
+        ]
+    }
+]

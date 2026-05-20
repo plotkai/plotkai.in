@@ -2,7 +2,7 @@
 title: "Modern Hindu Baby Names: Find the Perfect Name"
 date: 2026-03-31
 lastmod: 2026-03-31
-category: "Client Projects"
+category: "Product Launch"
 tags: ["Android App", "Mobile", "UI/UX Design", "Flutter"]
 excerpt: "Discover the perfect name for your little one with Modern Hindu Baby Names — a beautifully designed Android app featuring a vast collection of meaningful and modern names."
 featured: true

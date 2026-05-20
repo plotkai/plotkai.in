@@ -1,22 +1,31 @@
 ---
 title: "Contact Us"
 url: "/contact/"
+badge: "Company Info"
 ---
 
 <p>
   <img src="" style="width: 120%; transform: rotate(-1deg); margin-left: -50px;">
 </p>
 <p>
-  Hello, Old Sport! <br />Contact us on <a href="mailto:contact@plotkai.in">contact@plotkai.in</a>
+  Hello, Old Sport! Drop a mail to us on <a href="mailto:contact@plotkai.in">contact@plotkai.in</a>
 </p>
 
 <div style="text-align: left; margin: 20px 0;">
-  <a href="https://api.whatsapp.com/send/?phone=919044399422&text&type=phone_number&app_absent=0" class="features" style="display: inline-block;">
-    Get Started
+  <a href="tel:+919044399422" class="features" style="display: inline-block;">
+    Call on Mobile
+  </a>
+    <a href="https://api.whatsapp.com/send/?phone=919044399422&text&type=phone_number&app_absent=0" class="features" style="display: inline-block;">
+    Connect on Whatsapp
   </a>
 </div>
 
-<h2>Or go Social ?</h2>
+
+
+<h2>Or schedule a meeting with us</h2>
+<iframe src="https://calendar.zoho.in/eventreqForm/zz0802123007425a6b041703bdfd7206149f4079a5fa5c0db027667ad2f3d6d4c19eec9120d303b52cc8df807e51b44f039ac4c3f4?theme=7&l=en&tz=Asia/Kolkata" title="Schedule appointment for contact"frameBorder="0" scrolling="no" marginWidth="0" border="0px" marginHeight="0"height="350px" width="100%" allowTransparency="true" align="center"/></iframe>
+
+<h2>Or go Social </h2>
 <style>
   .social-icons {
     display: flex;
@@ -24,7 +33,7 @@ url: "/contact/"
     gap: 24px;
     flex-wrap: wrap;
     margin-top: 12px;
-    justify-content: center;
+    justify-content: left;
   }
   .social-icons a {
     display: inline-flex;
@@ -67,9 +76,9 @@ url: "/contact/"
     </svg>
   </a>
   <!-- Phone -->
-  <a href="tel:+919044399422" aria-label="Phone">
+  <!-- <a href="tel:+919044399422" aria-label="Phone">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
     </svg>
-  </a>
+  </a> -->
 </div>

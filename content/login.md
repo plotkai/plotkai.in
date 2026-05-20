@@ -1,6 +1,7 @@
 ---
-title: "Login"
+title: "Employee Login"
 url: "/login/"
+badge: "Company Info"
 description: "Sign in to your Plotkai Interactive client dashboard."
 ---
 

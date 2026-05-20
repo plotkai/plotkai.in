@@ -1,6 +1,7 @@
 ---
 title: "Terms & Conditions"
 url: "/terms/"
+badge: "Company Info"
 ---
 
 ## The Basics

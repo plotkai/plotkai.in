@@ -14,13 +14,12 @@ description: "Join Plotkai Interactive — explore open roles and our culture."
     </div>
   </div>
   <div class="login-card sleep-card" id="sleep-message" style="display: none;">
-    <div class="sleep-icon">🌙</div>
-    <h2 class="sleep-title">Our Servers Are Asleep</h2>
-    <p class="sleep-subtitle">The careers portal is available between <strong>9:00 AM — 6:00 PM IST</strong></p>
+    <div class="sleep-icon">💤</div>
+    <h2 class="sleep-title">No Open Positions</h2>
+    <p class="sleep-subtitle">We're hiring slowly and thoughtfully — just like our products. <strong></strong></p>
     <div class="sleep-divider"></div>
     <p class="sleep-body">
-      We believe in sustainable work — and so do our servers.<br>
-      Come back during business hours and we'll be ready for you.
+      We'll be back soon. 
     </p>
     <div class="sleep-clock" id="sleep-clock"></div>
     <p class="sleep-hint">Need urgent help? Reach us at <a href="mailto:contact@plotkai.in">contact@plotkai.in</a></p>

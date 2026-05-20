@@ -2,7 +2,7 @@
 {{ define "main" }}
 <div class="content-page-wrapper">
   <div class="reveal" style="margin-bottom:12px;">
-    <span class="badge">{{ if eq .Title "About Us" }}Company{{ else if eq .Title "Contact Us" }}Get in Touch{{ else }}Information{{ end }}</span>
+    <span class="badge">{{ .Params.badge | default "Information" }}</span>
   </div>
   <h1 class="reveal" style="margin-top:16px;">{{ .Title }}</h1>
   <div class="divider reveal"></div>

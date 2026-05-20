@@ -1,0 +1,43 @@
+{{ define "bodyclass" }}inner-page{{ end }}
+{{ define "main" }}
+<div class="blog-single-page">
+  <div class="reveal" style="margin-bottom:16px;">
+    <a href="/case-studies/"
+      style="font-size:14px;color:rgba(255,255,255,0.5);text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:color 0.2s;"
+      onmouseover="this.style.color='#008080'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7" />
+      </svg>
+      Back to Case Studies
+    </a>
+  </div>
+
+  <div class="post-meta reveal">
+    <span>{{ .Date.Format "January 2, 2006" }}</span>
+    {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
+    {{ with .Params.readTime }}<span>{{ . }}</span>{{ end }}
+  </div>
+
+  <h1 class="reveal">{{ .Title }}</h1>
+
+  {{ if .Params.featuredImage }}
+  <div class="featured-image reveal">
+    <img src="{{ .Params.featuredImage }}" alt="{{ .Title }}">
+    {{ with .Params.featuredImageCaption }}<span class="image-caption">{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+
+  <div class="post-content reveal">
+    {{ .Content }}
+  </div>
+
+  {{ if .Params.tags }}
+  <div class="tags-list reveal">
+    {{ range .Params.tags }}
+    <span class="tag">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

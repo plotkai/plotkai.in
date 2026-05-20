@@ -1,6 +1,7 @@
 ---
 title: "Privacy Policy"
 url: "/privacy/"
+badge: "Company Info"
 ---
 
 Thank you for choosing to be part of our community at **Plotkai Interactive** ("Plotkai", "Company", "we", "us", or "our"). We’re committed to respecting your privacy and protecting your personal information. If you have any questions or concerns about this policy or our data practices, please contact us at <a href="mailto:contact@plotkai.in">contact@plotkai.in</a>.
