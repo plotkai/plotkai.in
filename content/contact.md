@@ -8,7 +8,8 @@ badge: "Company Info"
   <img src="" style="width: 120%; transform: rotate(-1deg); margin-left: -50px;">
 </p>
 <p>
-  Hello, Old Sport! Drop a mail to us on <a href="mailto:contact@plotkai.in">contact@plotkai.in</a>
+  Hello! 
+  <br/>Drop a mail to us on <a href="mailto:contact@plotkai.in">contact@plotkai.in</a>
 </p>
 
 <div style="text-align: left; margin: 20px 0;">

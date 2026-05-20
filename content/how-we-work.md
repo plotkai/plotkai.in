@@ -284,7 +284,7 @@ description: "Learn how Plotkai Interactive builds premium products with zero te
       <span class="timeline-badge">Phase 02 / Concept &amp; Validation</span>
       <h3>Prototype &amp; Validate</h3>
       <p>
-        We build fast, high-fidelity prototypes and proof of concepts to put your ideas to the test. By ranking features based on user experience (UX) and technical feasibility, we validate the path forward with clarity.
+        We build fast, high-fidelity prototypes and proof of concepts to put your ideas to the test. By ranking features based on user experience (UX), Artificial Intelligence Integration, and technical feasibility, we validate the path forward with clarity.
       </p>
       <div class="timeline-grid">
         <div class="timeline-grid-item">
@@ -296,8 +296,8 @@ description: "Learn how Plotkai Interactive builds premium products with zero te
           Functional Proof of Concept
         </div>
         <div class="timeline-grid-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12h14" /></svg>
-          Aesthetic Integrity Design
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+          Artificial Intelligence Integration
         </div>
         <div class="timeline-grid-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
@@ -366,4 +366,9 @@ description: "Learn how Plotkai Interactive builds premium products with zero te
       </div>
     </div>
   </div>
+</div>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:56px;margin-bottom:32px;">
+  <a href="/contact/" class="btn-outline" id="about-schedule-consultation">
+    Schedule a Free Consultation
+  </a>
 </div>

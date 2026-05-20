@@ -35,10 +35,7 @@ We're here to change that by helping startups, creators, and organizations build
   <a href="/team/" class="btn-outline" id="about-meet-team">
     Meet the Team
   </a>
-  <a href="/start-project/" class="btn-outline" id="about-schedule-consultation">
+  <a href="/contact/" class="btn-outline" id="about-schedule-consultation">
     Schedule a Free Consultation
-  </a>
-  <a href="/contact/" class="btn-outline" id="about-get-in-touch">
-    Get in Touch with Us
   </a>
 </div>
