@@ -1475,7 +1475,7 @@ document.addEventListener("DOMContentLoaded", () =&gt; {
  &lt;div class="relative w-full h-80 md:h-[380px] overflow-hidden bg-gradient-to-br from-brand-dark to-black flex items-center justify-center border-b border-white/5"&gt;
  
  &lt;img 
- src="https://plotkai.in/img/team/utkarsh_11.png" 
+ src="https://plotkai.in/img/team/utkarsh_110.png" 
  alt="Utkarsh Chaudhary" 
  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 z-10"
  onerror="this.style.display='none';"
