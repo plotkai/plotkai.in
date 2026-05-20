@@ -15,13 +15,12 @@ description: "Sign in to your Plotkai Interactive client dashboard."
     </div>
   </div>
   <div class="login-card sleep-card" id="sleep-message" style="display: none;">
-    <div class="sleep-icon">🌙</div>
-    <h2 class="sleep-title">Our Servers Are Asleep</h2>
-    <p class="sleep-subtitle">The dashboard is available between <strong>9:00 AM — 6:00 PM IST</strong></p>
+    <div class="sleep-icon">🚧</div>
+    <h2 class="sleep-title">Our Servers Are Down For Maintainance</h2>
+    <p class="sleep-subtitle">The dashboard is currently not available.<strong></strong></p>
     <div class="sleep-divider"></div>
     <p class="sleep-body">
-      We believe in sustainable work — and so do our servers.<br>
-      Come back during business hours and we'll be ready for you.
+      Come back later, we'll be ready for you.
     </p>
     <div class="sleep-clock" id="sleep-clock"></div>
     <p class="sleep-hint">Need urgent help? Reach us at <a href="mailto:contact@plotkai.in">contact@plotkai.in</a></p>
