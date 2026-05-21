@@ -10,8 +10,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title"
-    content="{{ if .Title }}{{ .Title }} — {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
+  <meta name="twitter:title" content="{{ site.Title }}{{ else }}{{ site.Title }}{{ end }}">
   <meta name="twitter:description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
   <meta name="twitter:image:src" content="/img/plotkai-logo-square.png">
