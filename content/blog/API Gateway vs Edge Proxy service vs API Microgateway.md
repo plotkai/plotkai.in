@@ -1,15 +1,14 @@
 ---
 title: "NGINX on Kubernetes"
 date: 2024-07-22
+lastmod: 2024-07-22
+category: "Tech"
+tags: ["kubernetes", "nginx", "load balancer", "ingress"]
 excerpt: "NGINX on Kubernetes as a Load Balancer & Ingress"
+featured: false
 featuredImage: "/img/blog/nginx-general-k8s.jpg"
-tags: 
-- kubernetes
-- nginx
-- load balancer
-- ingress
-categories:
-- tech
+featuredImageCaption: "NGINX on Kubernetes"
+readTime: "3 min read"
 ---
 
 ## Using Nginx on Kubernetes as a Load Balancer Service with YAML Manifests

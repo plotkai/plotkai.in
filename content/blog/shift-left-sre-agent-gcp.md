@@ -1,15 +1,14 @@
 ---
 title: "The Agentic SRE - Shifting Level 1 Support to AI"
 date: 2026-02-11
+lastmod: 2026-02-11
+category: "Tech"
+tags: ["gcp", "ai", "cloud", "sre"]
 excerpt: "How to build an AI SRE Agent to handle routine triage and scale platform engineering expertise"
+featured: false
 featuredImage: "/img/blog/sre-ai-agent-gcp.jpg"
-tags: 
-- gcp
-- ai
-- cloud
-- sre
-categories:
-- tech
+featuredImageCaption: "The Agentic SRE - Shifting Level 1 Support to AI"
+readTime: "3 min read"
 ---
 
 In modern platform engineering, the bottleneck is rarely the technology itself. It is the human time required to triage repetitive infrastructure tickets. When a developer opens a ticket for a crashing pod or a latency spike, they often wait hours for an initial response.

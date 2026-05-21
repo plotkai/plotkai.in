@@ -8,7 +8,7 @@ excerpt: "Dive into Remainder, our exciting new Android game that challenges you
 featured: false
 featuredImage: "/img/blog/remainder.png"
 featuredImageCaption: "Remainder — an engaging Android game"
-readTime: "2 min read"
+readTime: "1 min read"
 ---
 
 We're thrilled to introduce Remainder, our latest Android game designed to provide hours of fun and mental stimulation. Whether you're a puzzle enthusiast or just looking for a quick game to pass the time, Remainder offers an addictive gameplay experience.

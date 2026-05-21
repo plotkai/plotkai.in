@@ -1,14 +1,14 @@
 ---
 title: "FinOps 101 - Saving Databricks Cost"
 date: 2025-05-06
+lastmod: 2025-05-06
+category: "Tech"
+tags: ["databricks", "finops", "cloud"]
 excerpt: "FinOps for Data Engineers: Stop Wasting Money by Using Databricks Smarter"
+featured: false
 featuredImage: "/img/blog/finops101-databricks.png"
-tags: 
-- databricks
-- finops
-- cloud
-categories:
-- tech
+featuredImageCaption: "FinOps 101 - Saving Databricks Cost"
+readTime: "3 min read"
 ---
 FinOps for Data Engineers: Stop Wasting Money by Using Databricks Smarter
 ---

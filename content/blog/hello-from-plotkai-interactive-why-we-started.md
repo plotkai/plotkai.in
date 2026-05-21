@@ -8,7 +8,7 @@ excerpt: "We’re Plotkai Interactive — a creative digital agency on a mission
 featured: false
 featuredImage: "/img/blog/business-card-back.jpg"
 featuredImageCaption: "The Plotkai Interactive team at work"
-readTime: "2 min read"
+readTime: "1 min read"
 ---
 
 Hello and welcome to Plotkai Interactive. We’re a creative digital agency based in Lucknow, India, specializing in web development, branding, and digital marketing. Our mission? To blend creativity with technology and build standout digital experiences that drive real business growth.

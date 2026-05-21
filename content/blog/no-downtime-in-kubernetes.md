@@ -1,14 +1,14 @@
 ---
 title: "No downtime for microservices"
 date: 2023-12-29
+lastmod: 2023-12-29
+category: "Tech"
+tags: ["kubectl", "microservice", "kubernetes"]
 excerpt: "How to prevent service downtime in kubernetes"
+featured: false
 featuredImage: "/img/blog/kubernetes.jpeg"
-tags: 
-- kubectl
-- microservice
-- kubernetes
-categories:
-- tech
+featuredImageCaption: "No downtime for microservices"
+readTime: "2 min read"
 ---
 
 ## Introduction

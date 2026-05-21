@@ -1,16 +1,14 @@
 ---
 title: "Platform Engineering Challenges"
 date: 2026-04-19
+lastmod: 2026-04-19
+category: "Tech"
+tags: ["azure", "cloud", "platform-engineering", "devops"]
 excerpt: "Why building a self-service infrastructure platform is a product discipline, not a one-time project, and how teams should design for maintenance, reliability, and scale."
+featured: false
 featuredImage: "/img/blog/platform-engineering-challenges.png"
 featuredImageCaption: "Platform Engineering Architecture"
-tags:
-- azure
-- cloud
-- platform-engineering
-- devops
-categories:
-- tech
+readTime: "2 min read"
 ---
 
 Building an internal provisioning platform whether using Terraform, Pulumi or a custom control plane is rarely a "set it and forget it" project. It is continuous maintenance dressed up as a product.

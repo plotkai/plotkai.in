@@ -1,15 +1,14 @@
 ---
 title: "Configuring Kubernetes for Multiple Environments with Kustomize"
 date: 2021-09-26
+lastmod: 2021-09-26
+category: "Tech"
+tags: ["kubectl", "microservice", "kubernetes", "kustomize"]
 excerpt: "Multiple environments (DEV, Staging, QA, Prod) with Kubernetes and Kustomize"
+featured: false
 featuredImage: "/img/blog/kustomize.jpeg"
-tags: 
-- kubectl
-- microservice
-- kubernetes
-- kustomize
-categories:
-- tech
+featuredImageCaption: "Configuring Kubernetes for Multiple Environments with Kustomize"
+readTime: "3 min read"
 ---
 Kubernetes Configuration Management for DEV, Staging, QA, Production, etc - 
 ---

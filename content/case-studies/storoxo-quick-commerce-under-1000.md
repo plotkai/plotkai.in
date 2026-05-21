@@ -8,7 +8,7 @@ excerpt: "How we built storoxo.com — a full-featured quick commerce platform f
 featured: true
 featuredImage: "/img/blog/storoxo-logo-new-small.png"
 featuredImageCaption: "Storoxo.com — ultra-lean, full-stack, and affordable."
-readTime: "2 min read"
+readTime: "1 min read"
 ---
 
 Storoxo.com is a next-gen quick commerce site — live, fast, and built to scale. The challenge: deliver a full-stack experience (user signup, email, payments, admin, and more) for under ₹1000/month.

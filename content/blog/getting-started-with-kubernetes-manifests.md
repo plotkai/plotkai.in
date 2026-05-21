@@ -1,14 +1,14 @@
 ---
 title: "Getting started with Kubernetes Manifests"
 date: 2021-09-23
+lastmod: 2021-09-23
+category: "Tech"
+tags: ["kubectl", "microservice", "kubernetes"]
 excerpt: "How to write a basic deployment and service."
+featured: false
 featuredImage: "/img/blog/kubernetes.jpeg"
-tags: 
-- kubectl
-- microservice
-- kubernetes
-categories:
-- tech
+featuredImageCaption: "Getting started with Kubernetes Manifests"
+readTime: "6 min read"
 ---
 Deploy your first container on Kuberentes cluster
 ---

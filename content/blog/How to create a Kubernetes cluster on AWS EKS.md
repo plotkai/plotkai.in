@@ -1,14 +1,14 @@
 ---
 title: "How to create a Kubernetes cluster on AWS EKS"
 date: 2021-07-10
+lastmod: 2021-07-10
+category: "Tech"
+tags: ["kubernetes", "aws eks", "eksctl"]
 excerpt: "Kubernetes 101 - Just Getting started."
+featured: false
 featuredImage: "/img/blog/eks.jpeg"
-tags: 
-- kubernetes
-- aws eks
-- eksctl
-categories:
-- tech
+featuredImageCaption: "How to create a Kubernetes cluster on AWS EKS"
+readTime: "1 min read"
 ---
 
 ## Using self-managed Amazon EC2 nodes (No Fargate)

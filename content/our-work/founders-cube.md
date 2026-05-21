@@ -8,7 +8,7 @@ excerpt: "FoundersCube helps aspiring founders and early-stage companies to get 
 featured: true
 featuredImage: "/img/blog/founders-cube.png"
 featuredImageCaption: "FoundersCube — the perfect entry to Information Technology for aspiring and early-stage founders."
-readTime: "2 min read"
+readTime: "1 min read"
 ---
 
 We are proud to introduce **FoundersCube**—a plug-and-play, on-premise Linux appliance that launches your entire corporate infrastructure instantly. 

@@ -8,7 +8,7 @@ excerpt: "How Plotkai Interactive delivered a zero-cost, fully automated website
 featured: true
 featuredImage: "https://yognishtha.in/images/yognishtha_50.jpeg"
 featuredImageCaption: "A minimal, performance-optimized website built for Yognishtha Trust"
-readTime: "4 min read"
+readTime: "2 min read"
 ---
 
 At Plotkai Interactive, we take pride in building scalable and cost-efficient digital foundations for organizations doing meaningful work. One such collaboration was with Yognishtha Trust — a non-profit initiative focused on holistic wellbeing and community upliftment. Their goal was simple: to have a clean, fast, and sustainable website that communicated their mission effectively without recurring infrastructure costs.

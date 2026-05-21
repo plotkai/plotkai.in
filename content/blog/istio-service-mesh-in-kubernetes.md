@@ -1,16 +1,14 @@
 ---
 title: "Istio service mesh in kubernetes"
 date: 2022-06-24
+lastmod: 2022-06-24
+category: "Tech"
+tags: ["istioctl", "kubectl", "microservice", "kubernetes", "istio"]
 excerpt: "Routing, Gateway and basic telemetry with Istio Service Mesh in Kubernetes cluster"
+featured: false
 featuredImage: "/img/blog/istio.png"
-tags: 
-- istioctl
-- kubectl
-- microservice
-- kubernetes
-- istio
-categories:
-- tech
+featuredImageCaption: "Istio service mesh in kubernetes"
+readTime: "2 min read"
 ---
 Setting up Istio Service Mesh on Kubernetes 
 ---

@@ -8,7 +8,7 @@ excerpt: "Discover the perfect name for your little one with Modern Hindu Baby N
 featured: true
 featuredImage: "/img/blog/baby-names.png"
 featuredImageCaption: "Modern Hindu Baby Names — elegant, simple, and meaningful."
-readTime: "2 min read"
+readTime: "1 min read"
 ---
 
 Modern Hindu Baby Names is a beautifully crafted Android application designed to help parents discover the perfect name for their newborn. The challenge: create a seamless, easy-to-use directory with rich meanings and offline support.

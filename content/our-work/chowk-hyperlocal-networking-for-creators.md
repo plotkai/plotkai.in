@@ -8,7 +8,7 @@ excerpt: "Chowk is a scalable, mobile-ready Android app for digital creators to 
 featured: true
 featuredImage: "/img/blog/chowk.png"
 featuredImageCaption: "Chowk — discover creators near you"
-readTime: "3 min read"
+readTime: "1 min read"
 ---
 
 Chowk is a scalable, mobile-ready Android app designed for digital creators to connect, network, and grow their community. Available now on the Google Play Store, Chowk brings hyperlocal discovery and real-time networking to your fingertips.
