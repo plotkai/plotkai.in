@@ -433,7 +433,7 @@ description: "The Product Tech Partner for Ambitious Startups"
       </div>
     </div>
     <div style="display:flex;justify-content:center;align-items: center;">
-      <a href="/how-we-work/" class="btn-secondary" id="hero-cta-tertiary">
+      <a href="/our-methodology/" class="btn-secondary" id="hero-cta-tertiary">
         See Detailed Process Workflow
       </a>
     </div>
