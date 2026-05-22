@@ -150,8 +150,8 @@ unsafe = true
   weight = 20
 
 [[menu.footer_company]]
-  name = "How We Work"
-  url = "/how-we-work/"
+  name = "Our Methodology"
+  url = "/our-methodology/"
   weight = 30
 
 [[menu.footer_company]]
