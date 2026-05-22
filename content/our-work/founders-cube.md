@@ -6,7 +6,7 @@ category: "Product Launch"
 tags: ["Linux Node", "IT Solutions", "On Premise Solutions"]
 excerpt: "FoundersCube helps aspiring founders and early-stage companies to get their feet wet in Information Technology using a simple, all-in-one, plug-and-play Linux solution."
 featured: true
-featuredImage: "/img/blog/founders-cube.png"
+featuredImage: "/img/our-work/founders-cube.png"
 featuredImageCaption: "FoundersCube — the perfect entry to Information Technology for aspiring and early-stage founders."
 readTime: "1 min read"
 ---

@@ -6,7 +6,7 @@ category: "Product Launch"
 tags: ["Android App", "Networking", "Hyperlocal", "Digital Creators", "Product Launch"]
 excerpt: "Chowk is a scalable, mobile-ready Android app for digital creators to connect, network, and discover each other hyperlocally."
 featured: true
-featuredImage: "/img/blog/chowk.png"
+featuredImage: "/img/our-work/chowk.png"
 featuredImageCaption: "Chowk — discover creators near you"
 readTime: "1 min read"
 ---

@@ -6,7 +6,7 @@ category: "Product Launch"
 tags: ["Android App", "Mobile", "UI/UX Design", "Flutter"]
 excerpt: "Discover the perfect name for your little one with Modern Hindu Baby Names — a beautifully designed Android app featuring a vast collection of meaningful and modern names."
 featured: true
-featuredImage: "/img/blog/baby-names.png"
+featuredImage: "/img/our-work/baby-names.png"
 featuredImageCaption: "Modern Hindu Baby Names — elegant, simple, and meaningful."
 readTime: "1 min read"
 ---

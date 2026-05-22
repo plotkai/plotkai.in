@@ -6,7 +6,7 @@ category: "Product Launch"
 tags: ["Android App", "Game", "Mobile"]
 excerpt: "Dive into Remainder, our exciting new Android game that challenges your mind and entertains on the go."
 featured: false
-featuredImage: "/img/blog/remainder.png"
+featuredImage: "/img/our-work/remainder.png"
 featuredImageCaption: "Remainder — an engaging Android game"
 readTime: "1 min read"
 ---

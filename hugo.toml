@@ -134,39 +134,80 @@ unsafe = true
 
 [[menu.main]]
   identifier = "contact"
-  name = "Contact"
+  name = "Contact Us"
   url = "/contact/"
   weight = 90
 
-# 2. Footer Menu: Company Group
+# 2. Footer Menu: Services Group
+[[menu.footer_services]]
+  name = "Cloud Services"
+  url = "/services/cloud-services/"
+  weight = 10
+
+[[menu.footer_services]]
+  name = "Platform Engineering"
+  url = "/services/platform-engineering/"
+  weight = 20
+
+[[menu.footer_services]]
+  name = "Product Engineering"
+  url = "/services/product-engineering/"
+  weight = 30
+
+[[menu.footer_services]]
+  name = "AI & Data"
+  url = "/services/artificial-intelligence-ai-ml/"
+  weight = 40
+
+[[menu.footer_services]]
+  name = "Observability"
+  url = "/services/observability-solution/"
+  weight = 50
+
+[[menu.footer_services]]
+  name = "App Modernization"
+  url = "/services/application-modernization/"
+  weight = 60
+
+[[menu.footer_services]]
+  name = "SRE Solutions"
+  url = "/services/site-reliability-engineering/"
+  weight = 70
+
+[[menu.footer_services]]
+  name = "Cybersecurity"
+  url = "/services/cybersecurity/"
+  weight = 80
+
+# 3. Footer Menu: Company Group
 [[menu.footer_company]]
   name = "About Us"
   url = "/about-us/"
   weight = 10
 
 [[menu.footer_company]]
-  name = "Services"
-  url = "/services/"
-  weight = 20
-
-[[menu.footer_company]]
   name = "Our Methodology"
   url = "/our-methodology/"
-  weight = 30
-
-[[menu.footer_company]]
-  name = "Case Studies"
-  url = "/case-studies/"
-  weight = 40
+  weight = 20
 
 [[menu.footer_company]]
   name = "Product Portfolio"
   url = "/our-work/"
-  weight = 50
+  weight = 30
+
+[[menu.footer_company]]
+  name = "Client Case Studies"
+  url = "/case-studies/"
+  weight = 40
 
 [[menu.footer_company]]
   name = "Partners"
   url = "/partners/"
+  weight = 50
+
+[[menu.footer_company]]
+  name = "Our Team"
+  url = "/team/"
   weight = 60
 
 [[menu.footer_company]]
@@ -175,11 +216,11 @@ unsafe = true
   weight = 70
 
 [[menu.footer_company]]
-  name = "Contact"
+  name = "Contact Us"
   url = "/contact/"
   weight = 80
 
-# 3. Footer Menu: Legal & Others Group
+# 4. Footer Menu: Legal Group
 [[menu.footer_legal]]
   name = "Privacy Policy"
   url = "/privacy/"
@@ -190,17 +231,13 @@ unsafe = true
   url = "/terms/"
   weight = 20
 
-[[menu.footer_legal]]
-  name = "Our Team"
-  url = "/team/"
-  weight = 30
-
-[[menu.footer_legal]]
-  name = "Employee Login"
-  url = "/login/"
-  weight = 40
-
-[[menu.footer_legal]]
+# 5. Footer Menu: Others Group
+[[menu.footer_others]]
   name = "Careers"
   url = "/careers/"
-  weight = 50
+  weight = 10
+
+[[menu.footer_others]]
+  name = "Employee Login"
+  url = "/login/"
+  weight = 20
