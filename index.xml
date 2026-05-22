@@ -917,24 +917,253 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  &lt;h3&gt;Discovery &amp;amp; Strategy&lt;/h3&gt;
  &lt;p&gt;
  Every great project starts with understanding. We deep-dive into your product vision, target market, and strategic goals to design a neat, purpose-driven blueprint before writing a single line of code.
- &lt;/p&gt;</description></item><item><title>Our Partners</title><link>https://plotkai.in/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/partners/</guid><description>&lt;p&gt;At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we are proud to be a part of the following programs and organizations -&lt;/p&gt;
-&lt;div class="credits"&gt;
- &lt;h3&gt;Global Partners&lt;/h3&gt;
- &lt;p&gt;
- &lt;a href="#"&gt;Google Cloud for Startups&lt;/a&gt; - Cloud Hosting and Marketing Resources
- &lt;/p&gt;
- &lt;p&gt;
- &lt;a href="#"&gt;Cloudflare&lt;/a&gt; - CDN Services, Domain management, and Security
- &lt;/p&gt;
- &lt;p&gt;
- &lt;a href="#"&gt; Dun &amp; Bradstreet&lt;/a&gt; - Worldwide recognition through D-U-N-S number registration
- &lt;/p&gt;
- &lt;h3&gt;Trusted by Visionaries&lt;/h3&gt;
- &lt;p&gt;
- &lt;a href="https://yognishtha.in/" target="_blank"&gt;Yognishtha&lt;/a&gt; - A wellness platform that has helped thousands
- of people improve their physical and mental health.
- &lt;/p&gt;
-&lt;/div&gt;</description></item><item><title>Privacy Policy</title><link>https://plotkai.in/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/privacy/</guid><description>&lt;p&gt;Thank you for choosing to be part of our community at &lt;strong&gt;Plotkai Interactive&lt;/strong&gt; (&amp;ldquo;Plotkai&amp;rdquo;, &amp;ldquo;Company&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;). We’re committed to respecting your privacy and protecting your personal information. If you have any questions or concerns about this policy or our data practices, please contact us at &lt;a href="mailto:contact@plotkai.in"&gt;&lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+ &lt;/p&gt;</description></item><item><title>Our Partners</title><link>https://plotkai.in/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/partners/</guid><description>&lt;p&gt;At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, our operations, products, and reliability are built upon enterprise-grade foundations. We are proud to partner with leading global programs, compliance authorities, and visionary initiatives to engineer digital products that scale.&lt;/p&gt;
+&lt;div class="partners-container"&gt;
+&lt;style&gt;
+.partners-grid {
+display: flex;
+flex-direction: column;
+gap: 28px;
+margin-top: 32px;
+margin-bottom: 48px;
+width: 100%;
+}
+.partner-card {
+background: rgba(255, 255, 255, 0.02);
+border: 1px solid rgba(255, 255, 255, 0.06);
+border-radius: 16px;
+padding: 32px;
+transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+display: flex;
+flex-direction: column;
+position: relative;
+overflow: hidden;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(10px);
+width: 100%;
+}
+.partner-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 4px;
+background: linear-gradient(180deg, var(--teal, #daa520), var(--coral, #ff7f50));
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.partner-card:hover {
+transform: translateX(6px);
+border-color: rgba(218, 165, 32, 0.35);
+box-shadow: 0 12px 30px rgba(0, 128, 128, 0.12);
+background: rgba(255, 255, 255, 0.04);
+}
+.partner-card:hover::before {
+opacity: 1;
+}
+.partner-top-section {
+display: flex;
+flex-direction: row;
+gap: 32px;
+align-items: flex-start;
+width: 100%;
+}
+.partner-logo-box {
+background: rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(0, 0, 0, 0.06);
+border-radius: 12px;
+height: 76px;
+width: 150px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 12px;
+transition: all 0.3s ease;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+vertical-align: middle;
+margin-top: 12px;
+}
+.partner-card:hover .partner-logo-box {
+transform: scale(1.02);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.partner-logo {
+max-height: 52px;
+max-width: 100%;
+object-fit: contain;
+}
+.partner-info {
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.partner-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 12px;
+width: 100%;
+}
+.partner-role-badge {
+display: inline-flex;
+padding: 4px 10px;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+color: var(--teal, #daa520);
+background: rgba(218, 165, 32, 0.08);
+border: 1px solid rgba(218, 165, 32, 0.2);
+border-radius: 50px;
+line-height: 1;
+}
+.partner-title {
+font-family: 'Space Grotesk', sans-serif;
+font-size: 22px;
+font-weight: 700;
+color: #ffffff;
+margin: 0;
+line-height: 1.3;
+letter-spacing: -0.01em;
+}
+.partner-description {
+font-size: 13px;
+line-height: 1.6;
+color: rgba(255, 255, 255, 0.65);
+margin: 0;
+}
+.partner-bottom-section {
+margin-top: 0px;
+border-top: 1px dashed rgba(255, 255, 255, 0.08);
+padding-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 100%;
+}
+.partner-features {
+list-style: none !important;
+padding: 0 !important;
+margin: 0 !important;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px 32px;
+width: 100%;
+}
+.partner-features li {
+font-size: 13px;
+color: rgba(255, 255, 255, 0.7) !important;
+margin-bottom: 0 !important;
+padding-left: 24px !important;
+position: relative;
+line-height: 1.5;
+transition: color 0.3s ease;
+}
+.partner-card:hover .partner-features li {
+color: rgba(255, 255, 255, 0.9) !important;
+}
+.partner-features li::before {
+content: '✓';
+position: absolute;
+left: 0;
+color: var(--coral, #ff7f50);
+font-weight: bold;
+transition: transform 0.3s ease;
+}
+.partner-card:hover .partner-features li::before {
+transform: scale(1.1);
+}
+.partner-action-link {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+font-size: 13.5px;
+font-weight: 600;
+color: var(--coral, #ff7f50) !important;
+text-decoration: none;
+transition: color 0.2s ease;
+align-self: flex-start;
+border-bottom: none !important;
+margin-top: 8px;
+}
+.partner-action-link:hover {
+color: #ff9a78 !important;
+}
+.partner-action-link span {
+transition: transform 0.2s ease;
+}
+.partner-action-link:hover span {
+transform: translateX(4px);
+}
+.section-header {
+font-family: 'Space Grotesk', sans-serif;
+font-size: 18px;
+font-weight: 700;
+color: #ffffff;
+margin: 48px 0 24px;
+display: flex;
+align-items: center;
+gap: 12px;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+.section-header::after {
+content: '';
+flex-grow: 1;
+height: 1px;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent);
+}
+@media (max-width: 768px) {
+.partner-card {
+padding: 24px;
+}
+.partner-card:hover {
+transform: translateY(-4px) !important;
+}
+.partner-card::before {
+width: 100% !important;
+height: 3px !important;
+}
+.partner-top-section {
+flex-direction: column !important;
+align-items: flex-start !important;
+gap: 20px !important;
+}
+.partner-logo-box {
+width: 100% !important;
+height: 72px !important;
+}
+.partner-header {
+flex-direction: column !important;
+align-items: flex-start !important;
+gap: 8px !important;
+}
+.partner-features {
+grid-template-columns: 1fr !important;
+gap: 10px !important;
+}
+}
+&lt;/style&gt;
+&lt;div class="section-header"&gt;Global Infrastructure &amp; Compliance Partners&lt;/div&gt;
+&lt;div class="partners-grid"&gt;
+&lt;!-- Google Cloud for Startups --&gt;
+&lt;div class="partner-card"&gt;
+&lt;div class="partner-top-section"&gt;
+&lt;div class="partner-logo-box"&gt;
+&lt;img class="partner-logo" src="https://plotkai.in/img/Google_for_Startups_logo.png" alt="Google Cloud for Startups Logo" /&gt;
+&lt;/div&gt;
+&lt;div class="partner-info"&gt;
+&lt;div class="partner-header"&gt;
+&lt;h4 class="partner-title"&gt;Google Cloud&lt;/h4&gt;
+&lt;span class="partner-role-badge"&gt;Infrastructure Partner&lt;/span&gt;
+&lt;/div&gt;
+&lt;p class="partner-description"&gt;
+We deploy secure, scalable architectures leveraging enterprise-grade Google Cloud infrastructure.
+&lt;/p&gt;</description></item><item><title>Privacy Policy</title><link>https://plotkai.in/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/privacy/</guid><description>&lt;p&gt;Thank you for choosing to be part of our community at &lt;strong&gt;Plotkai Interactive&lt;/strong&gt; (&amp;ldquo;Plotkai&amp;rdquo;, &amp;ldquo;Company&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;). We’re committed to respecting your privacy and protecting your personal information. If you have any questions or concerns about this policy or our data practices, please contact us at &lt;a href="mailto:contact@plotkai.in"&gt;&lt;a href="mailto:contact@plotkai.in"&gt;contact@plotkai.in&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;When you visit our websites or use our products and services, you trust us with your information — and we take that responsibility seriously. This Privacy Policy explains what data we collect, how we use it, and the rights you have in relation to it. Please read it carefully. If you do not agree with any part of this policy, please discontinue using our Sites or services.&lt;/p&gt;</description></item><item><title>Start Building Your Project</title><link>https://plotkai.in/start-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/start-project/</guid><description>&lt;div id="offerings-data" style="display: none;"&gt;
  {
  "offerings": [
