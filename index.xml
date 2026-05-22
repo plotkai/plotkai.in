@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content in Home on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Artificial Intelligence &amp; Machine Learning</title><link>https://plotkai.in/services/artificial-intelligence-ai-ml/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/artificial-intelligence-ai-ml/</guid><description>&lt;div class="reveal"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Plotkai Interactive: Let's make it happen</title><link>https://plotkai.in/</link><description>Recent content in Home on Plotkai Interactive: Let's make it happen</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://plotkai.in/index.xml" rel="self" type="application/rss+xml"/><item><title>Application Modernization</title><link>https://plotkai.in/services/application-modernization/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/application-modernization/</guid><description>&lt;div class="reveal"&gt;
+ &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
+ Legacy systems shouldn't slow down forward-looking startups. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we specialize in high-velocity application modernization, expert Kubernetes orchestration, GitOps automation, and full-featured cross-platform web and mobile development engineered to increase developer velocity and scale systems securely.
+ &lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- ==================== 8 MODERNIZATION PILLARS GRID ==================== --&gt;
+&lt;div class="reveal reveal-delay-1"&gt;
+ &lt;h2 class="text-2xl font-extrabold text-brand-teal mb-2 mt-8"&gt;Our Modernization Pillars &amp; Expertise&lt;/h2&gt;
+ &lt;p class="text-sm text-white/60 mb-6"&gt;Explore the comprehensive software engineering and delivery workflows we design, build, and optimize.&lt;/p&gt;</description></item><item><title>Artificial Intelligence &amp; Machine Learning</title><link>https://plotkai.in/services/artificial-intelligence-ai-ml/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/artificial-intelligence-ai-ml/</guid><description>&lt;div class="reveal"&gt;
  &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
  In the modern cognitive era, AI is no longer a simple chatbot interface—it is the central nervous system of competitive startups. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we design production-grade, secure, and cost-optimized Artificial Intelligence and Machine Learning systems engineered to drive autonomous decisions, massive operational efficiency, and state-of-the-art user experiences.
  &lt;/p&gt;
@@ -6,7 +14,39 @@
 &lt;!-- ==================== 8 AI/ML PILLARS GRID ==================== --&gt;
 &lt;div class="reveal reveal-delay-1"&gt;
  &lt;h2 class="text-2xl font-extrabold text-brand-teal mb-2 mt-8"&gt;Our AI/ML Pillars &amp; Expertise&lt;/h2&gt;
- &lt;p class="text-sm text-white/60 mb-6"&gt;Explore the full spectrum of cognitive and predictive capabilities we design, deploy, and manage.&lt;/p&gt;</description></item><item><title>FoundersCube - Your Entire Startup Infrastructure - In One Physical Box</title><link>https://plotkai.in/our-work/founders-cube/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/our-work/founders-cube/</guid><description>&lt;p&gt;We are proud to introduce &lt;strong&gt;FoundersCube&lt;/strong&gt;—a plug-and-play, on-premise Linux appliance that launches your entire corporate infrastructure instantly.
+ &lt;p class="text-sm text-white/60 mb-6"&gt;Explore the full spectrum of cognitive and predictive capabilities we design, deploy, and manage.&lt;/p&gt;</description></item><item><title>Observability Solutions</title><link>https://plotkai.in/services/observability-solution/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/observability-solution/</guid><description>&lt;div class="reveal"&gt;
+ &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
+ Complexity requires absolute transparency. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we build enterprise-grade observability and telemetry architectures that unify your logs, metrics, traces, and code quality data into a single, high-fidelity source of truth. We eliminate blind spots, dramatically reduce MTTR, and ensure absolute operational resilience.
+ &lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- ==================== 8 OBSERVABILITY PILLARS GRID ==================== --&gt;
+&lt;div class="reveal reveal-delay-1"&gt;
+ &lt;h2 class="text-2xl font-extrabold text-brand-teal mb-2 mt-8"&gt;Our Observability &amp; Telemetry Pillars&lt;/h2&gt;
+ &lt;p class="text-sm text-white/60 mb-6"&gt;Explore the specialized monitoring layers, unified dashboard configurations, and static quality gates we build to keep your platforms resilient.&lt;/p&gt;</description></item><item><title>Platform Engineering</title><link>https://plotkai.in/services/platform-engineering/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/platform-engineering/</guid><description>&lt;div class="reveal"&gt;
+ &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
+ In the modern high-velocity tech ecosystem, developer experience is directly linked to business outcomes. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we build custom Internal Developer Platforms (IDPs), robust GitOps pipelines, and fully standardized Kubernetes architectures engineered to eliminate developer friction, maximize velocity, and lock down secure compliance structures.
+ &lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- ==================== 8 PLATFORM PILLARS GRID ==================== --&gt;
+&lt;div class="reveal reveal-delay-1"&gt;
+ &lt;h2 class="text-2xl font-extrabold text-brand-teal mb-2 mt-8"&gt;Our Platform Engineering Pillars &amp; Expertise&lt;/h2&gt;
+ &lt;p class="text-sm text-white/60 mb-6"&gt;Explore the full spectrum of developer enablement and system orchestrations we design, deploy, and govern.&lt;/p&gt;</description></item><item><title>Product Engineering</title><link>https://plotkai.in/services/product-engineering/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/product-engineering/</guid><description>&lt;div class="reveal"&gt;
+ &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
+ Scale is built into the blueprint. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we specialize in high-availability product engineering, system design with 99.999% uptime guarantees, cloud-native deployments, and cross-platform web and Flutter mobile applications engineered to deliver fast, resilient, and elastic user experiences.
+ &lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- ==================== 8 PRODUCT PILLARS GRID ==================== --&gt;
+&lt;div class="reveal reveal-delay-1"&gt;
+ &lt;h2 class="text-2xl font-extrabold text-brand-teal mb-2 mt-8"&gt;Our Product Engineering Pillars &amp; Expertise&lt;/h2&gt;
+ &lt;p class="text-sm text-white/60 mb-6"&gt;Explore the full spectrum of clean system design and engineering orchestrations we build to sustain heavy enterprise scales.&lt;/p&gt;</description></item><item><title>Site Reliability Engineering</title><link>https://plotkai.in/services/site-reliability-engineering/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/site-reliability-engineering/</guid><description>&lt;div class="reveal"&gt;
+ &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
+ Resilience is not an accident; it is engineered. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we specialize in high-availability Site Reliability Engineering (SRE), merging advanced 99.999% uptime designs, AI incident routing, Model Context Protocol (MCP) diagnostics, self-healing systems, and multi-region disaster recovery blueprints to guarantee your product stays online under extreme scales.
+ &lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- ==================== 8 SRE PILLARS GRID ==================== --&gt;
+&lt;div class="reveal reveal-delay-1"&gt;
+ &lt;h2 class="text-2xl font-extrabold text-brand-teal mb-2 mt-8"&gt;Our SRE Engineering Pillars &amp; Expertise&lt;/h2&gt;
+ &lt;p class="text-sm text-white/60 mb-6"&gt;Explore how we fuse human governance, AI-driven automation, and deep failover structures to secure total availability.&lt;/p&gt;</description></item><item><title>FoundersCube - Your Entire Startup Infrastructure - In One Physical Box</title><link>https://plotkai.in/our-work/founders-cube/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/our-work/founders-cube/</guid><description>&lt;p&gt;We are proud to introduce &lt;strong&gt;FoundersCube&lt;/strong&gt;—a plug-and-play, on-premise Linux appliance that launches your entire corporate infrastructure instantly.
 &lt;strong&gt;Plug it in, map your domain, and go live!&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="-what-is-founderscube"&gt;📦 What is FoundersCube?&lt;/h2&gt;
@@ -31,7 +71,7 @@
 &lt;p&gt;Every aspect of the user interface was designed with simplicity and elegance in mind. Finding the right name should be a joyful experience, not a chore. The app offers a smooth, distraction-free environment for exploring thousands of names.&lt;/p&gt;</description></item><item><title>The Agentic SRE - Shifting Level 1 Support to AI</title><link>https://plotkai.in/blog/shift-left-sre-agent-gcp/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/blog/shift-left-sre-agent-gcp/</guid><description>&lt;p&gt;In modern platform engineering, the bottleneck is rarely the technology itself. It is the human time required to triage repetitive infrastructure tickets. When a developer opens a ticket for a crashing pod or a latency spike, they often wait hours for an initial response.&lt;/p&gt;
 &lt;p&gt;This article details a solution built on Google Cloud that shifts these Level 1 diagnostics to an AI Agent. By automating the first layer of analysis, we reduce Turnaround Time (TAT) from hours to seconds and free up the platform team for high-value architectural work.&lt;/p&gt;</description></item><item><title>Chowk: Hyperlocal Networking for Creators</title><link>https://plotkai.in/our-work/chowk-hyperlocal-networking-for-creators/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/our-work/chowk-hyperlocal-networking-for-creators/</guid><description>&lt;p&gt;Chowk is a scalable, mobile-ready Android app designed for digital creators to connect, network, and grow their community. Available now on the Google Play Store, Chowk brings hyperlocal discovery and real-time networking to your fingertips.&lt;/p&gt;
 &lt;h2 id="hyperlocal-discovery"&gt;Hyperlocal Discovery&lt;/h2&gt;
-&lt;p&gt;Chowk leverages map-based and GPS-powered technology to help users discover fellow creators nearby. Whether you&amp;rsquo;re looking to collaborate, share ideas, or simply connect, Chowk makes it easy to find and interact with creators in your vicinity.&lt;/p&gt;</description></item><item><title>Cloud Services &amp; Platform Engineering</title><link>https://plotkai.in/services/cloud/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/cloud/</guid><description>&lt;div class="reveal"&gt;
+&lt;p&gt;Chowk leverages map-based and GPS-powered technology to help users discover fellow creators nearby. Whether you&amp;rsquo;re looking to collaborate, share ideas, or simply connect, Chowk makes it easy to find and interact with creators in your vicinity.&lt;/p&gt;</description></item><item><title>Cloud Infrastructure</title><link>https://plotkai.in/services/cloud-services/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/services/cloud-services/</guid><description>&lt;div class="reveal"&gt;
  &lt;p class="text-lg text-white/80 leading-relaxed mb-8"&gt;
  In the modern digital landscape, the cloud is no longer just a hosting destination—it is a competitive engine. At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, we build high-availability, self-healing, and cost-optimized cloud architectures engineered to fuel rapid startup scaling and enterprise robustness.
  &lt;/p&gt;
@@ -629,7 +669,7 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
 
  checkReachability();
 })();
-&lt;/script&gt;</description></item><item><title>How We Work</title><link>https://plotkai.in/how-we-work/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/how-we-work/</guid><description>&lt;style&gt;
+&lt;/script&gt;</description></item><item><title>Our Methodology</title><link>https://plotkai.in/our-methodology/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/our-methodology/</guid><description>&lt;style&gt;
  .timeline-container {
  position: relative;
  padding: 32px 0;
