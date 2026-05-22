@@ -1,0 +1,30 @@
+{{ define "bodyclass" }}inner-page{{ end }}
+{{ define "main" }}
+<div class="blog-list-page">
+  <div class="reveal" style="margin-bottom:12px;">
+    <span class="badge">{{ .Params.badge | default "Information" }}</span>
+  </div>
+  <h1 class="reveal"
+    style="font-size:clamp(32px,5vw,54px);font-weight:900;line-height:1.1;margin:16px 0 8px;font-family:'Space Grotesk',sans-serif;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,0.7) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+    {{ .Title }}
+  </h1>
+  <div class="divider reveal"></div>
+  <p class="reveal" style="font-size:18px;color:rgba(255,255,255,0.55);margin-bottom:48px;line-height:1.6;">
+    {{ .Params.excerpt }}
+  </p>
+
+  <div>
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="blog-card reveal" id="post-{{ .File.UniqueID }}">
+      <div class="meta">
+        <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+        {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
+        {{ with .Params.readTime }}<span>{{ . }}</span>{{ end }}
+      </div>
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Params.excerpt }}</p>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

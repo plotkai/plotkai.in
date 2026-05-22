@@ -10,3 +10,140 @@ enableGitInfo = true
 
 [markup.goldmark.renderer]
 unsafe = true
+
+# ==================== Centralized Site Navigation ====================
+
+# 1. Main Navigation Menu (Desktop & Mobile view)
+[[menu.main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about-us/"
+  weight = 80
+
+[[menu.main]]
+  identifier = "services"
+  name = "Services"
+  url = "/services/"
+  weight = 20
+
+# Child menu items under Services
+[[menu.main]]
+  name = "Cloud & Platform Engineering"
+  url = "/services/cloud/"
+  parent = "services"
+  weight = 10
+
+[[menu.main]]
+  name = "Artificial Intelligence & Data"
+  url = "/services/artificial-intelligence-ai-ml/"
+  parent = "services"
+  weight = 20
+
+[[menu.main]]
+  name = "Cybersecurity"
+  url = "/services/cybersecurity/"
+  parent = "services"
+  weight = 30
+
+[[menu.main]]
+  identifier = "how"
+  name = "How We Work"
+  url = "/how-we-work/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "cases"
+  name = "Case Studies"
+  url = "/case-studies/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "our"
+  name = "Our Work"
+  url = "/our-work/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "partners"
+  name = "Partners"
+  url = "/partners/"
+  weight = 60
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 70
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 90
+
+# 2. Footer Menu: Company Group
+[[menu.footer_company]]
+  name = "About Us"
+  url = "/about-us/"
+  weight = 10
+
+[[menu.footer_company]]
+  name = "Services"
+  url = "/services/"
+  weight = 20
+
+[[menu.footer_company]]
+  name = "How We Work"
+  url = "/how-we-work/"
+  weight = 30
+
+[[menu.footer_company]]
+  name = "Case Studies"
+  url = "/case-studies/"
+  weight = 40
+
+[[menu.footer_company]]
+  name = "Our Work"
+  url = "/our-work/"
+  weight = 50
+
+[[menu.footer_company]]
+  name = "Partners"
+  url = "/partners/"
+  weight = 60
+
+[[menu.footer_company]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 70
+
+[[menu.footer_company]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 80
+
+# 3. Footer Menu: Legal & Others Group
+[[menu.footer_legal]]
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 10
+
+[[menu.footer_legal]]
+  name = "Terms of Service"
+  url = "/terms/"
+  weight = 20
+
+[[menu.footer_legal]]
+  name = "Our Team"
+  url = "/team/"
+  weight = 30
+
+[[menu.footer_legal]]
+  name = "Employee Login"
+  url = "/login/"
+  weight = 40
+
+[[menu.footer_legal]]
+  name = "Careers"
+  url = "/careers/"
+  weight = 50
