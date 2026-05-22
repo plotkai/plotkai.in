@@ -1,30 +1,173 @@
 {{ define "bodyclass" }}inner-page{{ end }}
 {{ define "main" }}
-<div class="blog-list-page">
-  <div class="reveal" style="margin-bottom:12px;">
-    <span class="badge">{{ .Params.badge | default "Information" }}</span>
+<div class="max-w-7xl mx-auto px-6 py-16">
+  <div class="reveal mb-3">
+    <span class="badge">{{ .Params.badge | default "Services" }}</span>
   </div>
-  <h1 class="reveal"
-    style="font-size:clamp(32px,5vw,54px);font-weight:900;line-height:1.1;margin:16px 0 8px;font-family:'Space Grotesk',sans-serif;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,0.7) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+  <h1 class="reveal text-4xl md:text-5xl lg:text-6xl font-black font-space tracking-tight mb-4 bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
     {{ .Title }}
   </h1>
   <div class="divider reveal"></div>
-  <p class="reveal" style="font-size:18px;color:rgba(255,255,255,0.55);margin-bottom:48px;line-height:1.6;">
+  <p class="reveal text-lg md:text-xl text-white/60 mb-8 max-w-3xl leading-relaxed">
     {{ .Params.excerpt }}
   </p>
 
-  <div>
-    {{ range .Pages }}
-    <a href="{{ .RelPermalink }}" class="blog-card reveal" id="post-{{ .File.UniqueID }}">
-      <div class="meta">
-        <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-        {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
-        {{ with .Params.readTime }}<span>{{ . }}</span>{{ end }}
+  {{- $tags := slice -}}
+  {{- range .Pages -}}
+    {{- with .Params.tags -}}
+      {{- range . -}}
+        {{- $tags = $tags | append (lower .) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $unique_tags := $tags | uniq | sort -}}
+
+  {{- if $unique_tags -}}
+  <div class="reveal mb-10" style="animation-delay: 0.1s;">
+    <span class="text-xs font-semibold uppercase tracking-wider text-white/40 block mb-3">Filter by Topic:</span>
+    <div class="flex flex-wrap gap-2.5">
+      {{- range $unique_tags -}}
+      <button type="button" 
+        class="tag-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 bg-white/5 text-white/60 hover:border-brand-teal/50 hover:text-brand-teal transition-all duration-300 cursor-pointer focus:outline-none"
+        data-tag="{{ . }}">
+        #{{ . }}
+      </button>
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+
+  <!-- Premium Responsive Square Cards Grid -->
+  <div class="relative min-h-[200px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range .Pages }}
+      {{- $card_tags := slice -}}
+      {{- with .Params.tags -}}
+        {{- range . -}}
+          {{- $card_tags = $card_tags | append (lower .) -}}
+        {{- end -}}
+      {{- end -}}
+      <a href="{{ .RelPermalink }}" class="service-card relative aspect-square block overflow-hidden rounded-3xl border border-white/10 group shadow-2xl transition-all duration-300 hover:border-brand-teal/40 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-brand-teal/5 reveal" id="post-{{ .File.UniqueID }}" data-tags="{{ delimit $card_tags "," }}">
+        <!-- Background Image -->
+        {{ $image := .Params.featuredImage | default "/img/services/default.png" }}
+        <img src="{{ $image }}" alt="{{ .Title }}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        
+        <!-- Premium Dark/Teal Overlay Gradient for text readability -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#091517] via-[#091517]/50 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-95"></div>
+        
+        <!-- Card Content -->
+        <div class="absolute inset-0 p-8 flex flex-col justify-end z-10">
+          <h3 class="text-xl md:text-2xl font-bold font-space text-white mb-2 transition-colors duration-200 group-hover:text-brand-teal">{{ .Title }}</h3>
+          <p class="text-sm md:text-base text-white/75 line-clamp-3 leading-relaxed">{{ .Params.excerpt }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+
+    <div class="no-posts-found">
+      <div class="flex flex-col items-center justify-center text-center">
+        <svg class="w-12 h-12 text-white/30 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+        </svg>
+        <h3 class="text-lg font-bold text-white/90 mb-1">No matches found</h3>
+        <p class="text-sm text-white/50 max-w-xs">We couldn't find any services matching all the selected tags. Try adjusting your filters.</p>
+        <button type="button" id="clear-filters-btn" class="mt-4 px-4 py-2 text-xs font-semibold bg-brand-teal text-white rounded-full hover:bg-brand-teal/90 transition-all shadow-md shadow-brand-teal/20">
+          Reset Filters
+        </button>
       </div>
-      <h2>{{ .Title }}</h2>
-      <p>{{ .Params.excerpt }}</p>
-    </a>
-    {{ end }}
+    </div>
   </div>
 </div>
+
+<style>
+  .tag-filter-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tag-filter-btn.active {
+    background-color: var(--brand-teal, #008080) !important;
+    border-color: var(--brand-teal, #008080) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(0, 128, 128, 0.35);
+    transform: translateY(-1px) scale(1.05);
+  }
+  
+  .service-card {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .service-card.filtered-out {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    display: none !important;
+  }
+  
+  .no-posts-found {
+    display: none;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    padding: 48px 24px;
+    margin-top: 20px;
+    animation: fadeIn 0.4s ease forwards;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.tag-filter-btn');
+    const serviceCards = document.querySelectorAll('.service-card');
+    const emptyState = document.querySelector('.no-posts-found');
+    const clearBtn = document.getElementById('clear-filters-btn');
+    const activeTags = new Set();
+
+    function updateFilters() {
+      let visibleCount = 0;
+
+      serviceCards.forEach(card => {
+        const cardTagsStr = card.getAttribute('data-tags') || '';
+        const cardTags = cardTagsStr ? cardTagsStr.split(',') : [];
+
+        // AND Filtering: must contain every selected tag
+        const isMatch = Array.from(activeTags).every(tag => cardTags.includes(tag));
+
+        if (isMatch) {
+          card.classList.remove('filtered-out');
+          visibleCount++;
+        } else {
+          card.classList.add('filtered-out');
+        }
+      });
+
+      // Toggle Empty State
+      if (visibleCount === 0 && activeTags.size > 0) {
+        emptyState.style.display = 'block';
+      } else {
+        emptyState.style.display = 'none';
+      }
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tag = btn.getAttribute('data-tag');
+        if (activeTags.has(tag)) {
+          activeTags.delete(tag);
+          btn.classList.remove('active');
+        } else {
+          activeTags.add(tag);
+          btn.classList.add('active');
+        }
+        updateFilters();
+      });
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        activeTags.clear();
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        updateFilters();
+      });
+    }
+  });
+</script>
 {{ end }}

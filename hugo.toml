@@ -15,12 +15,6 @@ unsafe = true
 
 # 1. Main Navigation Menu (Desktop & Mobile view)
 [[menu.main]]
-  identifier = "about"
-  name = "About Us"
-  url = "/about-us/"
-  weight = 80
-
-[[menu.main]]
   identifier = "services"
   name = "Services"
   url = "/services/"
@@ -28,52 +22,115 @@ unsafe = true
 
 # Child menu items under Services
 [[menu.main]]
-  name = "Cloud & Platform Engineering"
-  url = "/services/cloud/"
+  name = "Cloud Services"
+  url = "/services/cloud-services/"
   parent = "services"
+  pre = "cloud"
   weight = 10
+
+[[menu.main]]
+  name = "Platform Engineering"
+  url = "/services/platform-engineering/"
+  parent = "services"
+  pre = "cpu"
+  weight = 15
+
+[[menu.main]]
+  name = "Product Engineering"
+  url = "/services/product-engineering/"
+  parent = "services"
+  pre = "code"
+  weight = 18
 
 [[menu.main]]
   name = "Artificial Intelligence & Data"
   url = "/services/artificial-intelligence-ai-ml/"
   parent = "services"
+  pre = "brain"
   weight = 20
+
+[[menu.main]]
+  name = "Observability Solutions"
+  url = "/services/observability-solution/"
+  parent = "services"
+  pre = "eye"
+  weight = 22
+
+[[menu.main]]
+  name = "Application Modernization"
+  url = "/services/application-modernization/"
+  parent = "services"
+  pre = "refresh"
+  weight = 25
+
+[[menu.main]]
+  name = "Site Reliability Engineering"
+  url = "/services/site-reliability-engineering/"
+  parent = "services"
+  pre = "heartbeat"
+  weight = 28
 
 [[menu.main]]
   name = "Cybersecurity"
   url = "/services/cybersecurity/"
   parent = "services"
+  pre = "shield"
   weight = 30
 
-[[menu.main]]
-  identifier = "how"
-  name = "How We Work"
-  url = "/how-we-work/"
-  weight = 30
+#Services End
 
 [[menu.main]]
-  identifier = "cases"
-  name = "Case Studies"
-  url = "/case-studies/"
+  identifier = "builds"
+  name = "What We Build"
   weight = 40
 
+# Child menu items under What We Build
 [[menu.main]]
-  identifier = "our"
-  name = "Our Work"
-  url = "/our-work/"
-  weight = 50
+  name = "Client Case Studies"
+  url = "/case-studies/"
+  parent = "builds"
+  pre = "briefcase"
+  weight = 10
 
 [[menu.main]]
-  identifier = "partners"
-  name = "Partners"
-  url = "/partners/"
-  weight = 60
+  name = "Product Portfolio"
+  url = "/our-work/"
+  parent = "builds"
+  pre = "folder"
+  weight = 20
 
 [[menu.main]]
   identifier = "blog"
   name = "Blog"
   url = "/blog/"
   weight = 70
+
+[[menu.main]]
+  identifier = "company"
+  name = "Company"
+  weight = 80
+
+# Child menu items under Company
+[[menu.main]]
+  name = "About Us"
+  url = "/about-us/"
+  parent = "company"
+  pre = "users"
+  weight = 10
+
+[[menu.main]]
+  name = "Our Methodology"
+  url = "/our-methodology/"
+  parent = "company"
+  pre = "git-branch"
+  weight = 20
+
+[[menu.main]]
+  name = "Partners"
+  url = "/partners/"
+  parent = "company"
+  pre = "handshake"
+  weight = 30
 
 [[menu.main]]
   identifier = "contact"

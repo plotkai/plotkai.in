@@ -4,7 +4,7 @@ date: 2026-01-17
 lastmod: 2026-01-17
 category: "Services"
 tags: ["Security", "Compliance", "Risk Management"]
-excerpt: "In today’s hyper-connected digital era, security is not a feature—it is the bedrock of trust. Plotkai Interactive delivers comprehensive cybersecurity engineering and governance to shield your applications, data, and cloud infrastructure from escalating cyber threats."
+excerpt: "Shield your digital assets with advanced threat protection, secure architecture design, and regulatory compliance."
 featured: true
 featuredImage: "/img/services/cybersecurity.png"
 featuredImageCaption: "Enterprise-grade Cybersecurity"

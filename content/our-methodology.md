@@ -1,6 +1,6 @@
 ---
-title: "How We Work"
-url: "/how-we-work/"
+title: "Our Methodology"
+url: "/our-methodology/"
 badge: "Company Info"
 description: "Learn how Plotkai Interactive builds premium products with zero technical debt."
 ---

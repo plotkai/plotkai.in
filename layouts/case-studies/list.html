@@ -9,13 +9,44 @@
     {{ .Title }}
   </h1>
   <div class="divider reveal"></div>
-  <p class="reveal" style="font-size:18px;color:rgba(255,255,255,0.55);margin-bottom:48px;line-height:1.6;">
+  <p class="reveal" style="font-size:18px;color:rgba(255,255,255,0.55);margin-bottom:24px;line-height:1.6;">
     {{ .Params.excerpt }}
   </p>
 
-  <div>
+  {{- $tags := slice -}}
+  {{- range .Pages -}}
+    {{- with .Params.tags -}}
+      {{- range . -}}
+        {{- $tags = $tags | append (lower .) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $unique_tags := $tags | uniq | sort -}}
+
+  {{- if $unique_tags -}}
+  <div class="reveal mb-10" style="animation-delay: 0.1s;">
+    <span class="text-xs font-semibold uppercase tracking-wider text-white/40 block mb-3">Filter by Topic:</span>
+    <div class="flex flex-wrap gap-2.5">
+      {{- range $unique_tags -}}
+      <button type="button" 
+        class="tag-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold border border-white/10 bg-white/5 text-white/60 hover:border-brand-teal/50 hover:text-brand-teal transition-all duration-300 cursor-pointer focus:outline-none"
+        data-tag="{{ . }}">
+        #{{ . }}
+      </button>
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+
+  <div class="relative min-h-[200px]">
     {{ range .Pages }}
-    <a href="{{ .RelPermalink }}" class="blog-card reveal" id="post-{{ .File.UniqueID }}">
+    {{- $card_tags := slice -}}
+    {{- with .Params.tags -}}
+      {{- range . -}}
+        {{- $card_tags = $card_tags | append (lower .) -}}
+      {{- end -}}
+    {{- end -}}
+    <a href="{{ .RelPermalink }}" class="blog-card reveal transition-all duration-500" id="post-{{ .File.UniqueID }}" data-tags="{{ delimit $card_tags "," }}">
       <div class="meta">
         <span>{{ .Date.Format "Jan 2, 2006" }}</span>
         {{ with .Params.category }}<span>{{ . }}</span>{{ end }}
@@ -25,6 +56,121 @@
       <p>{{ .Params.excerpt }}</p>
     </a>
     {{ end }}
+
+    <div class="no-posts-found">
+      <div class="flex flex-col items-center justify-center text-center">
+        <svg class="w-12 h-12 text-white/30 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+        </svg>
+        <h3 class="text-lg font-bold text-white/90 mb-1">No matches found</h3>
+        <p class="text-sm text-white/50 max-w-xs">We couldn't find any articles matching all the selected tags. Try adjusting your filters.</p>
+        <button type="button" id="clear-filters-btn" class="mt-4 px-4 py-2 text-xs font-semibold bg-brand-teal text-white rounded-full hover:bg-brand-teal/90 transition-all shadow-md shadow-brand-teal/20">
+          Reset Filters
+        </button>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+  .tag-filter-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tag-filter-btn.active {
+    background-color: var(--brand-teal, #008080) !important;
+    border-color: var(--brand-teal, #008080) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(0, 128, 128, 0.35);
+    transform: translateY(-1px) scale(1.05);
+  }
+  
+  .blog-card {
+    transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease, margin 0.4s ease, padding 0.4s ease, border-color 0.3s ease;
+    max-height: 600px;
+    transform-origin: top center;
+  }
+  
+  .blog-card.filtered-out {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    max-height: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  .no-posts-found {
+    display: none;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    padding: 48px 24px;
+    margin-top: 20px;
+    animation: fadeIn 0.4s ease forwards;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.tag-filter-btn');
+    const blogCards = document.querySelectorAll('.blog-card');
+    const emptyState = document.querySelector('.no-posts-found');
+    const clearBtn = document.getElementById('clear-filters-btn');
+    const activeTags = new Set();
+
+    function updateFilters() {
+      let visibleCount = 0;
+
+      blogCards.forEach(card => {
+        const cardTagsStr = card.getAttribute('data-tags') || '';
+        const cardTags = cardTagsStr ? cardTagsStr.split(',') : [];
+
+        // AND Filtering: must contain every selected tag
+        const isMatch = Array.from(activeTags).every(tag => cardTags.includes(tag));
+
+        if (isMatch) {
+          card.classList.remove('filtered-out');
+          visibleCount++;
+        } else {
+          card.classList.add('filtered-out');
+        }
+      });
+
+      // Toggle Empty State
+      if (visibleCount === 0 && activeTags.size > 0) {
+        emptyState.style.display = 'block';
+      } else {
+        emptyState.style.display = 'none';
+      }
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tag = btn.getAttribute('data-tag');
+        if (activeTags.has(tag)) {
+          activeTags.delete(tag);
+          btn.classList.remove('active');
+        } else {
+          activeTags.add(tag);
+          btn.classList.add('active');
+        }
+        updateFilters();
+      });
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        activeTags.clear();
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        updateFilters();
+      });
+    }
+  });
+</script>
 {{ end }}

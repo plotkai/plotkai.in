@@ -4,7 +4,7 @@ date: 2026-05-22
 lastmod: 2026-05-22
 category: "Services"
 tags: ["Artificial Intelligence", "Machine Learning", "Generative AI", "Chatbots", "LLMs"]
-excerpt: "We empower your business with the transformative capabilities of Artificial Intelligence and Machine Learning. From intelligent automation to predictive insights, we engineer AI solutions that drive measurable growth."
+excerpt: "Empower your business with predictive ML insights, intelligent automation, and production-ready generative AI solutions."
 featured: true
 featuredImage: "/img/services/ai-ml.png"
 featuredImageCaption: "Artificial Intelligence & Machine Learning"
