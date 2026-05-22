@@ -160,7 +160,7 @@ unsafe = true
   weight = 40
 
 [[menu.footer_company]]
-  name = "Our Work"
+  name = "Product Portfolio"
   url = "/our-work/"
   weight = 50
 
