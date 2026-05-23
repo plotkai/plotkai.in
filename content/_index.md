@@ -43,8 +43,8 @@ description: "The Product Tech Partner for Ambitious Startups"
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
       </a>
-      <a href="/our-work/" class="btn-outline" id="hero-cta-secondary">
-        Explore Our Work
+      <a href="/services/" class="btn-outline" id="hero-cta-secondary">
+        Explore Our Services
       </a>
       <a href="/contact/" class="btn-secondary" id="hero-cta-tertiary">
         Schedule a Free Consultation
@@ -527,6 +527,7 @@ description: "The Product Tech Partner for Ambitious Startups"
           </svg>
         </a>
         <a href="/case-studies/" class="btn-outline" id="cta-showcase">View Case Studies</a>
+        <a href="/our-work/" class="btn-outline" id="cta-showcase">Our Products</a>
       </div>
     </div>
   </div>
