@@ -126,11 +126,18 @@ unsafe = true
   weight = 20
 
 [[menu.main]]
-  name = "Partners"
+  name = "Partnerships"
   url = "/partners/"
   parent = "company"
   pre = "handshake"
   weight = 30
+
+[[menu.main]]
+  name = "Careers"
+  url = "/careers/"
+  parent = "company"
+  pre = "handshake"
+  weight = 40
 
 [[menu.main]]
   identifier = "contact"
@@ -201,7 +208,7 @@ unsafe = true
   weight = 40
 
 [[menu.footer_company]]
-  name = "Partners"
+  name = "Partnerships"
   url = "/partners/"
   weight = 50
 
