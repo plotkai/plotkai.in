@@ -136,7 +136,7 @@ unsafe = true
   name = "Careers"
   url = "/careers/"
   parent = "company"
-  pre = "handshake"
+  pre = "briefcase"
   weight = 40
 
 [[menu.main]]
