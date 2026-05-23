@@ -670,6 +670,12 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  checkReachability();
 })();
 &lt;/script&gt;</description></item><item><title>Our Methodology</title><link>https://plotkai.in/our-methodology/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/our-methodology/</guid><description>&lt;style&gt;
+ /* Override global reveal animations on this page for instant loading */
+ .reveal {
+ opacity: 1 !important;
+
+ }
+
  .timeline-container {
  position: relative;
  padding: 32px 0;
@@ -682,7 +688,7 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  top: 0;
  bottom: 0;
  width: 2px;
- background: linear-gradient(to bottom, #00e5a0 0%, var(--teal) 33%, var(--coral) 66%, #00c853 100%);
+ background: linear-gradient(to bottom, #3b82f6 0%, #00e5a0 16%, #f59e0b 33%, var(--coral) 50%, #8b5cf6 66%, #f43f5e 83%, #00c853 100%);
  opacity: 0.25;
  }
 
@@ -738,7 +744,27 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  transition: background 0.3s ease;
  }
 
- /* Phase 01: Teal Glow */
+ /* Phase 01: Blue Glow */
+ .item-blue .timeline-node {
+ border-color: #3b82f6;
+ box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+ color: #3b82f6;
+ }
+ .item-blue .timeline-card::before {
+ background: linear-gradient(90deg, #3b82f6, transparent);
+ }
+ .item-blue:hover .timeline-card {
+ border-color: rgba(59, 130, 246, 0.35);
+ box-shadow: 0 12px 40px rgba(59, 130, 246, 0.08);
+ transform: translateX(6px);
+ }
+ .item-blue:hover .timeline-node {
+ box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+ background: #3b82f6;
+ color: var(--dark-surface);
+ }
+
+ /* Phase 02: Teal Glow */
  .item-teal .timeline-node {
  border-color: #00e5a0;
  box-shadow: 0 0 15px rgba(0, 229, 160, 0.15);
@@ -758,27 +784,27 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  color: var(--dark-surface);
  }
 
- /* Phase 02: Gold Glow */
- .item-gold .timeline-node {
- border-color: var(--teal);
- box-shadow: 0 0 15px rgba(218, 165, 32, 0.15);
- color: var(--teal);
+ /* Phase 03: Amber Glow */
+ .item-amber .timeline-node {
+ border-color: #f59e0b;
+ box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+ color: #f59e0b;
  }
- .item-gold .timeline-card::before {
- background: linear-gradient(90deg, var(--teal), transparent);
+ .item-amber .timeline-card::before {
+ background: linear-gradient(90deg, #f59e0b, transparent);
  }
- .item-gold:hover .timeline-card {
- border-color: rgba(218, 165, 32, 0.35);
- box-shadow: 0 12px 40px rgba(218, 165, 32, 0.08);
+ .item-amber:hover .timeline-card {
+ border-color: rgba(245, 158, 11, 0.35);
+ box-shadow: 0 12px 40px rgba(245, 158, 11, 0.08);
  transform: translateX(6px);
  }
- .item-gold:hover .timeline-node {
- box-shadow: 0 0 25px rgba(218, 165, 32, 0.5);
- background: var(--teal);
+ .item-amber:hover .timeline-node {
+ box-shadow: 0 0 25px rgba(245, 158, 11, 0.5);
+ background: #f59e0b;
  color: var(--dark-surface);
  }
 
- /* Phase 03: Coral Glow */
+ /* Phase 04: Coral Glow */
  .item-coral .timeline-node {
  border-color: var(--coral);
  box-shadow: 0 0 15px rgba(255, 127, 80, 0.15);
@@ -798,7 +824,47 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  color: var(--dark-surface);
  }
 
- /* Phase 04: Emerald Glow */
+ /* Phase 05: Purple Glow */
+ .item-purple .timeline-node {
+ border-color: #8b5cf6;
+ box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
+ color: #8b5cf6;
+ }
+ .item-purple .timeline-card::before {
+ background: linear-gradient(90deg, #8b5cf6, transparent);
+ }
+ .item-purple:hover .timeline-card {
+ border-color: rgba(139, 92, 246, 0.35);
+ box-shadow: 0 12px 40px rgba(139, 92, 246, 0.08);
+ transform: translateX(6px);
+ }
+ .item-purple:hover .timeline-node {
+ box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
+ background: #8b5cf6;
+ color: var(--dark-surface);
+ }
+
+ /* Phase 06: Rose Glow */
+ .item-rose .timeline-node {
+ border-color: #f43f5e;
+ box-shadow: 0 0 15px rgba(244, 63, 94, 0.15);
+ color: #f43f5e;
+ }
+ .item-rose .timeline-card::before {
+ background: linear-gradient(90deg, #f43f5e, transparent);
+ }
+ .item-rose:hover .timeline-card {
+ border-color: rgba(244, 63, 94, 0.35);
+ box-shadow: 0 12px 40px rgba(244, 63, 94, 0.08);
+ transform: translateX(6px);
+ }
+ .item-rose:hover .timeline-node {
+ box-shadow: 0 0 25px rgba(244, 63, 94, 0.5);
+ background: #f43f5e;
+ color: var(--dark-surface);
+ }
+
+ /* Phase 07: Emerald Glow */
  .item-emerald .timeline-node {
  border-color: #00c853;
  box-shadow: 0 0 15px rgba(0, 200, 83, 0.15);
@@ -882,9 +948,12 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
  }
 
  /* Specific color SVG icons in grid items */
+ .item-blue .timeline-grid-item svg { color: #3b82f6; }
  .item-teal .timeline-grid-item svg { color: #00e5a0; }
- .item-gold .timeline-grid-item svg { color: var(--teal); }
+ .item-amber .timeline-grid-item svg { color: #f59e0b; }
  .item-coral .timeline-grid-item svg { color: var(--coral); }
+ .item-purple .timeline-grid-item svg { color: #8b5cf6; }
+ .item-rose .timeline-grid-item svg { color: #f43f5e; }
  .item-emerald .timeline-grid-item svg { color: #00c853; }
 
  @media (max-width: 680px) {
@@ -910,13 +979,13 @@ We&amp;rsquo;re here to change that by helping startups, creators, and organizat
 &lt;div class="timeline-container"&gt;
  &lt;div class="timeline-line"&gt;&lt;/div&gt;
  &lt;!-- PHASE 01 --&gt;
- &lt;div class="timeline-item item-teal reveal"&gt;
+ &lt;div class="timeline-item item-blue"&gt;
  &lt;div class="timeline-node"&gt;01&lt;/div&gt;
  &lt;div class="timeline-card"&gt;
- &lt;span class="timeline-badge"&gt;Phase 01 / Research &amp;amp; Blueprint&lt;/span&gt;
- &lt;h3&gt;Discovery &amp;amp; Strategy&lt;/h3&gt;
+ &lt;span class="timeline-badge"&gt;Phase 01 / Legal &amp;amp; Client Onboarding&lt;/span&gt;
+ &lt;h3&gt;Secure Onboarding &amp;amp; NDA&lt;/h3&gt;
  &lt;p&gt;
- Every great project starts with understanding. We deep-dive into your product vision, target market, and strategic goals to design a neat, purpose-driven blueprint before writing a single line of code.
+ We build a foundation of absolute trust and security from day zero. Before exploring your concepts, we sign comprehensive Mutual Non-Disclosure Agreements (NDAs) and establish transparent Intellectual Property (IP) ownership frameworks so your ideas remain 100% yours.
  &lt;/p&gt;</description></item><item><title>Our Partners</title><link>https://plotkai.in/partners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plotkai.in/partners/</guid><description>&lt;p&gt;At &lt;strong&gt;Plotkai Interactive&lt;/strong&gt;, our operations, products, and reliability are built upon enterprise-grade foundations. We are proud to partner with leading global programs, compliance authorities, and visionary initiatives to engineer digital products that scale.&lt;/p&gt;
 &lt;div class="partners-container"&gt;
 &lt;style&gt;
