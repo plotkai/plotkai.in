@@ -7,12 +7,9 @@
 &lt;li&gt;Built for long-term investors &amp;amp; goal planners&lt;/li&gt;
 &lt;li&gt;Only a monitoring tool, does not manage your investment or bank&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="my-8"&gt;
- &lt;a href="https://vealth.in" target="_blank" rel="noopener" class="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold bg-brand-coral text-white hover:opacity-90 transition-opacity" style="text-decoration: none;"&gt;
- Experience the Vealth Dashboard
- &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M5 12h14"&gt;&lt;/path&gt;&lt;path d="m12 5 7 7-7 7"&gt;&lt;/path&gt;&lt;/svg&gt;
- &lt;/a&gt;
-&lt;/div&gt;
+&lt;br&gt;
+&lt;a href="https://vealth.in" target="_blank" class="btn-primary"&gt;Experience the Vealth Dashboard &amp;rarr;&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
 &lt;h2 id="everything-you-need-to-manage-your-wealth"&gt;Everything you need to manage your wealth&lt;/h2&gt;
 &lt;p&gt;A unified view of all your family&amp;rsquo;s finances in one place.&lt;/p&gt;</description></item><item><title>Vitaran SMTP Orchestrator</title><link>https://plotkai.in/our-work/vitaran-smtp-orchestrator/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://plotkai.in/our-work/vitaran-smtp-orchestrator/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Vitaran is an &lt;strong&gt;operational communication gateway&lt;/strong&gt; that acts as the central control plane for your entire application ecosystem&amp;rsquo;s email infrastructure. By serving as a programmable middleware layer between your application logic and multiple third-party email providers (such as SMTP2GO or Brevo, etc), Vitaran eliminates infrastructure fragmentation. It empowers developers to seamlessly manage global user consent, maintain brand-consistent HTML templates, and dispatch cross-channel messages through a single, unified API.&lt;/p&gt;
