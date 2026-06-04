@@ -22,9 +22,9 @@ Self-track all investments in one clear dashboard without linking accounts or sh
 - Built for long-term investors & goal planners
 - Only a monitoring tool, does not manage your investment or bank
 
-<br>
-<a href="https://vealth.in" target="_blank" class="btn-primary">Experience the Vealth Dashboard &rarr;</a>
-<br><br>
+<div style="margin: 32px 0;">
+  <a href="https://vealth.in" target="_blank" rel="noopener" class="btn-primary" style="color: #ffffff !important;">Experience the Vealth Dashboard <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+</div>
 
 ## Everything you need to manage your wealth
 
