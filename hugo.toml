@@ -80,24 +80,16 @@ unsafe = true
 #Services End
 
 [[menu.main]]
-  identifier = "builds"
-  name = "What We Build"
+  identifier = "case-studies"
+  name = "Case Studies"
+  url = "/case-studies/"
   weight = 40
 
-# Child menu items under What We Build
 [[menu.main]]
-  name = "Client Case Studies"
-  url = "/case-studies/"
-  parent = "builds"
-  pre = "briefcase"
-  weight = 10
-
-[[menu.main]]
-  name = "Product Portfolio"
+  identifier = "products"
+  name = "Products"
   url = "/our-work/"
-  parent = "builds"
-  pre = "folder"
-  weight = 20
+  weight = 50
 
 [[menu.main]]
   identifier = "blog"
