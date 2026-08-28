@@ -40,5 +40,13 @@ You agree that your use of the Service will comply with all applicable laws, reg
 *Indemnification.*
 You agree to indemnify and hold harmless Plotkai Interactive, its employees, contractors, and affiliates from any claims, damages, liabilities, and expenses (including reasonable attorneys’ fees) arising from your use of the Service, your violation of these Terms, or your infringement of any intellectual property or privacy rights.
 
+## Babylogs Product Terms
+
+1. **Third-Party Integrations (Google Drive)**:
+   Babylogs provides optional synchronization via Google Drive. Your use of Google Drive is subject to Google's Terms of Service. Plotkai is not responsible for outages, loss of access, or data availability issues related to Google's third-party services.
+
+2. **No Medical Advice**:
+   Babylogs is a daily activity tracking and logging tool for parents and caregivers. The application, its statistics, and timeline views are for informational and organizational purposes only and do not constitute medical advice, diagnosis, or treatment. Always consult a qualified pediatrician or healthcare provider for medical concerns.
+
 *Miscellaneous.*
 This Agreement constitutes the entire understanding between you and Plotkai Interactive regarding the use of the Service. It may only be modified in writing signed by an authorized representative of Plotkai Interactive. These Terms shall be governed by the laws of India, without regard to its conflict of laws principles. Any disputes shall be subject to the exclusive jurisdiction of the courts in Lucknow, Uttar Pradesh, India. If any provision of this Agreement is found unenforceable, the remaining provisions shall remain valid and enforceable. A waiver of any term shall not be deemed a waiver of any subsequent breach. You may not assign your rights under this Agreement without prior written consent. Plotkai Interactive may assign its rights and obligations under this Agreement without restriction.

@@ -38,6 +38,24 @@ We disclose personal information only to employees, contractors, and service pro
 
 We take appropriate technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction.
 
+## Babylogs — Google Drive Sync & Data Handling
+
+Babylogs (a Plotkai product, hosted at [babylogs.plotkai.in](https://babylogs.plotkai.in)) offers an optional Google Drive integration to allow parents and caregivers to synchronize baby logs (such as feeds, sleep, and diapers) between devices and partners.
+
+1. **Google User Data Accessed**:
+   Babylogs uses the `drive.file` scope. It only creates, reads, and updates a private data store file (`babylogs_store.json`) created specifically by the app in your personal Google Drive. Babylogs does not read, access, or modify any other files, photos, or documents in your Google Drive.
+
+2. **Data Storage & Privacy**:
+   All synchronized baby logs are stored directly and exclusively in your own Google Drive account. Plotkai operates zero intermediary databases or servers to store your baby activity records.
+
+3. **Data Sharing & Use**:
+   - We do not sell, rent, or monetize your baby logs or Google user data.
+   - We do not use Google user data for advertising or tracking.
+   - We do not transfer your data to third parties, except as directly shared by you with your chosen partner via your private invite link.
+
+4. **Google API Limited Use Disclosure**:
+   Babylogs' use and transfer of information received from Google APIs to any other app will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+
 ## Cookies
 We use cookies and similar technologies to improve your browsing experience, understand usage patterns, and personalize content. You can choose to refuse cookies in your browser settings, though some features of the site may not function properly without them.
 
@@ -47,4 +65,4 @@ You have the right to access, correct, delete, or restrict the processing of you
 ## Changes to This Policy
 We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated “Last Modified” date. Continued use of our services after changes means you accept the updated policy.
 
-*Last updated: October 2025*
+*Last updated: August 2026*
