@@ -54,38 +54,4 @@ Configuring MCP servers across different developer environments is seamless. `ai
 ### 5. Cloud Bridge (Coming Soon)
 - A managed, serverless MCP execution proxy allowing AI clients to connect to remote, cloud-hosted MCP servers with credential vaulting, centralized logging, and usage metering.
 
----
 
-## Technical Architecture
-
-| Component | Technology |
-| :--- | :--- |
-| **Frontend Framework** | React 19, TypeScript, Vite |
-| **Styling & Design System** | Tailwind CSS with responsive dark/light mode |
-| **Backend & Automation** | Cloudflare Workers for PR submission & payload validation |
-| **Data Architecture** | Decentralized, GitOps-driven JSON registry schemas |
-| **Hosting & CI/CD** | Automated GitHub Actions deployment to GitHub Pages |
-
----
-
-<!-- ==================== PREMIUM GLASSMORPHISM CTA BLOCK ==================== -->
-<div class="reveal reveal-delay-4 my-10 p-8 rounded-2xl border border-brand-coral/20 bg-gradient-to-br from-brand-dark/95 via-brand-dark to-brand-coral/5 text-center relative overflow-hidden group">
-  <div class="absolute -right-20 -bottom-20 w-60 h-60 rounded-full bg-brand-coral/5 blur-3xl pointer-events-none"></div>
-  <div class="absolute -left-20 -top-20 w-60 h-60 rounded-full bg-brand-teal/5 blur-3xl pointer-events-none"></div>
-  
-  <div class="relative z-10 max-w-xl mx-auto">
-    <div class="badge mb-4">AI Agent Infrastructure</div>
-    <h3 class="text-2xl font-extrabold text-white mb-2 leading-snug">Building Custom MCP Servers or AI Tooling?</h3>
-    <p class="text-sm text-white/70 leading-relaxed mb-6">
-      Whether you are developing proprietary Model Context Protocol servers for enterprise datasets or architecting agentic AI workflows, let our engineers design scalable, secure, and production-ready AI infrastructure.
-    </p>   
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="/contact/" class="btn-primary" id="product-cta-primary">
-        Schedule a Free Consultation
-      </a>
-      <a href="https://aihost.info" target="_blank" rel="noopener" class="btn-outline" id="product-cta-secondary">
-        Visit aihost.info
-      </a>
-    </div>
-  </div>
-</div>
