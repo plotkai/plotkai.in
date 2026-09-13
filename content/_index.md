@@ -46,6 +46,9 @@ description: "The Product Tech Partner for Ambitious Startups"
       <a href="/services/" class="btn-outline" id="hero-cta-secondary">
         Explore Our Services
       </a>
+      <a href="/products/" class="btn-outline" id="hero-cta-secondary">
+        Explore Our Products
+      </a>
       <a href="/contact/" class="btn-secondary" id="hero-cta-tertiary">
         Schedule a Free Consultation
       </a>
