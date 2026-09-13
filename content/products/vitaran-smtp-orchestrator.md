@@ -6,9 +6,11 @@ category: "Product Launch"
 tags: ["Vitaran","SMTP","Orchestrator"]
 excerpt: "Vitaran is an operational communication gateway for email infrastructure, providing unified API, provider load balancing, template management, and inbound email broker."
 featured: false
-featuredImage: "/img/our-work/vitaran.png"
+featuredImage: "/img/products/vitaran.png"
 featuredImageCaption: "Vitaran Dashboard"
 readTime: "2 min read"
+aliases:
+  - "/our-work/vitaran-smtp-orchestrator/"
 ---
 
 ## Overview

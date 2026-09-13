@@ -527,7 +527,7 @@ description: "The Product Tech Partner for Ambitious Startups"
           </svg>
         </a>
         <a href="/case-studies/" class="btn-outline" id="cta-showcase">View Case Studies</a>
-        <a href="/our-work/" class="btn-outline" id="cta-showcase">Our Products</a>
+        <a href="/products/" class="btn-outline" id="cta-products">Our Products</a>
       </div>
     </div>
   </div>

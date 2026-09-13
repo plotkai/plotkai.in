@@ -6,9 +6,11 @@ category: "Product Launch"
 tags: ["aihost.info", "Model Context Protocol", "MCP", "AI Agents", "Developer Tools", "Open Source"]
 excerpt: "aihost.info is a fast, searchable global registry and 1-click multi-client configuration generator for Model Context Protocol (MCP) servers across Claude, Cursor, Antigravity, and Windsurf."
 featured: true
-featuredImage: "/img/our-work/aihost.info.png"
+featuredImage: "/img/products/aihost.info.png"
 featuredImageCaption: "aihost.info — Universal MCP Directory & Registry"
 readTime: "3 min read"
+aliases:
+  - "/our-work/aihost.info-mcp-registry/"
 ---
 
 ## Supercharge AI Assistants with the Universal MCP Directory

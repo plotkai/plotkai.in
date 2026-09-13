@@ -88,8 +88,79 @@ unsafe = true
 [[menu.main]]
   identifier = "products"
   name = "Products"
-  url = "/our-work/"
+  url = "/products/"
   weight = 50
+
+# Child menu items under Products
+[[menu.main]]
+  name = "aihost.info"
+  url = "/products/aihost.info-mcp-registry/"
+  parent = "products"
+  pre = "globe"
+  weight = 10
+
+[[menu.main]]
+  name = "Babylogs"
+  url = "/products/babylogs-track-baby-growth/"
+  parent = "products"
+  pre = "heart"
+  weight = 15
+
+[[menu.main]]
+  name = "Chowk"
+  url = "/products/chowk-hyperlocal-networking-for-creators/"
+  parent = "products"
+  pre = "map-pin"
+  weight = 20
+
+[[menu.main]]
+  name = "FinFunnel"
+  url = "/products/finfunnel-income-distribution-planner/"
+  parent = "products"
+  pre = "funnel"
+  weight = 22
+
+[[menu.main]]
+  name = "FoundersCube"
+  url = "/products/founders-cube/"
+  parent = "products"
+  pre = "box"
+  weight = 25
+
+[[menu.main]]
+  name = "IdeaVault"
+  url = "/products/idea-vault-startup-evaluator/"
+  parent = "products"
+  pre = "lightbulb"
+  weight = 28
+
+[[menu.main]]
+  name = "Modern Hindu Baby Names"
+  url = "/products/modern-hindu-baby-names/"
+  parent = "products"
+  pre = "book-open"
+  weight = 30
+
+[[menu.main]]
+  name = "Remainder"
+  url = "/products/remainder-android-game/"
+  parent = "products"
+  pre = "gamepad"
+  weight = 35
+
+[[menu.main]]
+  name = "Vealth.in"
+  url = "/products/vealth.in-track-your-wealth-trajectory/"
+  parent = "products"
+  pre = "trending-up"
+  weight = 40
+
+[[menu.main]]
+  name = "Vitaran"
+  url = "/products/vitaran-smtp-orchestrator/"
+  parent = "products"
+  pre = "mail"
+  weight = 45
 
 [[menu.main]]
   identifier = "blog"
@@ -191,7 +262,7 @@ unsafe = true
 
 [[menu.footer_company]]
   name = "Product Portfolio"
-  url = "/our-work/"
+  url = "/products/"
   weight = 30
 
 [[menu.footer_company]]

@@ -6,9 +6,11 @@ category: "Product Launch"
 tags: ["Vealth.in","Wealth Management"]
 excerpt: "Vealth.in is an Indian Family Wealth Monitoring Platform. Track investments, accounts, goals and family wealth all in one place."
 featured: false
-featuredImage: "/img/our-work/vealth.in.png"
+featuredImage: "/img/products/vealth.in.png"
 featuredImageCaption: "Vealth.in Dashboard"
 readTime: "2 min read"
+aliases:
+  - "/our-work/vealth.in-track-your-wealth-trajectory/"
 ---
 
 ## Privacy First – Your family wealth monitoring

@@ -6,9 +6,11 @@ category: "Product Launch"
 tags: ["Android App", "Networking", "Hyperlocal", "Digital Creators", "Product Launch"]
 excerpt: "Chowk is a scalable, mobile-ready Android app for digital creators to connect, network, and discover each other hyperlocally."
 featured: true
-featuredImage: "/img/our-work/chowk.png"
+featuredImage: "/img/products/chowk.png"
 featuredImageCaption: "Chowk — discover creators near you"
 readTime: "1 min read"
+aliases:
+  - "/our-work/chowk-hyperlocal-networking-for-creators/"
 ---
 
 Chowk is a scalable, mobile-ready Android app designed for digital creators to connect, network, and grow their community. Available now on the Google Play Store, Chowk brings hyperlocal discovery and real-time networking to your fingertips.

@@ -7,9 +7,11 @@ category: "Product Launch"
 tags: ["Babylogs", "Parenting", "Health & Growth", "Mobile App", "PWA"]
 excerpt: "Babylogs by Plotkai is a lightning-fast, privacy-first baby tracking application. Effortlessly log feeds, diaper changes, sleep patterns, growth milestones, and daily routines all in one place."
 featured: true
-featuredImage: "/img/our-work/babylogs-icon.png"
+featuredImage: "/img/products/babylogs-icon.png"
 featuredImageCaption: "Babylogs by Plotkai — Simplified baby activity & growth tracker"
 readTime: "2 min read"
+aliases:
+  - "/our-work/babylogs-track-baby-growth/"
 ---
 
 ## Effortless Baby Tracking for Modern Parents
